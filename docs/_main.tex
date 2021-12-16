@@ -1,0 +1,1663 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={COSUIZA EN TEITOK},
+  pdfauthor={Andrea Escobar Castillo},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{plainnat}
+\nocite{*}
+
+\title{COSUIZA EN TEITOK}
+\author{Andrea Escobar Castillo}
+\date{Última actualización: 2021-12-16}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{informaciones-generales}{%
+\chapter*{Informaciones generales}\label{informaciones-generales}}
+\addcontentsline{toc}{chapter}{Informaciones generales}
+
+\hypertarget{a-quiuxe9n-estuxe1-dirigido-este-documento}{%
+\subsection*{¿A quién está dirigido este documento?}\label{a-quiuxe9n-estuxe1-dirigido-este-documento}}
+\addcontentsline{toc}{subsection}{¿A quién está dirigido este documento?}
+
+A todos los colaboradores del corpus COSUIZA que vayan a realizar ediciones digitales en nuestra página \href{https://cosuiza.unil.ch/}{web}.
+
+\hypertarget{objetivo}{%
+\subsection*{Objetivo}\label{objetivo}}
+\addcontentsline{toc}{subsection}{Objetivo}
+
+Este documento tiene por objetivo servir como guía de trabajo en todas las etapas de creación de ediciones digitales con la herramienta Teitok en el servidor del COSUIZA.
+
+\hypertarget{requisitos}{%
+\subsection*{Requisitos}\label{requisitos}}
+\addcontentsline{toc}{subsection}{Requisitos}
+
+Para hacer uso de este tutorial no se necesita tener ningún conocimiento previo, pero es necesario tener:\\
+1. Una cuenta de usuario o de administrador en la página del COSUIZA.\\
+2. Un editor de código fuente. Recomendamos \href{https://code.visualstudio.com/}{Visual Studio Code} por su versatilidad y por ser una herramienta gratuita compatible con Mac, Linux y Microsoft.
+
+\hypertarget{cuxf3mo-estuxe1-estructurado-este-tutorial}{%
+\subsection*{¿Cómo está estructurado este tutorial?}\label{cuxf3mo-estuxe1-estructurado-este-tutorial}}
+\addcontentsline{toc}{subsection}{¿Cómo está estructurado este tutorial?}
+
+El \protect\hyperlink{introducciuxf3n}{primer} capítulo se ofrece une breve introducción a la codificación de textos, su importancia, fundamentos y herramientas. Este apartado resulta imprescindible para el principiante en estas cuestiones.\\
+El \protect\hyperlink{cosuiza}{segundo} capítulo presenta el corpus documental que motiva el proyecto en el cual se enmarca este documento.\\
+El \protect\hyperlink{charta}{tercer} capítulo expone muy brevemente el proyecto y el macrocorpus del cual hace parte el COSUIZA.\\
+En el \protect\hyperlink{teitok}{cuarto} capítulo se presenta la herramienta que nos permite crear, anotar y publicar nuestro corpus documental.\\
+El \protect\hyperlink{ediciuxf3n-de-textos-en-cosuizateitok}{quinto} capítulo es un tutorial que enseña cómo proceder en todas las etapas de la edición de textos en el COSUIZA.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Contacto}: \href{mailto:andrea.escobarcastillo@unil.ch}{\nolinkurl{andrea.escobarcastillo@unil.ch}}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Este documento está en construcción
+
+\hypertarget{introducciuxf3n}{%
+\chapter*{Introducción}\label{introducciuxf3n}}
+\addcontentsline{toc}{chapter}{Introducción}
+
+En la era digital, los datos textuales se producen en cantidades inconmensurables, sean estos de origen digital o no. Diversas disciplinas fundamentan sus investigaciones en datos textuales. En este sentido, las humanidades no han experimentado un cambio, puesto que desde siempre, los datos textuales, o simplemente, el texto, han sido la materia prima de los estudiosos de esta disciplina.
+Sin embargo, pese a conservar su materia de estudio intacta, la llegada de las computadoras presentó, inevitablemente, desafíos y posibilidades en cuanto a la colecta, constitución y análisis de datos, o más bien dicho de los corpus de estudio.
+Un corpus lingüístico, que es el tipo de corpus del que nos ocuparemos en este documento, requiere del trabajo de filólogos en la colecta, transcripción y edición de datos y del uso de ciertas herramientas informáticas destinadas a la presentación de los documentos editados.\\
+En la imagen debajo vemos la reproducción de un documento que hace parte del corpus COSUIZA:\\
+
+Fonds Carlos de Goyeneche y Silvela, marquis de Balbueno, IS 5318/1/3/23
+
+¿Cómo podemos hacer de este documento una fuente de datos susceptibles de almacenarse, transportarse y hacer parte de un corpus en el cual puedan realizarse búsquedas específicas?, pero además, ¿cómo podemos transcribir y presentar fielmente su estructura?
+Más allá de la etapa evidente de la captura de la imagen, nos debemos plantear la cuestión de cómo extraer el texto que contiene el facsímil. Esto lo hacemos transcribiendo, pero para ello debemos determinar las herramientas que nos van a permitir producir esta transcripción. Existen programas, que muy frecuentemente exigen una subscripción para usarlos,
+y permiten transcribir documentos manuscritos de manera automática, por ejemplo,
+Textract de la compañía Amazon. Pero esta etapa constituye solamente una parte del proceso de preparación de un corpus lingüístico digital. En la actualidad, las transcripciones de textos manuscritos se deben realizar teniendo en consideración que estas serán publicadas empleando herramientas informáticas, lo que supone, desde luego, que estén codificadas de modo que puedan ser legibles por las computadoras.
+
+\hypertarget{la-codificaciuxf3n-de-textos}{%
+\section*{La codificación de textos}\label{la-codificaciuxf3n-de-textos}}
+\addcontentsline{toc}{section}{La codificación de textos}
+
+En rigor, el texto que leemos en este documento está codificado, de otro modo el computador, que solamente ``habla'' binario, no podría presentar los caracteres de nuestra lengua. Para la computadora, la palabra \emph{español} equivale a la secuencia {\textbackslash x65\textbackslash x73\textbackslash x70\textbackslash x61\textbackslash xc3\textbackslash xb1\textbackslash x6f\textbackslash x6c} en el sistema de codificación UTF-8. Esta codificación es muy cercana a la lengua de la computadora y no es fácilmente legible por los seres humanos (probablmente algunas personas estarán en desacuerdo con esta afirmación). Esta codificación es la que permite obtener texto plano o texto sin formato. Ahora bien, sabemos que las características textuales y estructurales de los documentos provenientes de las humanidades son diversas. Volvamos al documento presentado más arriba: podemos observar columnas, títulos subrayados, signos, etcétera. Una alternativa sería, simplemente, transcribir este documento en un procesador de texto como Word y aplicar algunos estilos tipográficos. Sin embargo, esta opción es restrictiva, no solamente por el hecho de que Word es un programa que exige una licencia, sino que, además, este no asegura la interoperabilidad imprescindible para el intercambio de datos. Pero por sobre todo, los estilos tipográficos no incluyen información semántica. Somos los seres humanos quienes tenemos la capacidad de interpretar el contenido semántico de los estilos tipográficos.
+
+\hypertarget{xml}{%
+\subsection*{XML}\label{xml}}
+\addcontentsline{toc}{subsection}{XML}
+
+Una solución al problema de la codificación de textos fue propuesta hace bastante tiempo con la creación del metalenguaje de marcado XML, sigla de eXtensible Markup Language. XML es un estándar que permite la estructuración y transmisión de información a través de un sistema de etiquetas que se extienden en una estructura de subordinación. La cantidad de etiquetas que componen un documento es variable y no es forzosamente permanente, característica que explica el adjetivo eXtensible.
+Las ventajas que se pueden encontrar haciendo uso de XML como medio para estructurar datos son múltiples. Primeramente, XML no es solamente legible por las computadoras, sino también por los seres humanos. Es una herramienta que existe desde hace más de cuarenta años, razón por la cual podemos estar seguros de que no caerá repentinamente en desuso. Es particularmente adecuada para la estructuración de datos textuales que no se adaptan a un modelo tabular.\\
+Un archivo en formato XML se estructura como vemos en el cuadro debajo. Un elemento raíz (root) contiene todos los elementos y subelementos. La cantidad de niveles no tiene restricción más allá de los evidentes problemas de legibilidad que conlleva un documento con excesivos niveles de anidación.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{raíz}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}}\KeywordTok{elemento}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{subelemento}\NormalTok{\textgreater{}...Datos...\textless{}/}\KeywordTok{subelemento}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}/}\KeywordTok{elemento}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}/}\KeywordTok{raíz}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+Un elemento puede contener atributos, cuya utilidad es aportar información descriptiva sobre el elemento en el que aparece, dicho de otro modo, contiene datos sobre los metadatos. El valor de un atributo debe ir siempre entre comillas como vemos en el cuadro a continuación:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{elemento}\OtherTok{ id=}\StringTok{"20"}\NormalTok{\textgreater{}...Datos...\textless{}/}\KeywordTok{elemento}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+Estos principios constituyen el fundamento de la TEI (Text encoding initiative) dado que esta es una aplicación del
+metalenguaje de marcado XML.
+
+\hypertarget{tei}{%
+\subsection*{TEI}\label{tei}}
+\addcontentsline{toc}{subsection}{TEI}
+
+TEI es una sigla que hace referencia al consorcio de la Iniciativa para la codificación de textos que nació a finales de la década de los ochenta con el fin de establecer una metodología para la codificación informática de textos de carácter humanístico. La TEI representa, en la actualidad, el proyecto más longevo y exitoso de las humanidades digitales.
+El consorcio TEI desarrolló un sistema de etiquetado, basado en XML, que permite agregar al texto plano marcas o anotaciones con información relativa a la estructura y contenido semántico de un texto.
+Dicho de otro modo, TEI puede entenderse como una colección de etiquetas con relaciones jerárquicas. Esta colección de etiquetas está orientada a representar textos procedentes de las humanidades: obras no literarias y literarias de todo género, manuscritas o impresas.
+Para cada documento, y en función de sus características textuales, TEI concibe diferentes módulos. Por ejemplo, para la descripción de manuscritos podemos recurrir a la etiqueta { \textless foliation\textgreater{} } que nos permite describir la numeración de los folios de un manuscrito.\\
+Las directrices o, mejor dicho, recomendaciones (puesto que no han sido concebidas como una normativa), pueden encontrarse en la página del consorcio. \footnote{Directrices TEI}\\
+Supongamos que formamos parte de un proyecto en el cual se ha decidido codificar diversas ediciones de \emph{La Araucana}. Comenzaremos la codificación por la primera plana que vemos a continuación:
+
+Una manera de transcribir esta primera plana sería como vemos en el cuadro debajo (ignoramos todos los elementos tipogáficos para los cuales existe una gran cantidad de elementos previstos por la TEI):
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{front}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}}\KeywordTok{titlePage}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{docTitle}\NormalTok{\textgreater{}}
+\NormalTok{      \textless{}}\KeywordTok{titlePart}\OtherTok{ type=}\StringTok{"main"}\NormalTok{\textgreater{}LA ARAVCAna \textless{}}\KeywordTok{choice}\NormalTok{\textgreater{}\textless{}}\KeywordTok{orig}\NormalTok{\textgreater{}ARAVCAna\textless{}/}\KeywordTok{orig}\NormalTok{\textgreater{}\textless{}}\KeywordTok{reg}\NormalTok{\textgreater{}Araucana\textless{}/}\KeywordTok{reg}\NormalTok{\textgreater{}\textless{}/}\KeywordTok{choice}\NormalTok{\textgreater{}}
+\NormalTok{      \textless{}/}\KeywordTok{titlePart}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}/}\KeywordTok{docTitle}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{byline}\NormalTok{\textgreater{}de don\textless{}}\KeywordTok{docAuthor}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{choice}\NormalTok{\textgreater{}\textless{}}\KeywordTok{orig}\NormalTok{\textgreater{}Alonſo\textless{}/}\KeywordTok{orig}\NormalTok{\textgreater{}\textless{}}\KeywordTok{reg}\NormalTok{\textgreater{}Alonso\textless{}/}\KeywordTok{reg}\NormalTok{\textgreater{} }
+\NormalTok{    de Ercilla y \textless{}}\KeywordTok{choice}\NormalTok{\textgreater{}\textless{}}\KeywordTok{orig}\NormalTok{\textgreater{}çuñiga\textless{}/}\KeywordTok{orig}\NormalTok{\textgreater{}\textless{}}\KeywordTok{reg}\NormalTok{\textgreater{}Zúñiga\textless{}/}\KeywordTok{reg}\NormalTok{\textgreater{}.}
+\NormalTok{    \textless{}/}\KeywordTok{docAuthor}\NormalTok{\textgreater{}\textless{}/}\KeywordTok{byline}\NormalTok{\textgreater{} }
+\NormalTok{    \textless{}}\KeywordTok{figure}\NormalTok{\textgreater{}}
+\NormalTok{      \textless{}}\KeywordTok{graphic}\OtherTok{ url=}\StringTok{"https://es.wikipedia.org/wiki/Literatura\_colonial\_de\_Chile\#/media/Archivo:La\_Araucana.jpg"}\NormalTok{/\textgreater{}}
+\NormalTok{      \textless{}}\KeywordTok{figDesc}\NormalTok{\textgreater{}Grabado del Ángel Gabriel\textless{}/}\KeywordTok{figDesc}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}/}\KeywordTok{figure}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{docImprint}\NormalTok{\textgreater{} }
+\NormalTok{       EN \textless{}}\KeywordTok{pubPlace}\NormalTok{\textgreater{}SALAMANCA\textless{}/}\KeywordTok{pubPlace}\NormalTok{\textgreater{}}
+\NormalTok{      En caſa de \textless{}}\KeywordTok{name}\NormalTok{\textgreater{}Domingo de Portonarijs\textless{}/}\KeywordTok{name}\NormalTok{\textgreater{}, Impreſſor de ſu Catholica Mageſtad.}
+\NormalTok{    \textless{}/}\KeywordTok{docImprint}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{imprimatur}\NormalTok{\textgreater{}Con privilegio de Caſtilla, y de Aragon. A coſta de Vicente, y Simon de Portonarijs. Eſta taſſado a        \textless{}}\KeywordTok{del}\NormalTok{\textgreater{}\textless{}}\KeywordTok{gap}\OtherTok{ reason=}\StringTok{"illegible"}\NormalTok{\textgreater{}\textless{}/}\KeywordTok{del}\NormalTok{\textgreater{} }
+\NormalTok{    marauedis el pliego.\textless{}/}\KeywordTok{imprimatur}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}/}\KeywordTok{titlePage}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}/}\KeywordTok{front}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+Esta brevísima transcripción nos permite constatar ciertos puntos antes mencionados en este tutorial:
+
+Un elemento engloba a todo el resto de los elementos, en este caso es el elemento { \textless front\textgreater{} } cuya función es contener toda la información paratextual de un documento.
+
+Cada elemento tiene una etiqueta de apertura y una de cierre. La barra oblicua / indica el cierre de una etiqueta.
+
+Se puede, facultativamente, agregar atributos a los elementos. En este caso el elemento { \textless titlePart\textgreater{} } tiene un atributo para especificar el título principal de un texto. En ciertos casos, podríamos encontrar un subtítulo explicativo o un título alternativo precedido por la conjuncion disyuntiva \emph{o}, en cuyos casos el valor del atributo \texttt{type} debe ser \texttt{"desc"} y \texttt{"alt"} respectivamente.
+
+Podemos constatar la finalidad para cual se ha concebido el sistema de codificación TEI en XML: la descripción detallada del texto.
+
+Sin embargo, esta transcripción se encuentra fuera de contexto. El elemento { \textless front\textgreater{} } no es el elemento raíz de un documento codificado en TEI.
+El elemento raíz de un documento en TEI es { \textless TEI\textgreater{}}. Este siempre lleva dos elementos hijos, { \textless teiHeader\textgreater{} }para los metadatos y { \textless text\textgreater{} } para el texto en sí.\\
+TEI ha publicado cinco versiones de sus directrices. La más reciente es la quinta propuesta (P5), una publicación de más de mil páginas y casi seiscientas etiquetas. Esta información nos permite deducir que un texto puede ser exhaustivamente descrito en TEI. Ahora bien, esta exhaustividad dependerá de los requerimientos de cada proyecto de edición. En cambio, TEI exige una cantidad mínima de información en el encabezado ({\textless teiHeader\textgreater{}}) para que un texto se considere codificado en TEI.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{\textless{}?xml}\OtherTok{ version=}\StringTok{"1.0"}\OtherTok{ encoding=}\StringTok{"UTF{-}8"}\FunctionTok{?\textgreater{}}
+\NormalTok{\textless{}}\KeywordTok{TEI}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}}\KeywordTok{teiHeader}\NormalTok{\textgreater{}}
+\NormalTok{      \textless{}}\KeywordTok{fileDesc}\NormalTok{\textgreater{}}
+\NormalTok{         \textless{}}\KeywordTok{titleStmt}\NormalTok{\textgreater{}}
+\NormalTok{            \textless{}}\KeywordTok{title}\NormalTok{\textgreater{}Título\textless{}/}\KeywordTok{title}\NormalTok{\textgreater{}}
+\NormalTok{         \textless{}/}\KeywordTok{titleStmt}\NormalTok{\textgreater{}}
+\NormalTok{         \textless{}}\KeywordTok{publicationStmt}\NormalTok{\textgreater{}}
+\NormalTok{         \textless{}/}\KeywordTok{publicationStmt}\NormalTok{\textgreater{}}
+\NormalTok{         \textless{}}\KeywordTok{sourceDesc}\NormalTok{\textgreater{}}
+\NormalTok{         \textless{}/}\KeywordTok{sourceDesc}\NormalTok{\textgreater{}}
+\NormalTok{      \textless{}/}\KeywordTok{fileDesc}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}/}\KeywordTok{teiHeader}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}}\KeywordTok{text}\NormalTok{\textgreater{}}
+\NormalTok{      Texto}
+\NormalTok{  \textless{}/}\KeywordTok{text}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}/}\KeywordTok{TEI}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+Este documento contiene la información mínima requerida de una codificación en TEI.
+La primera línea es lo que comúnmente se conoce como la declaración XML que tiene como función proveer la versión de XML que se utiliza y el estándar de codificación de caracteres.
+El { \textless teiHeader\textgreater{} } puede contener cinco elementos hijos que describen el contexto de publicación de un documento. Pero solamente el elemento { \textless fileDesc\textgreater{} } es obligatorio, este debe proveer la información relativa a la edición electrónica en al menos tres etiquetas enumeradas a continuación:
+
+{ \textless titleStmt\textgreater{}}: proporciona la información relativa al título del documento y sus autores o responsables.
+
+{ \textless publicationStmt\textgreater{}}: reúne la información acerca de la publicación del documento electrónico. Puede ser descrito simplemente en prosa en un elemento de párrafo \texttt{\textless{}p\textgreater{}} o se puede recurrir a elementos específicos como \texttt{\textless{}pubPlace\textgreater{}} o \texttt{\textless{}Publisher\textgreater{}}.
+
+{ \textless sourceDesc\textgreater{}}: contiene la información referente al documento que sirve de fuente para la edición electrónica. Al igual que el elemento precedente, este puede ser descrito en prosa o con elementos propios.
+
+Como se ha mencionado previamente, la exhaustividad de la descripción con ayuda del estándar de marcación TEI depende de los requisitos de cada proyecto. En nuestro caso, haremos el examen detallado de la cabecera que utilizaremos para cada documento del COSUIZA en el último capítulo.
+
+\hypertarget{cosuiza}{%
+\chapter*{COSUIZA}\label{cosuiza}}
+\addcontentsline{toc}{chapter}{COSUIZA}
+
+COSUIZA es un corpus de textos hispánicos conservados en bibliotecas y archivos suizos que fue iniciado en 2013 por miembros de la Sección de español de la Universidad de Lausana. El objetivo general que se plantearon los integrantes de la sección en ese entonces fue el de realizar un inventario para disponer de una visión general de todos los manuscritos en español custodiados por la Confederación suiza. El objetivo siguiente fue realizar las ediciones de estos documentos siguiendo los criterios propuestos por la red \protect\hyperlink{charta}{§ CHARTA}.
+Los manuscritos escritos en español están repartidos por todo el país y su naturaleza es muy diversa, pero hay dos instituciones que sobresalen por la riqueza tanto cualitativa como cuantitativa de la documentación que conservan.
+
+\hypertarget{biblioteca-de-ginebra}{%
+\section*{Biblioteca de Ginebra}\label{biblioteca-de-ginebra}}
+\addcontentsline{toc}{section}{Biblioteca de Ginebra}
+
+La \href{http://institutions.ville-geneve.ch/en/bibliotheque-de-geneve/}{BGE} aloja en su acervo documental una colección de manuscritos provenientes del condado de Altamira. La colección Favre, llamada así para honorar a quien fue el donador de los manuscritos en el año 1907, el historiador Edouard Favre, contiene epistolarios, documentos reales y también privados relativos a la casa de Altamira. En 1914 el conservador de manuscritos de la BGE, Léopold Micheli, publicó un inventario que actualmente se encuentra disponible en versión electrónica.
+
+\hypertarget{biblioteca-cantonal-y-universitaria-de-lausana}{%
+\section*{Biblioteca cantonal y universitaria de Lausana}\label{biblioteca-cantonal-y-universitaria-de-lausana}}
+\addcontentsline{toc}{section}{Biblioteca cantonal y universitaria de Lausana}
+
+La \href{https://www.bcu-lausanne.ch/}{BCUL} conserva desde 1997 el fondo Carlos de Goyeneche y Silvela, marqués de Balbueno, que ofrece una serie de documentos manuscritos de genealogía y también de tipo notarial: apeos, arrendamientos y títulos, entre otros.
+Para el lector que quiera ir más allá de esta presentación lacónica del fondo Carlos de Goyeneche y Silvela, puede consultar una exposición prolija e informativa en Castillo Lluch y Diez del Corral Areta (2015)\footnote{Castillo Lluch y Diez del Corral Areta (2015)} o también en la página del Servicio de manuscritos de la Biblioteca cantonal y universitaria de Lausana.
+
+Para una descripción detallada de los fondos mencionados aquí y otros conservados en Suiza se puede consultar Castillo Lluch y Diez del Corral Areta (2018).\footnote{Castillo Lluch y Diez del Corral Areta (2018)}
+
+\hypertarget{charta}{%
+\chapter*{CHARTA}\label{charta}}
+\addcontentsline{toc}{chapter}{CHARTA}
+
+Como se ha mencionado en la sección precedente, los documentos que hacen parte del COSUIZA son transcritos y editados conforme a los criterios establecidos por CHARTA.\footnote{Para una exposición del proyecto ver \citet{areta2014sin}. Para acceder a la página del proyecto y del corpus ir a https://www.corpuscharta.es/} Esta sigla tiene una doble significación, por una parte hace referencia a una red de investigación internacional que nació en 2005 y por otra da el nombre al {C}orpus {H}ispánico y {A}mericano en la {R}ed: {T}extos {A}ntiguos.\\
+En primer lugar, el grupo estableció un estándar de edición aplicable a documentos de vertiente archivística con el propósito de uniformar las transcripciones de este tipo de documentos que suelen tener una alta dosis de subjetividad. En segundo lugar, se planteó la idea de constituir un corpus diacrónico (siglo XII al siglo XIX) de textos españoles e hispanoamericanos editados con los mencionados criterios y presentarlos en tres versiones: paleográfica, crítica y facsimilar.\\
+Las posibilidades ofrecidas por bases de datos como el corpus CHARTA han sido de enorme utilidad para las diferentes disciplinas que se interesan en la documentación histórica y no literaria. La creación y evolución de este corpus (y de sus subcorpus) ha sido de vital importancia para el estudio histórico de la lengua.
+Sin embargo, la abundancia de datos textuales siempre plantea dificultades si las herramientas que utilizamos para el procesamiento de estos datos presentan limitaciones. No cabe duda que el acceso a grandes cantidades de datos textuales ha modificado el proceder metodológico de los lingüistas. Sus exigencias han evolucionado y desde hace un tiempo ya no es suficiente contar con datos disponibles en un mismo sitio en la red, ahora se hace necesario contar con herramientas capaces de procesar y manipular los datos textuales de modo que, por ejemplo, un fenómeno lingüístico pueda ser estudiado y analizado con ayuda de las computadoras y ya no solamente con la calma y perseverancia del lingüista tradicional. En este contexto herramientas digitales como el estándar de etiquetado TEI y la plataforma Teitok permiten la convergencia de la actividad ecdótica con la lingüística. Veremos en \protect\hyperlink{teitok}{§ TEITOK} las posibilidades que ofrece esta plaforma en este sentido.
+También es necesario señalar que para llegar a construir fuentes de datos textuales fiables es indispensable el trabajo colaborativo de filólogos rigurosos dispuestos a revisar y corregir los datos que se ponen a disposición de la comunidad científica en estos corpus digitales. A este respecto, Teitok ofrece un entorno que facilita este trabajo colectivo.
+
+\hypertarget{teitok}{%
+\chapter*{TEITOK}\label{teitok}}
+\addcontentsline{toc}{chapter}{TEITOK}
+
+Teitok es una plataforma web desarrollada por Maarten Janssen \citep{janssen2016teitok} en el contexto del proyecto
+Post Scriptum de la Universidad de Lisboa en 2014.\footnote{Ver \citet{vaamonde2015ps}}
+Esencialmente, Teitok permite visualizar y procesar datos textuales codificados en TEI/XML. Es una herramienta versátil que ofrece además, diferentes módulos en función del corpus para el cual se utiliza.
+Comúnmente entendemos por corpus una colección de textos. En Teitok, esta colección de textos se presenta como una serie de archivos en formato TEI/XML. La particularidad de Teitok, y su diferencia con el estándar de marcación TEI, es que en el segmento { \textless text\textgreater{} } se aplica un sistema de {tokenización} que permite llevar a cabo el etiquetado morfosintáctico y la lematización de manera automática con herramientas de lingüística computacional almacenadas en el servidor de la plataforma. Esto se traduce en el reemplazo de la etiqueta { \textless w\textgreater{} } del estándar TEI, utilizada para marcar lingüísticamente las palabras, por la etiqueta { \textless tok\textgreater.} Para el resto de los elementos textuales se conservan las anotaciones de TEI ({\textless pb\textgreater{} }para el inicio de página, {\textless lb\textgreater{} } para el cambio de línea, { \textless cb\textgreater{} }para el inicio de columna, entre otros que veremos en el siguiente capítulo).\\
+A continuación vemos el resultado de la anotación en TEI y luego con el modelo de Teitok:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{1) TEI}
+\NormalTok{\textless{}}\KeywordTok{w}\OtherTok{ lemma=}\StringTok{"haber"}\OtherTok{ pos=}\StringTok{"VAIP2P0"}
+\OtherTok{  xml:id=}\StringTok{"A19883{-}003{-}a{-}0180"}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}}\KeywordTok{choice}\NormalTok{\textgreater{}}
+\NormalTok{   \textless{}}\KeywordTok{orig}\NormalTok{\textgreater{}habeis\textless{}/}\KeywordTok{orig}\NormalTok{\textgreater{}}
+\NormalTok{   \textless{}}\KeywordTok{reg}\NormalTok{\textgreater{}habéis\textless{}/}\KeywordTok{reg}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}/}\KeywordTok{choice}\NormalTok{\textgreater{}}
+\NormalTok{ \textless{}/}\KeywordTok{w}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{1) Teitok}
+\NormalTok{\textless{}}\KeywordTok{tok}\OtherTok{ id=}\StringTok{"w{-}102"}\OtherTok{ nform=}\StringTok{"habéis"}\OtherTok{ lemma=}\StringTok{"haber"}\OtherTok{ pos=}\StringTok{"VAIP2P0"}\NormalTok{\textgreater{}}
+\NormalTok{habeis}
+\NormalTok{\textless{}/}\KeywordTok{tok}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+Conforme al sistema de tokenización, la normalización, la anotación lingüística y la lematización se inscriben en un solo nodo por medio de los atributos, lo que permite la modificación en la plataforma de manera muy intuitiva.\footnote{Para un modelo de anotación cabalmente conforme a TEI, el lector puede consultar el libro \emph{Edición digital de documentos antiguos: marcación XML-TEI basada en los criterios CHARTA}. \citep{martinez2020edicion}} Siguiendo la línea de desarrollo de los corpus electrónicos, resultado de la vinculación de la lingüística de corpus con las herramientas informáticas, la plataforma permite trabajar directamente en línea, lo que resulta en la utilización crítica del corpus por medio de su corrección continua \citep{kabatek2016linguistica}. Ya veremos en \protect\hyperlink{teitok}{§ Edición de textos en COSUIZA/Teitok} las posibilidades que ofrece la plataforma web en cuanto a estas labores de edición.\\
+Cabe señalar que la red CHARTA se encuentra haciendo la migración de su \href{http://www.corpuscharta.es/}{Corpus 2.0} a una versión 3.0 implementando Teitok. Este proyecto se puso en marcha en 2020 y, desde entonces, ha integrado al entorno de Teitok una serie de instrumentos para adaptar los criterios de edición CHARTA a las posibilidades y requerimientos de Teitok y TEI.
+
+\hypertarget{ediciuxf3n-de-textos-en-cosuizateitok}{%
+\chapter*{Edición de textos en COSUIZA/Teitok}\label{ediciuxf3n-de-textos-en-cosuizateitok}}
+\addcontentsline{toc}{chapter}{Edición de textos en COSUIZA/Teitok}
+
+En este capítulo presentaremos una guía detallada de los procedimientos de edición en la página del COSUIZA.
+Este capítulo se divide en tres apartados. En el primero se hace una presentación de las etiquetas que componen la cabecera de todos los documentos del corpus y un repertorio de las etiquetas aplicables al texto. El segundo expone las posibilidades de automatización que ofrece Teitok en el proceso de edición. Finalmente, el tercer apartado, ofrece una serie de videotutoriales que exponen el proceso de creación y edición de un documento en la página del COSUIZA.
+
+\hypertarget{guuxeda-de-etiquetado}{%
+\section*{Guía de etiquetado}\label{guuxeda-de-etiquetado}}
+\addcontentsline{toc}{section}{Guía de etiquetado}
+
+\hypertarget{metadatos}{%
+\subsection*{Metadatos}\label{metadatos}}
+\addcontentsline{toc}{subsection}{Metadatos}
+
+Como se ha indicado previamente, los metadatos se presentan dentro del elemento { \textless teiHeader\textgreater{}}. Esta sección puede ser muy suscinta o muy extensa dependiendo de los requerimientos del proyecto en el que se inscribe la edición. El {\textless teiHeader\textgreater{}} del COSUIZA recoge los datos necesarios según los criterios de la red CHARTA y las exigencias de TEI. Este elemento que, de ahora en adelante, llamaremos cabecera se compone de cuatro elementos hijos que detallamos a continuación:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  { \textless fileDesc\textgreater{} }
+\item
+  { \textless encodingDesc\textgreater{} }
+\item
+  { \textless profileDesc\textgreater{} }
+\item
+  { \textless revisionDesc\textgreater{} }
+\end{enumerate}
+
+\hypertarget{filedesc}{%
+\subsubsection*{\texorpdfstring{1. { \textless fileDesc\textgreater{} }}{1.  \textless fileDesc\textgreater{} }}\label{filedesc}}
+\addcontentsline{toc}{subsubsection}{1. { \textless fileDesc\textgreater{} }}
+
+Contiene los elementos que proporcionan información bibliográfica del documento electrónico.
+
+\hypertarget{titlestmt}{%
+\paragraph*{\texorpdfstring{1.1 { \textless titleStmt\textgreater{} }}{1.1  \textless titleStmt\textgreater{} }}\label{titlestmt}}
+\addcontentsline{toc}{paragraph}{1.1 { \textless titleStmt\textgreater{} }}
+
+El enunciado de título ofrece la información relativa al título del documento electrónico y las personas u organismos responsables de su realización.
+
+\hypertarget{title}{%
+\subparagraph*{\texorpdfstring{ 1.1.1 { \textless title\textgreater{} }}{ 1.1.1  \textless title\textgreater{} }}\label{title}}
+\addcontentsline{toc}{subparagraph}{ 1.1.1 { \textless title\textgreater{} }}
+
+Todos los documentos del COSUIZA llevan por título una secuencia alfanumérica como se ilustra en el ejemplo debajo:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{title}\NormalTok{\textgreater{}COSUIZA{-}0001\textless{}/}\KeywordTok{title}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{funder}{%
+\subparagraph*{\texorpdfstring{1.1.2 { \textless funder\textgreater{} }}{1.1.2  \textless funder\textgreater{} }}\label{funder}}
+\addcontentsline{toc}{subparagraph}{1.1.2 { \textless funder\textgreater{} }}
+
+Ofrece la información sobre la institución o individuos que financian el proyecto. Para todos los documentos del COSUIZA el contenido de este elemento es el mismo:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{funder}\NormalTok{\textgreater{}Universidad de Lausana\textless{}/}\KeywordTok{funder}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{respstmt}{%
+\subparagraph*{\texorpdfstring{1.1.3 { \textless respStmt\textgreater{} }}{1.1.3  \textless respStmt\textgreater{} }}\label{respstmt}}
+\addcontentsline{toc}{subparagraph}{1.1.3 { \textless respStmt\textgreater{} }}
+
+El enunciado de responsabilidad provee información sobre las personas que han participado en la producción del documento electrónico, también se precisa el rol de cada una. Se deben distinguir tres roles de acuerdo a los criterios de edición CHARTA y uno específico a la producción del documento electrónico. Cada uno de estos enunciados de responsabilidad contienen un elemento {\textless resp\textgreater{}} con un atributo para especificar si se trata del transcriptor, los revisores o el encargado de producir el documento XML y, un elemento {\textless name\textgreater{}} para identificar a la persona encargada de la función correspondiente. Se deben completar solamente los nombres que correspondan en la etiqueta {\textless name\textgreater{}}, el resto es invariable.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{respStmt}\NormalTok{\textgreater{} }
+\NormalTok{            \textless{}}\KeywordTok{resp}\OtherTok{ resp=}\StringTok{"transcriber"}\NormalTok{\textgreater{}Transcriptor\textless{}/}\KeywordTok{resp}\NormalTok{\textgreater{} }
+\NormalTok{            \textless{}}\KeywordTok{name}\NormalTok{\textgreater{}Nombre del transcriptor\textless{}/}\KeywordTok{name}\NormalTok{\textgreater{} }
+\NormalTok{         \textless{}/}\KeywordTok{respStmt}\NormalTok{\textgreater{}}
+\NormalTok{         \textless{}}\KeywordTok{respStmt}\NormalTok{\textgreater{}}
+\NormalTok{            \textless{}}\KeywordTok{resp}\OtherTok{ resp=}\StringTok{"reviewer1"}\NormalTok{\textgreater{}Revisor 1\textless{}/}\KeywordTok{resp}\NormalTok{\textgreater{}}
+\NormalTok{            \textless{}}\KeywordTok{name}\NormalTok{\textgreater{}Nombre del revisor 1\textless{}/}\KeywordTok{name}\NormalTok{\textgreater{}}
+\NormalTok{         \textless{}/}\KeywordTok{respStmt}\NormalTok{\textgreater{}}
+\NormalTok{         \textless{}}\KeywordTok{respStmt}\NormalTok{\textgreater{}}
+\NormalTok{            \textless{}}\KeywordTok{resp}\OtherTok{ resp=}\StringTok{"reviewer2"}\NormalTok{\textgreater{}Revisor 2\textless{}/}\KeywordTok{resp}\NormalTok{\textgreater{}}
+\NormalTok{            \textless{}}\KeywordTok{name}\NormalTok{\textgreater{}Nombre del revisor 2\textless{}/}\KeywordTok{name}\NormalTok{\textgreater{}}
+\NormalTok{         \textless{}/}\KeywordTok{respStmt}\NormalTok{\textgreater{}}
+\NormalTok{         \textless{}}\KeywordTok{respStmt}\NormalTok{\textgreater{}}
+\NormalTok{            \textless{}}\KeywordTok{resp}\OtherTok{ resp=}\StringTok{"XMLconverter"}\NormalTok{\textgreater{}Conversor a XML\textless{}/}\KeywordTok{resp}\NormalTok{\textgreater{}}
+\NormalTok{            \textless{}}\KeywordTok{name}\NormalTok{\textgreater{}Nombre del conversor a XML\textless{}/}\KeywordTok{name}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}/}\KeywordTok{respStmt}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{publicationstmt}{%
+\paragraph*{\texorpdfstring{1.2 { \textless publicationStmt\textgreater{} }}{1.2  \textless publicationStmt\textgreater{} }}\label{publicationstmt}}
+\addcontentsline{toc}{paragraph}{1.2 { \textless publicationStmt\textgreater{} }}
+
+Proporciona los datos relativos a la publicación y distribución del documento electrónico.
+
+\hypertarget{publisher}{%
+\subparagraph*{\texorpdfstring{1.2.1 { \textless publisher\textgreater{} }}{1.2.1  \textless publisher\textgreater{} }}\label{publisher}}
+\addcontentsline{toc}{subparagraph}{1.2.1 { \textless publisher\textgreater{} }}
+
+Contiene la información sobre la organización responsable de la publicación del documento. En nuestra cabecera encontramos dos elementos { \textless orgName\textgreater{} } para proporcionar el nombre del grupo GRAFILA (Grupo de Análisis Filológico de Lausana) ---acrónimo del grupo de estudio miembro de la red CHARTA--- y el de la UNIL. El tipo de institución se detalla con ayuda del atributo \texttt{type}. Para el COSUIZA estos elementos y sus atributos son inmutables:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{publisher}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{orgName}\OtherTok{ type=}\StringTok{"group"}\NormalTok{\textgreater{}GRAFILA\textless{}/}\KeywordTok{orgName}\NormalTok{\textgreater{} }
+\NormalTok{    \textless{}}\KeywordTok{orgName}\OtherTok{ type=}\StringTok{"institution"}\NormalTok{\textgreater{}Universidad de Lausana\textless{}/}\KeywordTok{orgName}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}/}\KeywordTok{publisher}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{pubplace}{%
+\subparagraph*{\texorpdfstring{1.2.2 { \textless pubPlace\textgreater{} }}{1.2.2  \textless pubPlace\textgreater{} }}\label{pubplace}}
+\addcontentsline{toc}{subparagraph}{1.2.2 { \textless pubPlace\textgreater{} }}
+
+Contiene el nombre del lugar de publicación del documento electrónico. Para todos los documentos del corpus este elemento tiene el mismo contenido:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{pubPlace}\NormalTok{\textgreater{}Lausana\textless{}/}\KeywordTok{pubPlace}\NormalTok{\textgreater{} }
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{idno}{%
+\subparagraph*{\texorpdfstring{1.2.3 { \textless idno\textgreater{} }}{1.2.3  \textless idno\textgreater{} }}\label{idno}}
+\addcontentsline{toc}{subparagraph}{1.2.3 { \textless idno\textgreater{} }}
+
+Este elemento aparece dos veces en la cabecera y está destinado a identificar el corpus y el número del documento dentro del corpus. Estas informaciones son de utilidad para el macrocorpus CHARTA en el proceso de integración de los documentos de todos sus subcorpus. El contenido de la primera etiqueta es invariable a diferencia del número identificador:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{idno}\OtherTok{ type=}\StringTok{"corpus"}\NormalTok{\textgreater{}COSUIZA\textless{}/}\KeywordTok{idno}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}}\KeywordTok{idno}\OtherTok{ type=}\StringTok{"corpus{-}num"}\NormalTok{\textgreater{}Número identificador\textless{}/}\KeywordTok{idno}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{distributor}{%
+\subparagraph*{\texorpdfstring{1.2.4 { \textless distributor\textgreater{} }}{1.2.4  \textless distributor\textgreater{} }}\label{distributor}}
+\addcontentsline{toc}{subparagraph}{1.2.4 { \textless distributor\textgreater{} }}
+
+Recoge la información sobre el o los organismos responsables de la distribución del documento. En nuestra cabecera permanece invariable:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{distributor}\NormalTok{\textgreater{}Universidad de Lausana\textless{}/}\KeywordTok{distributor}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{availability}{%
+\subparagraph*{\texorpdfstring{1.2.5 { \textless availability\textgreater{} }}{1.2.5  \textless availability\textgreater{} }}\label{availability}}
+\addcontentsline{toc}{subparagraph}{1.2.5 { \textless availability\textgreater{} }}
+
+Proporciona la información relativa a la disponibilidad o restricción de publicación de un documento. Dada la naturaleza de los documentos que hacen parte del COSUIZA, en la mayoría de los casos el contenido de esta etiqueta será el mismo. Ahora bien, si se tratara de un documento sobre el cual se aplican ciertos derechos o reservas deberá ser señalado en esta sección. Para todo el resto de los documentos, este elemento se presenta dentro de una etiqueta \emph{párrafo} ({\textless p\textgreater{}}) como se muestra a continuación:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{availability}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{p}\NormalTok{\textgreater{}Licencia CREATIVE COMMONS\textless{}/}\KeywordTok{p}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}/}\KeywordTok{availability}\NormalTok{\textgreater{} }
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{sourcedesc}{%
+\paragraph*{\texorpdfstring{1.3 { \textless sourceDesc\textgreater{} }}{1.3  \textless sourceDesc\textgreater{} }}\label{sourcedesc}}
+\addcontentsline{toc}{paragraph}{1.3 { \textless sourceDesc\textgreater{} }}
+
+Suministra la información sobre el documento original que sirve de fuente para la edición digital.
+En virtud de que todos los documentos originales son manuscritos, vamos a utilizar la etiqueta { \textless msDesc\textgreater{}} concebida para describir documentos de este tipo.
+
+\hypertarget{msdesc}{%
+\subparagraph*{\texorpdfstring{1.3.1 { \textless msDesc\textgreater{} }}{1.3.1  \textless msDesc\textgreater{} }}\label{msdesc}}
+\addcontentsline{toc}{subparagraph}{1.3.1 { \textless msDesc\textgreater{} }}
+
+{1.3.1.1 } { \textless msIdentifier\textgreater{} }
+Este elemento contiene todas las etiquetas destinadas a identificar la ubicación exacta de un manuscrito. Vamos a indicar el país, el cantón, la ciudad, el nombre del archivo y el identificador dentro del archivo. El único elemento que no varía es el país como podemos ver debajo:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{msIdentifier}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{country}\NormalTok{\textgreater{}Suiza\textless{}/}\KeywordTok{country}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{region}\OtherTok{ type=}\StringTok{"canton"}\NormalTok{\textgreater{}Cantón en donde se conserva el documento\textless{}/}\KeywordTok{region}\NormalTok{\textgreater{} }
+\NormalTok{    \textless{}}\KeywordTok{settlement}\NormalTok{\textgreater{}Ciudad en donde se conserva el documento\textless{}/}\KeywordTok{settlement}\NormalTok{\textgreater{} }
+\NormalTok{    \textless{}}\KeywordTok{repository}\NormalTok{\textgreater{}Archivo en donde se conserva el documento\textless{}/}\KeywordTok{repository}\NormalTok{\textgreater{} }
+\NormalTok{    \textless{}}\KeywordTok{idno}\NormalTok{\textgreater{}Identificador dentro del archivo\textless{}/}\KeywordTok{idno}\NormalTok{\textgreater{} }
+\NormalTok{\textless{}/}\KeywordTok{msIdentifier}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+En caso de que el documento electrónico tenga como fuente el fragmento de un manuscrito se deben indicar los folios (f o ff.) dentro de la etiqueta { \textless idno\textgreater{}}.
+
+{1.3.1.2 } { \textless msContents\textgreater{} } Esta etiqueta nos permite describir los contenidos del manuscrito. Incluiremos el resumen que hace parte de todas las cabeceras de las ediciones CHARTA, además señalaremos si se trata de una copia o de un original en el valor del atributo \texttt{class} del elemento { \textless msItem\textgreater{}}, el nombre del scriptor en caso de conocer su nombre y, añadiremos su tipo en el atributo \texttt{type} con el valor que corresponda:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{msContents}\NormalTok{\textgreater{} }
+\NormalTok{  \textless{}}\KeywordTok{summary}\NormalTok{\textgreater{}Resumen del contenido\textless{}/}\KeywordTok{summary}\NormalTok{\textgreater{} }
+\NormalTok{  \textless{}}\KeywordTok{msItem}\OtherTok{ class=}\StringTok{"original/copia"}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{editor}\NormalTok{\textgreater{}}
+\NormalTok{      \textless{}}\KeywordTok{persName}\OtherTok{ type=}\StringTok{"escribano/notario"}\NormalTok{\textgreater{}Nombre del scriptor\textless{}/}\KeywordTok{persName}\NormalTok{\textgreater{} }
+\NormalTok{    \textless{}/}\KeywordTok{editor}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}/}\KeywordTok{msItem}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}/}\KeywordTok{msContents}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+{1.3.1.3 } { \textless physDesc\textgreater{} }
+Proporciona la información respecto de las características físicas del documento fuente. Este elemento contiene tres etiquetas mayores:\\
+- { \textless objectDesc\textgreater{} } En donde incluiremos los elementos relativos a las medidas del documento y su estado de conservación. En la mayoría de los casos los atributos de los elementos son invariables.\\
+- { \textless handDesc\textgreater{}} En donde identificaremos y describiremos la o las manos presentes en el manuscrito. En nuestro ejemplo vamos a suponer que existen dos manos en el manuscrito, una de ellas será la preponderante (major) y, la otra, la secundaria (minor).\\
+- { \textless bindingDesc\textgreater{}} En donde podemos describir la encuadernación.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{physDesc}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}}\KeywordTok{objectDesc}\OtherTok{ form=}\StringTok{"ms"}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{supportDesc}\OtherTok{ material=}\StringTok{"papel"}\NormalTok{\textgreater{}}
+\NormalTok{        \textless{}}\KeywordTok{extent}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}}\KeywordTok{note}\NormalTok{\textgreater{}Descripción en prosa del manuscrito\textless{}/}\KeywordTok{note}\NormalTok{\textgreater{} }
+\NormalTok{          \textless{}}\KeywordTok{dimensions}\OtherTok{ scope=}\StringTok{"all"}\OtherTok{ unit=}\StringTok{"mm"}\NormalTok{\textgreater{}}
+\NormalTok{              \textless{}}\KeywordTok{height}\NormalTok{\textgreater{}\textless{}/}\KeywordTok{height}\NormalTok{\textgreater{} }
+\NormalTok{              \textless{}}\KeywordTok{width}\NormalTok{\textgreater{}\textless{}/}\KeywordTok{width}\NormalTok{\textgreater{} }
+\NormalTok{          \textless{}/}\KeywordTok{dimensions}\NormalTok{\textgreater{}}
+\NormalTok{        \textless{}/}\KeywordTok{extent}\NormalTok{\textgreater{}}
+\NormalTok{        \textless{}}\KeywordTok{condition}\NormalTok{\textgreater{}\textless{}}\KeywordTok{p}\NormalTok{\textgreater{}Estado de conservación\textless{}/}\KeywordTok{p}\NormalTok{\textgreater{}\textless{}/}\KeywordTok{condition}\NormalTok{\textgreater{} }
+\NormalTok{    \textless{}/}\KeywordTok{supportDesc}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}/}\KeywordTok{objectDesc}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}}\KeywordTok{handDesc}\OtherTok{ hands=}\StringTok{"2"}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{handNote}\OtherTok{ resp=}\StringTok{"\#h1"}\OtherTok{ scope=}\StringTok{"major"}\NormalTok{\textgreater{}\textless{}}\KeywordTok{p}\NormalTok{\textgreater{}Descripción de la mano 1\textless{}/}\KeywordTok{p}\NormalTok{\textgreater{}\textless{}/}\KeywordTok{handNote}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{handNote}\OtherTok{ resp=}\StringTok{"\#h2"}\OtherTok{ scope=}\StringTok{"major"}\NormalTok{\textgreater{}\textless{}}\KeywordTok{p}\NormalTok{\textgreater{}Descripción de la mano 2\textless{}/}\KeywordTok{p}\NormalTok{\textgreater{}\textless{}/}\KeywordTok{handNote}\NormalTok{\textgreater{} }
+\NormalTok{  \textless{}/}\KeywordTok{handDesc}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}}\KeywordTok{bindingDesc}\NormalTok{\textgreater{} }
+\NormalTok{    \textless{}}\KeywordTok{binding}\NormalTok{\textgreater{}\textless{}}\KeywordTok{p}\NormalTok{\textgreater{}Descripción en prosa de la encuadernación\textless{}/}\KeywordTok{p}\NormalTok{\textgreater{}\textless{}/}\KeywordTok{binding}\NormalTok{\textgreater{} }
+\NormalTok{  \textless{}/}\KeywordTok{bindingDesc}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}/}\KeywordTok{physDesc}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+{1.3.1.4 } { \textless history\textgreater{} } Etiqueta que contiene la información sobre la historia del manuscrito.
+Usaremos la etiqueta { \textless origin\textgreater{}} para incluir los elementos específicos a la fecha y locación originales del manuscrito. Todos los atributos son invariables, con la excepción del atributo \texttt{when}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{history}\NormalTok{\textgreater{} }
+\NormalTok{  \textless{}}\KeywordTok{origin}\NormalTok{\textgreater{} }
+\NormalTok{    \textless{}}\KeywordTok{origDate}\OtherTok{ when=}\StringTok{"1688{-}11{-}12"}\OtherTok{ type=}\StringTok{"explicit"}\NormalTok{\textgreater{}1688 noviembre 12\textless{}/}\KeywordTok{origDate}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{origPlace}\OtherTok{ type=}\StringTok{"explicit"}\NormalTok{\textgreater{}}
+\NormalTok{      \textless{}}\KeywordTok{placeName}\OtherTok{ type=}\StringTok{"settlement"}\NormalTok{\textgreater{}Valladolid\textless{}/}\KeywordTok{placeName}\NormalTok{\textgreater{} }
+\NormalTok{      \textless{}}\KeywordTok{region}\OtherTok{ type=}\StringTok{"region"}\NormalTok{\textgreater{}Valladolid\textless{}/}\KeywordTok{region}\NormalTok{\textgreater{} }
+\NormalTok{      \textless{}}\KeywordTok{country}\NormalTok{\textgreater{}España\textless{}/}\KeywordTok{country}\NormalTok{\textgreater{} }
+\NormalTok{      \textless{}}\KeywordTok{geo}\NormalTok{\textgreater{}41.651981 {-}4.728561\textless{}/}\KeywordTok{geo}\NormalTok{\textgreater{} }
+\NormalTok{    \textless{}/}\KeywordTok{origPlace}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}/}\KeywordTok{origin}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}/}\KeywordTok{history}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+El atributo \texttt{when}debe tener como valor la fecha en formato \texttt{aaaa-mm-dd}. El contenido del elemento { \textless geo\textgreater{}} permite la geovisualización de los documentos en la plataforma Teitok. Para lograr la correcta distribución de los documentos en el mapa, es imprescindible estandardizar las coordenadas geográficas de las diferentes localidades representadas en el mapa. Para acceder al repertorio de coordenadas del COSUIZA pinchar \href{https://github.com/aescocasti/pro_bookdown/raw/master/coordenadas.xlsx.zip}{aquí}. En los casos en donde solo se sepa el país de origen del documento, el repertorio de coordenadas se encuentra en \href{https://github.com/aescocasti/pro_bookdown/raw/master/coordenadas_paises.xlsx.zip}{este} enlace. En el supuesto de que una localidad o país no se hallaren en el repertorio se debe contactar al administrador de la página del COSUIZA.
+
+\hypertarget{encodingdesc}{%
+\subsubsection*{\texorpdfstring{2. { \textless encodingDesc\textgreater{} }}{2.  \textless encodingDesc\textgreater{} }}\label{encodingdesc}}
+\addcontentsline{toc}{subsubsection}{2. { \textless encodingDesc\textgreater{} }}
+
+Elemento que permite describir los fundamentos editoriales sobre los cuales se ha realizado la edición del documento.
+
+\hypertarget{projectdesc}{%
+\paragraph*{\texorpdfstring{2.1 { \textless projectDesc\textgreater{} }}{2.1  \textless projectDesc\textgreater{} }}\label{projectdesc}}
+\addcontentsline{toc}{paragraph}{2.1 { \textless projectDesc\textgreater{} }}
+
+Ofrece las razones por las cuales se ha realizado la codificación del documento. Se trata de una descripción somera dentro de un elemento \emph{párrafo} ({\textless p\textgreater{}}). El contenido será el mismo para todos los documentos del COSUIZA:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{projectDesc}\NormalTok{\textgreater{} }
+\NormalTok{  \textless{}}\KeywordTok{p}\NormalTok{\textgreater{}Edición electrónica preparada para la investigación CHARTA{-}TEI\textless{}/}\KeywordTok{p}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}/}\KeywordTok{projectDesc}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{editorialdecl}{%
+\paragraph*{\texorpdfstring{2.2 { \textless editorialDecl\textgreater{} }}{2.2  \textless editorialDecl\textgreater{} }}\label{editorialdecl}}
+\addcontentsline{toc}{paragraph}{2.2 { \textless editorialDecl\textgreater{} }}
+
+Contiene los detalles de los principios editoriales aplicados en la codificación del documento. Su contenido se precisa en un elemento \emph{párrafo} ({\textless p\textgreater{}}) y es idéntico en todos los documentos del COSUIZA:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{editorialDecl}\NormalTok{\textgreater{} }
+\NormalTok{  \textless{}}\KeywordTok{p}\NormalTok{\textgreater{}Este documento sigue los criterios de edición CHARTA adaptados para el estándar internacional de marcación electrónica TEI http://www.tei{-}c.org/index.xml.\textless{}/}\KeywordTok{p}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}/}\KeywordTok{editorialDecl}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{classdecl}{%
+\paragraph*{\texorpdfstring{2.3 { \textless classDecl\textgreater{} }}{2.3  \textless classDecl\textgreater{} }}\label{classdecl}}
+\addcontentsline{toc}{paragraph}{2.3 { \textless classDecl\textgreater{} }}
+
+En este elemento se incluye la tipología documental propuesta en los criterios CHARTA.\footnote{Ver tipología documental en el enlace} Este elemento es invariable y debe estar presente en todos las ediciones electrónicas, puesto que sirve como fuente de la categoría de documento que se señalará posteriormente en la cabecera. Dada la extensión de esta clasificación, se expone solamente un extracto a continuación:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{classDecl}\NormalTok{\textgreater{} }
+\NormalTok{    \textless{}}\KeywordTok{taxonomy}\OtherTok{ xml:id=}\StringTok{"Tip{-}CH"}\NormalTok{\textgreater{}}
+\NormalTok{       \textless{}}\KeywordTok{bibl}\NormalTok{\textgreater{}Tipología CHARTA, propuesta de octubre de 2013\textless{}/}\KeywordTok{bibl}\NormalTok{\textgreater{} }
+\NormalTok{       \textless{}}\KeywordTok{category}\OtherTok{ xml:id=}\StringTok{"tex{-}leg"}\NormalTok{\textgreater{} }
+\NormalTok{          \textless{}}\KeywordTok{category}\OtherTok{ xml:id=}\StringTok{"tex{-}leg{-}ord"}\NormalTok{\textgreater{}}
+\NormalTok{             \textless{}}\KeywordTok{catDesc}\NormalTok{\textgreater{}Ordenanzas\textless{}/}\KeywordTok{catDesc}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}/}\KeywordTok{category}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}}\KeywordTok{category}\OtherTok{ xml:id=}\StringTok{"tex{-}leg{-}fue"}\NormalTok{\textgreater{}}
+\NormalTok{             \textless{}}\KeywordTok{catDesc}\NormalTok{\textgreater{}Fueros\textless{}/}\KeywordTok{catDesc}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}/}\KeywordTok{category}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}}\KeywordTok{category}\OtherTok{ xml:id=}\StringTok{"tex{-}leg{-}pri"}\NormalTok{\textgreater{}}
+\NormalTok{             \textless{}}\KeywordTok{catDesc}\NormalTok{\textgreater{}Privilegios\textless{}/}\KeywordTok{catDesc}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}/}\KeywordTok{category}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}}\KeywordTok{category}\OtherTok{ xml:id=}\StringTok{"tex{-}leg{-}cpue"}\NormalTok{\textgreater{}}
+\NormalTok{             \textless{}}\KeywordTok{catDesc}\NormalTok{\textgreater{}Cartas pueblas\textless{}/}\KeywordTok{catDesc}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}/}\KeywordTok{category}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}}\KeywordTok{category}\OtherTok{ xml:id=}\StringTok{"tex{-}leg{-}pra"}\NormalTok{\textgreater{}}
+\NormalTok{             \textless{}}\KeywordTok{catDesc}\NormalTok{\textgreater{}Pragmáticas\textless{}/}\KeywordTok{catDesc}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}/}\KeywordTok{category}\NormalTok{\textgreater{}}
+\NormalTok{       \textless{}/}\KeywordTok{category}\NormalTok{\textgreater{}}
+\NormalTok{       \textless{}}\KeywordTok{category}\OtherTok{ xml:id=}\StringTok{"car{-}com"}\NormalTok{\textgreater{} }
+\NormalTok{          \textless{}}\KeywordTok{category}\OtherTok{ xml:id=}\StringTok{"car{-}com{-}con"}\NormalTok{\textgreater{}}
+\NormalTok{             \textless{}}\KeywordTok{catDesc}\NormalTok{\textgreater{}Contratos\textless{}/}\KeywordTok{catDesc}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}/}\KeywordTok{category}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}}\KeywordTok{category}\OtherTok{ xml:id=}\StringTok{"car{-}com{-}com"}\NormalTok{\textgreater{}}
+\NormalTok{             \textless{}}\KeywordTok{catDesc}\NormalTok{\textgreater{}Compraventas\textless{}/}\KeywordTok{catDesc}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}/}\KeywordTok{category}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}}\KeywordTok{category}\OtherTok{ xml:id=}\StringTok{"car{-}com{-}ces"}\NormalTok{\textgreater{}}
+\NormalTok{             \textless{}}\KeywordTok{catDesc}\NormalTok{\textgreater{}Cesiones\textless{}/}\KeywordTok{catDesc}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}/}\KeywordTok{category}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}}\KeywordTok{category}\OtherTok{ xml:id=}\StringTok{"car{-}com{-}don"}\NormalTok{\textgreater{}}
+\NormalTok{             \textless{}}\KeywordTok{catDesc}\NormalTok{\textgreater{}Donaciones\textless{}/}\KeywordTok{catDesc}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}/}\KeywordTok{category}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}}\KeywordTok{category}\OtherTok{ xml:id=}\StringTok{"car{-}com{-}conc"}\NormalTok{\textgreater{}}
+\NormalTok{             \textless{}}\KeywordTok{catDesc}\NormalTok{\textgreater{}Conciertos\textless{}/}\KeywordTok{catDesc}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}/}\KeywordTok{category}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}}\KeywordTok{category}\OtherTok{ xml:id=}\StringTok{"car{-}com{-}acu"}\NormalTok{\textgreater{}}
+\NormalTok{             \textless{}}\KeywordTok{catDesc}\NormalTok{\textgreater{}Acuerdos\textless{}/}\KeywordTok{catDesc}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}/}\KeywordTok{category}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}}\KeywordTok{category}\OtherTok{ xml:id=}\StringTok{"car{-}com{-}per"}\NormalTok{\textgreater{}}
+\NormalTok{             \textless{}}\KeywordTok{catDesc}\NormalTok{\textgreater{}Permutas\textless{}/}\KeywordTok{catDesc}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}/}\KeywordTok{category}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}}\KeywordTok{category}\OtherTok{ xml:id=}\StringTok{"car{-}com{-}tru"}\NormalTok{\textgreater{}}
+\NormalTok{             \textless{}}\KeywordTok{catDesc}\NormalTok{\textgreater{}Truques\textless{}/}\KeywordTok{catDesc}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}/}\KeywordTok{category}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}}\KeywordTok{category}\OtherTok{ xml:id=}\StringTok{"car{-}com{-}pac"}\NormalTok{\textgreater{}}
+\NormalTok{             \textless{}}\KeywordTok{catDesc}\NormalTok{\textgreater{}Pactos\textless{}/}\KeywordTok{catDesc}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}/}\KeywordTok{category}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}}\KeywordTok{category}\OtherTok{ xml:id=}\StringTok{"car{-}com{-}int"}\NormalTok{\textgreater{}}
+\NormalTok{             \textless{}}\KeywordTok{catDesc}\NormalTok{\textgreater{}Intercambios de bienes\textless{}/}\KeywordTok{catDesc}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}/}\KeywordTok{category}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}}\KeywordTok{category}\OtherTok{ xml:id=}\StringTok{"car{-}com{-}ccen"}\NormalTok{\textgreater{}}
+\NormalTok{             \textless{}}\KeywordTok{catDesc}\NormalTok{\textgreater{}Cartas de censo\textless{}/}\KeywordTok{catDesc}\NormalTok{\textgreater{}}
+\NormalTok{          \textless{}/}\KeywordTok{category}\NormalTok{\textgreater{}}
+\NormalTok{       \textless{}/}\KeywordTok{category}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}/}\KeywordTok{taxonomy}\NormalTok{\textgreater{}}
+\NormalTok{ \textless{}/}\KeywordTok{classDecl}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{profiledesc}{%
+\subsubsection*{\texorpdfstring{3. { \textless profileDesc\textgreater{} }}{3.  \textless profileDesc\textgreater{} }}\label{profiledesc}}
+\addcontentsline{toc}{subsubsection}{3. { \textless profileDesc\textgreater{} }}
+
+Elemento que se utiliza para indicar informaciones no bibliográficas del documento.
+
+\hypertarget{langusage}{%
+\paragraph*{\texorpdfstring{3.1 { \textless langUsage\textgreater{} }}{3.1  \textless langUsage\textgreater{} }}\label{langusage}}
+\addcontentsline{toc}{paragraph}{3.1 { \textless langUsage\textgreater{} }}
+
+Esta etiqueta contiene las lenguas utilizadas en el texto. Cada lengua se señala en un elemento { \textless language\textgreater{} } que incluye el atributo \texttt{ident} para identificar el código de cada lengua. Este código proviene de la norma \href{https://fr.wikipedia.org/wiki/Liste_des_codes_ISO_639-1}{ISO-639-1}. La mayoría de los documentos del COSUIZA están escritos en castellano y para expresarlo usaremos el código \emph{es}. En el ejemplo debajo vamos a suponer estamos frente a un documento en el cual se utilizan dos lenguas, una principal (\emph{major}) y una secundaria (\emph{minor}), la extensión de la utilización de cada una en el manuscrito se expresa en el atributo \texttt{scope} que permite expresar una noción de medida:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{langUsage}\OtherTok{ type=}\StringTok{"hybrid"}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}}\KeywordTok{language}\OtherTok{ ident=}\StringTok{"es"}\OtherTok{ scope=}\StringTok{"major"}\NormalTok{\textgreater{}castellano\textless{}/}\KeywordTok{language}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}}\KeywordTok{language}\OtherTok{ ident=}\StringTok{"fr"}\OtherTok{ scope=}\StringTok{"minor"}\NormalTok{\textgreater{}francés\textless{}/}\KeywordTok{language}\NormalTok{\textgreater{} }
+\NormalTok{\textless{}/}\KeywordTok{langUsage}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+Cuando codifiquemos un documento con más de una lengua debemos precisarlo en el atributo \texttt{type} del elemento { \textless langUsage\textgreater{} } con el valor hybrid. No incluiremos este atributo en los documentos monolingües.
+
+\hypertarget{textclass}{%
+\paragraph*{\texorpdfstring{3.2 { \textless textClass\textgreater{} }}{3.2  \textless textClass\textgreater{} }}\label{textclass}}
+\addcontentsline{toc}{paragraph}{3.2 { \textless textClass\textgreater{} }}
+
+Proporciona la información relativa a la clasificación del documento de acuerdo a una tipología o esquema establecidos. En esta sección recogeremos los identificadores correspondientes de la taxonomía CHARTA presentada previamente. También vamos a incluir las palabras clave propias de la cabecera CHARTA. Supongamos que estamos codificando un testamento, primero buscaremos la categoría Testamento en la taxonomía declarada más arriba y vamos a copiar el valor de su atributo \texttt{xml:id} que es: \texttt{tes-inv-tes}. También vamos a incluir la supracategoría que contiene a Testamento como vemos en la figura debajo:
+
+\includegraphics[width=0.6\textwidth,height=\textheight]{img/taxonomia.png}
+
+Se indica en primera posición la supracategoría y, luego, la subcategoría, cada una en un elemento { \textless catRef\textgreater{} } y en el atributo target se debe escribir el identificador de la categoría antecedido por un signo almohadilla o numeral. La codificación de esta sección de un documento testamentario quedaría como vemos debajo:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{textClass}\NormalTok{\textgreater{} }
+\NormalTok{  \textless{}}\KeywordTok{catRef}\OtherTok{ target=}\StringTok{"\#tes{-}inv"}\NormalTok{/\textgreater{}}
+\NormalTok{  \textless{}}\KeywordTok{catRef}\OtherTok{ target=}\StringTok{"\#tes{-}inv{-}tes"}\NormalTok{/\textgreater{} }
+\NormalTok{  \textless{}}\KeywordTok{keywords}\NormalTok{\textgreater{} }
+\NormalTok{    \textless{}}\KeywordTok{term}\NormalTok{\textgreater{}Palabra clave 1\textless{}/}\KeywordTok{term}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{term}\NormalTok{\textgreater{}Palabra clave 2\textless{}/}\KeywordTok{term}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{term}\NormalTok{\textgreater{}Palabra clave 3\textless{}/}\KeywordTok{term}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{term}\NormalTok{\textgreater{}etc\textless{}/}\KeywordTok{term}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}/}\KeywordTok{keywords}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}/}\KeywordTok{textClass}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{particdesc}{%
+\paragraph*{\texorpdfstring{3.3 { \textless particDesc\textgreater{} }}{3.3  \textless particDesc\textgreater{} }}\label{particdesc}}
+\addcontentsline{toc}{paragraph}{3.3 { \textless particDesc\textgreater{} }}
+
+Este elemento permite describir los participantes o interlocutores presentes en un texto. Esta sección solo debe utilizarse para ciertas categorías documentales como la correspondencia o, documentos reales en donde existen diversos roles y podemos diferenciar la autoría de la delegación y la escritura. Para cada rol o papel usaremos una etiqueta { \textless person\textgreater{} } con un atributo \texttt{rol} cuyo valor va a depender de la categoría documental. En el ejemplo debajo vemos los roles que debemos especificar, en el caso de que sea posible identificar todos los roles, en un documento real.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{particDesc}\NormalTok{\textgreater{} }
+\NormalTok{  \textless{}}\KeywordTok{person}\OtherTok{ role=}\StringTok{"author"}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{persName}\NormalTok{\textgreater{}Autor\textless{}/}\KeywordTok{persName}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}/}\KeywordTok{person}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}}\KeywordTok{person}\OtherTok{ role=}\StringTok{"ordered"}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{persName}\NormalTok{\textgreater{}Iussor\textless{}/}\KeywordTok{persName}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}/}\KeywordTok{person}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}}\KeywordTok{person}\OtherTok{ role=}\StringTok{"scriptor"}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{persName}\NormalTok{\textgreater{}Scriptor\textless{}/}\KeywordTok{persName}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}/}\KeywordTok{person}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}}\KeywordTok{person}\OtherTok{ role=}\StringTok{"signed"}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{persName}\NormalTok{\textgreater{}Firmante\textless{}/}\KeywordTok{persName}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}/}\KeywordTok{person}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}/}\KeywordTok{particDesc}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+En el caso de estar frente a un documento epistolar, se debe utilizar la secuencia a continuación, solamente si es posible identificar estos roles:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{particDesc}\NormalTok{\textgreater{} }
+\NormalTok{  \textless{}}\KeywordTok{person}\OtherTok{ role=}\StringTok{"sent"}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{persName}\NormalTok{\textgreater{}Emisor\textless{}/}\KeywordTok{persName}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}/}\KeywordTok{person}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}}\KeywordTok{person}\OtherTok{ role=}\StringTok{"received"}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}}\KeywordTok{persName}\NormalTok{\textgreater{}Destinatario\textless{}/}\KeywordTok{persName}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}/}\KeywordTok{person}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}/}\KeywordTok{particDesc}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{correspdesc}{%
+\paragraph*{\texorpdfstring{3.4 { \textless correspDesc\textgreater{} }}{3.4  \textless correspDesc\textgreater{} }}\label{correspdesc}}
+\addcontentsline{toc}{paragraph}{3.4 { \textless correspDesc\textgreater{} }}
+
+Ofrece datos relativos a un documento epistolar. Esta sección debe ser utilizada solamente en la codificación de cartas. Se detalla el lugar de origen y destino además de sus coordenadas respectivas.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{correspDesc}\NormalTok{\textgreater{} }
+\NormalTok{  \textless{}}\KeywordTok{correspAction}\OtherTok{ type=}\StringTok{"sent"}\NormalTok{\textgreater{} }
+\NormalTok{    \textless{}}\KeywordTok{settlement}\NormalTok{\textgreater{}}
+\NormalTok{      \textless{}}\KeywordTok{placeName}\NormalTok{\textgreater{}Origen\textless{}/}\KeywordTok{placeName}\NormalTok{\textgreater{}}
+\NormalTok{      \textless{}}\KeywordTok{geo}\NormalTok{\textgreater{}Coordenadas\textless{}/}\KeywordTok{geo}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}/}\KeywordTok{settlement}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}/}\KeywordTok{correspAction}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}}\KeywordTok{correspAction}\OtherTok{ type=}\StringTok{"received"}\NormalTok{\textgreater{} }
+\NormalTok{    \textless{}}\KeywordTok{settlement}\NormalTok{\textgreater{}}
+\NormalTok{      \textless{}}\KeywordTok{placeName}\NormalTok{\textgreater{}Origen\textless{}/}\KeywordTok{placeName}\NormalTok{\textgreater{}}
+\NormalTok{      \textless{}}\KeywordTok{geo}\NormalTok{\textgreater{}Coordenadas\textless{}/}\KeywordTok{geo}\NormalTok{\textgreater{}}
+\NormalTok{    \textless{}/}\KeywordTok{settlement}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}/}\KeywordTok{correspAction}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}/}\KeywordTok{correspDesc}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{revisiondesc}{%
+\subsubsection*{\texorpdfstring{4. { \textless revisionDesc\textgreater{} }}{4.  \textless revisionDesc\textgreater{} }}\label{revisiondesc}}
+\addcontentsline{toc}{subsubsection}{4. { \textless revisionDesc\textgreater{} }}
+
+Este elemento permite registrar las modificaciones que se han hecho en el documento electrónico. Cada intervención se detalla en un elemento { \textless change\textgreater{} } con un atributo \texttt{when} para precisar la fecha en que ha tenido lugar la modificación. En el COSUIZA detallaremos dos modificaciones principales: la creación del documento XML y la revisión de la presentación crítica. El atributo \texttt{when}debe indicar la fecha de la modificación y se puede agregar el atributo \texttt{who}para indicar las iniciales del colaborador que las ha llevado a cabo.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{revisionDesc}\NormalTok{\textgreater{} }
+\NormalTok{  \textless{}}\KeywordTok{change}\OtherTok{ when=}\StringTok{"aaa{-}mm{-}dd"}\OtherTok{ who=}\StringTok{"MCL"}\NormalTok{\textgreater{}Creación del archivo\textless{}/}\KeywordTok{change}\NormalTok{\textgreater{}}
+\NormalTok{  \textless{}}\KeywordTok{change}\OtherTok{ when=}\StringTok{"aaa{-}mm{-}dd"}\OtherTok{ who=} \StringTok{"ECDA"}\NormalTok{\textgreater{}Revisión final de la presentación crítica\textless{}/}\KeywordTok{change}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}/}\KeywordTok{revisionDesc}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{texto}{%
+\subsection*{Texto}\label{texto}}
+\addcontentsline{toc}{subsection}{Texto}
+
+{ \textless text\textgreater{}} es el elemento que contiene los datos textuales en un documento TEI. Hemos señalado que en Teitok la cabecera se ajusta a los criterios de la TEI, sin embargo, en lo que respecta al texto tiene su propio sistema basado en la \emph{tokenización} de las palabras y de los signos de puntuación. En este sentido, en este tutorial nos limitaremos a presentar solamente los elementos editoriales que CHARTA ha adaptado para su migración a Teitok.
+
+\hypertarget{elementos-codicoluxf3gicos}{%
+\subsubsection*{1. Elementos codicológicos}\label{elementos-codicoluxf3gicos}}
+\addcontentsline{toc}{subsubsection}{1. Elementos codicológicos}
+
+\hypertarget{numeraciuxf3n-de-hoja-columna-y-luxednea}{%
+\paragraph*{1.1 Numeración de hoja, columna y línea}\label{numeraciuxf3n-de-hoja-columna-y-luxednea}}
+\addcontentsline{toc}{paragraph}{1.1 Numeración de hoja, columna y línea}
+
+\hypertarget{inicio-de-puxe1gina}{%
+\subparagraph*{\texorpdfstring{ 1.1.1 Inicio de página}{ 1.1.1 Inicio de página}}\label{inicio-de-puxe1gina}}
+\addcontentsline{toc}{subparagraph}{ 1.1.1 Inicio de página}
+
+CHARTA
+
+CHARTA-TEITOK
+
+\{h 1r\}
+
+{\textless pb} {n} {=} {``1r''} {facs} {=} {``COSUIZA-0014-1r.jpeg''} {id} {=} {``e-1''}{/\textgreater{}}
+
+\{h 1v\}
+
+{\textless pb} {n} {=} {``1v''} {facs} {=} {``COSUIZA-0014-1v.jpeg''} {id} {=} {``e-23''}{/\textgreater{}}
+
+La etiqueta { \textless pb\textgreater{} } indica el inicio de página.
+Es pertinente recordar que conforme a los criterios CHARTA todos los textos editados, aunque sean fragmentos de un manuscrito, comienzan por la hoja 1. De modo que el atributo \texttt{n} (\emph{número}), siempre comienza por el número 1. También consta de un atributo \texttt{facs} para precisar el nombre del archivo facsimilar. Para denominar los archivos de los facsímiles se utiliza el nombre del archivo XML seguido de un guión, la hoja y cara correspondiente: COSUIZA-XXXX-1r. El atributo \texttt{ìd} adjudica un identificador único al elemento {\textless pb\textgreater{}}, este identificador es de la forma \texttt{e-n°} y, si bien no es aleatorio, no corresponde necesariamente al número de hoja. Veremos en la sección práctica de este documento, que la plataforma de Teitok se encarga de adjudicar este identificador.
+
+\hypertarget{inicio-de-columna}{%
+\subparagraph*{1.1.2 Inicio de columna}\label{inicio-de-columna}}
+\addcontentsline{toc}{subparagraph}{1.1.2 Inicio de columna}
+
+CHARTA
+
+CHARTA-TEITOK
+
+\{a\}
+
+{\textless cb} {n} {=} {``a''} {id} {=} {``e-9''}{/\textgreater{}}
+
+\{h 1ra\}
+
+{\textless pb} {n} {=} {``1r''} {facs} {=} {``COSUIZA-0014-1r.jpeg''} {id} {=} {``e-1''}{/\textgreater{}} {\textless cb} {n} {=} {``a''} {id} {=} {``e-9''}{/\textgreater{}}
+
+El inicio de columna se indica con la etiqueta {\textless cb\textgreater{}}. Consta de un atributo \texttt{n} cuyo valor es la letra de la columna y un atributo \texttt{id}. En la segunda línea de la tabla tenemos un inicio de página que coincide con el inicio de una columna, coincidencia muy frecuente en los manuscritos. Como vemos en la marcación CHARTA, página y columna se señalan en una misma secuencia entre llaves. Sin embargo, en la marcación CHARTA-TEITOK el inicio de página y el de columna se indican con etiquetas independientes no anidadas.
+
+\hypertarget{inicio-de-luxednea}{%
+\subparagraph*{1.1.3 Inicio de línea}\label{inicio-de-luxednea}}
+\addcontentsline{toc}{subparagraph}{1.1.3 Inicio de línea}
+
+CHARTA
+
+CHARTA-TEITOK
+
+\{1\}
+
+{\textless lb} {n} {=} {``1''} {id} {=} {``e-1''}{/\textgreater{}}
+
+Del mismo modo que los elementos precedentes, el cambio de línea contiene dos atributos: \texttt{n}y \texttt{id} y, el identificador puede no coincidir con el número de línea.
+
+\hypertarget{cambio-de-luxednea-en-acotaciones-marginales}{%
+\subparagraph*{1.1.4 Cambio de línea en acotaciones marginales}\label{cambio-de-luxednea-en-acotaciones-marginales}}
+\addcontentsline{toc}{subparagraph}{1.1.4 Cambio de línea en acotaciones marginales}
+
+CHARTA
+
+CHARTA-TEITOK
+
+\textbar{}
+
+{\textless lb} {id} {=} {``e-4''}{/\textgreater{}}
+
+El cambio de línea en el texto marginal se anota con un elemento { \textless lb\textgreater{}}, sin embargo, carece de atributo \texttt{n}.
+
+\hypertarget{deterioro-del-original}{%
+\paragraph*{1.2 Deterioro del original}\label{deterioro-del-original}}
+\addcontentsline{toc}{paragraph}{1.2 Deterioro del original}
+
+CHARTA
+
+CHARTA-TEITOK
+
+{[}***{]}
+
+{\textless gap} {reason} {=} {``ilegible''}{/\textgreater{}}
+
+*
+
+{\textless gap} {reason} {=} {``ilegible''} {extent} {=} {``1 char''}{/\textgreater{}}
+
+**
+
+{\textless gap} {reason} {=} {``ilegible''} {extent} {=} {``2 chars''}{/\textgreater{}}
+
+***
+
+{\textless gap} {reason} {=} {``ilegible''} {extent} {=} {``3 chars''}{/\textgreater{}}
+
+****
+
+{\textless gap} {reason} {=} {``ilegible''} {extent} {=} {``4 chars''}{/\textgreater{}}
+
+*****
+
+{\textless gap} {reason} {=} {``ilegible''} {extent} {=} {``5 chars''}{/\textgreater{}}
+
+******
+
+{\textless gap} {reason} {=} {``ilegible''} {extent} {=} {``6 or more chars''}{/\textgreater{}}
+
+{[}roto{]}
+
+{\textless gap} {reason} {=} {``roto''}{/\textgreater{}}
+
+{[}doblez{]}
+
+{\textless gap} {reason} {=} {``doblez''}{/\textgreater{}}
+
+{[}mancha{]}
+
+{\textless gap} {reason} {=} {``mancha''}{/\textgreater{}}
+
+Valga recordar que el uso de corchetes en la marcación CHARTA tiene lugar solamente cuando no se sabe el número exacto de caracteres ilegibles. En CHARTA-TEITOK se puede indicar hasta un máximo de cinco letras ilegibles, para cualquier cantidad superior se debe dar el valor \texttt{6\ or\ more\ chars} al atributo \texttt{extent}.
+Otro cambio que ha tenido lugar en los criterios CHARTA-TEITOK en relación a los criterios CHARTA es que no se puede emplear la marcación relativa a la cantidad de letras ilegibles y la razón del deterioro al mismo tiempo. El transcriptor debe escoger la información que sea pertinente en cada caso.
+
+\hypertarget{signos-o-elementos-especiales}{%
+\paragraph*{1.3 Signos o elementos especiales}\label{signos-o-elementos-especiales}}
+\addcontentsline{toc}{paragraph}{1.3 Signos o elementos especiales}
+
+\hypertarget{firma}{%
+\subparagraph*{1.3.1 Firma}\label{firma}}
+\addcontentsline{toc}{subparagraph}{1.3.1 Firma}
+
+CHARTA
+
+CHARTA-TEITOK
+
+{[}firma: Alfonso de Fonseca{]}
+
+{\textless signed\textgreater{}} {\textless tok} {id} {=} {``w-1''}{\textgreater{}} Alfonso{\textless/tok\textgreater{}} {\textless tok} {id} {=} {``w-2''}{\textgreater{}}de{\textless/tok\textgreater{}}
+{\textless tok} {id} {=} {``w-3''}{\textgreater{}}Fonseca{\textless/tok\textgreater{}}{\textless/signed\textgreater{}}
+
+La etiqueta { \textless signed\textgreater{}} se utiliza para marcar las firmas. Debe contener el texto de la firma debidamente \emph{tokenizado}.
+
+CHARTA
+
+CHARTA-TEITOK
+
+{[}firma mano 2: Alfonso de Fonseca{]}
+
+{\textless signed} {hand} {=} {``\#h2''}{\textgreater{}}
+{\textless tok} {id} {=} {``w-1''}{\textgreater{}} Alfonso{\textless/tok\textgreater{}} {\textless tok} {id} {=} {``w-2''}{\textgreater{}}de{\textless/tok\textgreater{}}
+{\textless tok} {id} {=} {``w-3''}{\textgreater{}}Fonseca{\textless/tok\textgreater{}}{\textless/signed\textgreater{}}
+
+Se diferencia la firma hecha por otra mano con el atributo \texttt{hand}, cuyo valor debe estar debidamente mencionado dentro del elemento { \textless handDesc\textgreater{}} en los metadatos.
+
+CHARTA
+
+CHARTA-TEITOK
+
+{[}firma en ar{]}{[}firma en he{]}
+
+{\textless signed} {xml:lang} {=} {``ar''}{/\textgreater{}}
+{\textless signed} {xml:lang} {=} {``he''}{/\textgreater{}}
+
+Se usa el atributo \texttt{xml:lang}para marcar una firma en un alfabeto distinto al latino. Nótese que entre corchetes en la marcación CHARTA se aconseja utilizar el código ISO-639-1.
+
+\hypertarget{ruxfabrica}{%
+\subparagraph*{1.3.2 Rúbrica}\label{ruxfabrica}}
+\addcontentsline{toc}{subparagraph}{1.3.2 Rúbrica}
+
+CHARTA
+
+CHARTA-TEITOK
+
+{[}rúbrica{]}
+
+{\textless figure} {type} {=} {``rúbrica''}{/\textgreater{}}
+
+{[}rúbrica: A{]}
+
+{\textless figure} {type} {=} {``rúbrica''}{\textgreater{}}{\textless tok} {id} {=} {``w-1''}{\textgreater{}}A{\textless/tok\textgreater{} }{\textless/figure\textgreater{}}.
+
+La rúbrica se designa con la etiqueta { \textless figure\textgreater{}}. Al igual que en la firma, el texto que contiene debe estar \emph{tokenizado}.
+
+\hypertarget{signos}{%
+\subparagraph*{1.3.3 Signos}\label{signos}}
+\addcontentsline{toc}{subparagraph}{1.3.3 Signos}
+
+CHARTA
+
+CHARTA-TEITOK
+
+{[}sello{]}{[}crismón{]}{[}cruz{]}{[}signo{]}{[}quirógrafo{]}
+
+{\textless figure} {type} {=} {``cruz''}{/\textgreater{}}
+
+Se emplea la etiqueta { \textless figure\textgreater{}} para los signos especiales. En el ejemplo hemos usado solamente el signo de la cruz, no obstante, se debe dar el valor que corresponda en cada caso al atributo \texttt{type}.
+
+\hypertarget{impreso}{%
+\subparagraph*{1.3.4 Impreso}\label{impreso}}
+\addcontentsline{toc}{subparagraph}{1.3.4 Impreso}
+
+CHARTA
+
+CHARTA-TEITOK
+
+{[}impreso: texto{]}
+
+{\textless hi} {rend} {=} {``impreso''}{\textgreater{}} {\textless tok} {id} {=} {``w-1''}{\textgreater{}}texto{\textless/tok\textgreater{}}{\textless/hi\textgreater{}}
+
+Los pasajes impresos se marcan con la etiqueta { \textless hi\textgreater{}} (\emph{highlighted}). Este elemento se utiliza para destacar fragmentos que se diferencian de su contexto. El atributo \texttt{rend}(\emph{rendition}) sirve para indicar cómo se representa un elemento en el manuscrito. En este contexto, el valor de este atributo es invariable. Como se ha señalado previamente, el texto debe estar \emph{tokenizado}.
+
+\hypertarget{intervenciones-en-el-texto}{%
+\paragraph*{1.4 Intervenciones en el texto}\label{intervenciones-en-el-texto}}
+\addcontentsline{toc}{paragraph}{1.4 Intervenciones en el texto}
+
+\hypertarget{tachado-raspado-cancelado}{%
+\subparagraph*{1.4.1 Tachado, raspado, cancelado}\label{tachado-raspado-cancelado}}
+\addcontentsline{toc}{subparagraph}{1.4.1 Tachado, raspado, cancelado}
+
+CHARTA
+
+CHARTA-TEITOK
+
+{[}tachado{]}
+
+{\textless del} {type} {=} {``tachado''}{/\textgreater{}}
+
+{[}tachado: texto{]}
+
+{\textless del} {type} {=} {``tachado''}{\textgreater{}} {\textless tok} {id} {=} {``w-1''}{\textgreater{}}texto{\textless/tok\textgreater{}}{\textless/del\textgreater{}}
+
+{[}tachado mano 2: texto{]}
+
+{\textless del} {type} {=} {``tachado''} {hand} {=} {``\#h2''}{\textgreater{}} {\textless tok} {id} {=} {``w-1''}{\textgreater{}}texto{\textless/tok\textgreater{}}{\textless/del\textgreater{}}
+
+Usamos la etiqueta { \textless del\textgreater{}} (\emph{deletion}) para marcar un fragmento suprimido. Utilizaremos la misma secuencia para otras intervenciones como \emph{raspado} y \emph{cancelado}. Para ello, se debe completar el valor del atributo \texttt{type} con la intervención que corresponda.
+
+\hypertarget{sobre-escrito}{%
+\subparagraph*{1.4.2 Sobre escrito}\label{sobre-escrito}}
+\addcontentsline{toc}{subparagraph}{1.4.2 Sobre escrito}
+
+CHARTA
+
+CHARTA-TEITOK
+
+mu{[}sobrescrito: l+g{]}er
+
+{\textless tok} {id} {=} {``w-1''}{\textgreater{}}{mu}{\textless subst\textgreater\textless del} {type} {=} {``sobrescrito''}{\textgreater{}}l{\textless/del\textgreater\textless add} {type} {=} {``sobrescrito''}{\textgreater{}}{g}{\textless/add\textgreater\textless/subst\textgreater{}}{er}{\textless/tok\textgreater{}}
+
+Puesto que esta es una intervención que tiene lugar dentro de una palabra o un { \textless tok\textgreater{}}, integramos los elementos propios a la intervención en el interior de esta etiqueta. Utilizamos { \textless subst\textgreater{}} para indicar la supresión y adición de elementos en el texto. Para indicar la supresión empleamos la etiqueta { \textless del\textgreater{}} cuyo contenido es, en este caso, la letra \emph{l} y, para el texto sobrescrito, la letra \emph{g}, usamos { \textless add\textgreater{}}. Ambas deben contar con un atributo \texttt{type}para declarar el tipo de intervención.
+
+\hypertarget{sobre-raspado}{%
+\subparagraph*{1.4.3 Sobre raspado}\label{sobre-raspado}}
+\addcontentsline{toc}{subparagraph}{1.4.3 Sobre raspado}
+
+CHARTA
+
+CHARTA-TEITOK
+
+{[}sobre raspado: muger{]}
+
+{\textless subst\textgreater{}}{\textless del} {type} {=} {``sobre-raspado''}{/\textgreater{}}{}{\textless add} {type} {=} {``sobre-raspado''}{\textgreater{}}muger{\textless/add\textgreater{}}{\textless/subst\textgreater{}}
+
+Utilizamos los mismos elementos que en el caso precedente, sin embargo, dado que es muy improbable que podamos restituir el texto raspado, la etiqueta { \textless del\textgreater{}} no lleva contenido. El texto, en este caso \emph{muger}, debe ir correctamente \emph{tokenizado}, cosa que no hacemos en este ejemplo para no sobrecargarlo visualmente. Si el sobre raspado se hallase al interior de una palabra, la intervención debe indicarse al interior de la etiqueta { \textless tok\textgreater{}} como podemos apreciar en el ejemplo del sobrescrito.
+
+\hypertarget{interlineado}{%
+\subparagraph*{1.4.4 Interlineado}\label{interlineado}}
+\addcontentsline{toc}{subparagraph}{1.4.4 Interlineado}
+
+CHARTA
+
+CHARTA-TEITOK
+
+{[}interlineado: texto{]}
+
+{\textless add} {place} {=} {``interlineado''}{\textgreater{}}texto{\textless/add\textgreater{}}
+
+Para el interlineado utilizamos la etiqueta { \textless add\textgreater{}} que consta de un atributo \texttt{place}cuyo valor es invariable. Si el interlineado fuese obra de otra mano, esto se indica agregando el atributo \texttt{hand} con el valor ``\#h2'' o el que corresponda a la mano debidamente declarada en los metadatos. Este mismo principio se puede aplicar para todo el resto de las intervenciones hechas por otra mano en el texto.
+
+\hypertarget{margen}{%
+\subparagraph*{1.4.5 Margen}\label{margen}}
+\addcontentsline{toc}{subparagraph}{1.4.5 Margen}
+
+CHARTA
+
+CHARTA-TEITOK
+
+{[}margen: texto{]}
+
+{\textless add} {place} {=} {``margen''}{\textgreater{}}texto{\textless/add\textgreater{}}
+
+{[}margen mano 2: texto{]}
+
+{\textless add} {hand} {=} {``\#h2''} {place} {=} {``margen''}{\textgreater{}}texto{\textless/add\textgreater{}}
+
+Usamos las mismas etiquetas que en el caso del interlineado, sin embargo, el valor del atributo \texttt{place}cambia. Opcionalmente se puede añadir el lado en el cual tiene lugar la intervención al margen. En cuyo caso el atributo \texttt{place}llevaría por valor: margen izquiero, margen derecho, margen superior o margen inferior. Como en el resto de los casos previamente señalados y, como se puede ver en la tabla, también se puede precisar un cambio de mano.
+
+\begin{quote}
+📝 Para agregar el texto de un sobre se puede utilizar el mismo marcado que se usa para el margen. Se debe escribir \emph{sobre} en el valor del atributo \texttt{place}
+\end{quote}
+
+\hypertarget{encabezamiento-y-tuxedtulo}{%
+\subparagraph*{1.4.6 Encabezamiento y título}\label{encabezamiento-y-tuxedtulo}}
+\addcontentsline{toc}{subparagraph}{1.4.6 Encabezamiento y título}
+
+CHARTA
+
+CHARTA-TEITOK
+
+{[}encabezamiento: texto{]}
+
+{\textless div} {type} {=} {``encabezamiento''}{\textgreater{}}texto{\textless/div\textgreater{}}
+
+{[}título: texto{]}
+
+{\textless div} {type} {=} {``título''}{\textgreater{}}texto{\textless/div\textgreater{}}
+
+Se emplea la etiqueta { \textless div\textgreater{}} para el encabezamiento y el título. Este elemento se utiliza para englobar párrafos que hacen parte de una unidad. Se añade el atributo \texttt{type}para detallar el tipo de subdivisión.
+
+\hypertarget{blanco}{%
+\subparagraph*{1.4.7 Blanco}\label{blanco}}
+\addcontentsline{toc}{subparagraph}{1.4.7 Blanco}
+
+CHARTA
+
+CHARTA-TEITOK
+
+{[}blanco{]}
+
+{\textless gap} {reason} {=} {``blanco''}{\textgreater{}}texto{\textless/gap\textgreater{}}
+
+Este elemento se marca con las mismas etiquetas que en los casos de deterioro del original, en cambio, el valor del atributo \texttt{reason} es \emph{blanco}.
+
+\hypertarget{intervenciones-en-el-texto-por-parte-del-editor}{%
+\paragraph*{1.5 Intervenciones en el texto por parte del editor}\label{intervenciones-en-el-texto-por-parte-del-editor}}
+\addcontentsline{toc}{paragraph}{1.5 Intervenciones en el texto por parte del editor}
+
+Las conjeturas del editor se pueden clasificar de acuerdo al grado de certeza con el que se realizan.
+
+\hypertarget{conjetura-cierta}{%
+\paragraph*{1.5.1 Conjetura cierta}\label{conjetura-cierta}}
+\addcontentsline{toc}{paragraph}{1.5.1 Conjetura cierta}
+
+CHARTA
+
+CHARTA-TEITOK
+
+{[}ilegible: texto{]}
+
+{\textless supplied} {reason} {=} {``ilegible''}{\textgreater{}}texto{\textless/supplied\textgreater{}}
+
+{[}roto: texto{]}
+
+{\textless supplied} {reason} {=} {``roto''}{\textgreater{}}texto{\textless/supplied\textgreater{}}
+
+{[}doblez: texto{]}
+
+{\textless supplied} {reason} {=} {``doblez''}{\textgreater{}}texto{\textless/supplied\textgreater{}}
+
+{[}mancha: texto{]}
+
+{\textless supplied} {reason} {=} {``mancha''}{\textgreater{}}texto{\textless/supplied\textgreater{}}
+
+Se utiliza el elemento { \textless supplied\textgreater{}} para agregar una conjetura con certeza. La razón se añade en el valor del atributo \texttt{reason}.
+
+\hypertarget{conjetura-incierta}{%
+\subparagraph*{1.5.2 Conjetura incierta}\label{conjetura-incierta}}
+\addcontentsline{toc}{subparagraph}{1.5.2 Conjetura incierta}
+
+CHARTA
+
+CHARTA-TEITOK
+
+{[}ilegible: texto{]}
+
+{\textless unclear} {reason} {=} {``ilegible''}{\textgreater{}}texto{\textless/unclear\textgreater{}}
+
+{[}roto: texto{]}
+
+{\textless unclear} {reason} {=} {``roto''}{\textgreater{}}texto{\textless/unclear\textgreater{}}
+
+{[}doblez: texto{]}
+
+{\textless unclear} {reason} {=} {``doblez''}{\textgreater{}}texto{\textless/unclear\textgreater{}}
+
+{[}mancha: texto{]}
+
+{\textless unclear} {reason} {=} {``mancha''}{\textgreater{}}texto{\textless/unclear\textgreater{}}
+
+La conjetura con menos certeza se trata de manera similar a la precedente, sin embargo, se utiliza la etiqueta { \textless unclear\textgreater{}}. Se debe recordar que todo texto al interior de estas etiquetas debe estar \emph{tokenizado}.
+
+\hypertarget{transcripciuxf3n-paleogruxe1fica-y-presentaciuxf3n-cruxedtica}{%
+\subsubsection*{2. Transcripción paleográfica y presentación crítica}\label{transcripciuxf3n-paleogruxe1fica-y-presentaciuxf3n-cruxedtica}}
+\addcontentsline{toc}{subsubsection}{2. Transcripción paleográfica y presentación crítica}
+
+\hypertarget{transcripciuxf3n-paleogruxe1fica}{%
+\paragraph*{2.1 Transcripción paleográfica}\label{transcripciuxf3n-paleogruxe1fica}}
+\addcontentsline{toc}{paragraph}{2.1 Transcripción paleográfica}
+
+CHARTA
+
+CHARTA-TEITOK
+
+villa
+
+{\textless tok} {id} {=} {``w-1''}{\textgreater{}}villa{\textless/tok\textgreater{}}
+
+Para marcar las palabras empleamos la etiqueta {\textless tok\textgreater{}}, la cual siempre debe constar de un atributo \texttt{id}para su identificador de la forma \texttt{"w-n°"}. El contenido de esta etiqueta es la transcripción paleográfica de la palabra, en nuestro ejemplo: \emph{villa}. Sabemos que esta palabra no sufrirá ningún cambio en la presentación crítica, a menos que esté precedida de un punto y tengamos que poner la \emph{v} en mayúscula. En este ejemplo supondremos que \emph{villa} no requiere de ninguna modificación en la presentación crítica. En todos los casos similares la etiqueta { \textless tok\textgreater{}} no lleva otro atributo que el de \texttt{id}.
+
+\hypertarget{presentaciuxf3n-cruxedtica}{%
+\paragraph*{2.2 Presentación crítica}\label{presentaciuxf3n-cruxedtica}}
+\addcontentsline{toc}{paragraph}{2.2 Presentación crítica}
+
+CHARTA
+
+CHARTA-TEITOK
+
+uilla
+
+{\textless tok} {id} {=} {``w-1''} {nform} {=} {``villa''}{\textgreater{}}uilla{\textless/tok\textgreater{}}
+
+En este caso debemos cambiar la grafía \emph{u} por la \emph{v} ya que la primera se presenta con valor consonántico, para ello, agregamos el atributo \texttt{nform} para escribir la forma que deseamos para nuestra presentación crítica.
+
+\hypertarget{abreviaturas}{%
+\paragraph*{2.3 Abreviaturas}\label{abreviaturas}}
+\addcontentsline{toc}{paragraph}{2.3 Abreviaturas}
+
+CHARTA
+
+CHARTA-TEITOK
+
+escriu
+
+{\textless tok} {id} {=} {``w-1''} {form} {=} {``escrui''} {fform} {=} {``escruiano''} {nform} {=} {``escrivano''}{\textgreater{}}escriu{\textless ex\textgreater{}}ano{\textless/ex\textgreater{}}
+
+Para indicar la presencia de una abreviatura, debemos hacerlo por medio del elemento { \textless ex\textgreater{}}. Dado que es un fenómeno que ocurre al interior de una palabra, su etiqueta debe situarse al interior de la etiqueta { \textless tok\textgreater{}}. Ante la presencia de una abreviatura se deben agregar dos atributos a esta etiqueta. En primer lugar se añade el atributo \texttt{form}cuyo valor debe ser la forma escrita, sin desarrollar la abreviatura ni incluir el elemento { \textless ex\textgreater{}}. Este atributo se usa en todos los casos en donde encontramos otra etiqueta al interior de una etiqueta { \textless tok\textgreater{}}. En segundo lugar, se incorpora el atributo \texttt{fform} cuyo valor debe ser la palabra con su abreviatura expandida. Finalmente, como el ejemplo requiere la modificación de la grafía \emph{u} por \emph{v}, al igual que en el ejemplo precedente, añadimos un atributo \texttt{nform}.
+
+\begin{quote}
+📝 Recordemos que cuando se agregan atributos a las etiquetas, estos deben tener un valor, de otro modo no los añadiremos. En el caso susodicho, la abreviatura exige la existencia de los atributos \texttt{form}y \texttt{fform}, pero no de \texttt{nform}.
+\end{quote}
+
+\hypertarget{uniuxf3n-y-separaciuxf3n-de-palabras}{%
+\paragraph*{2.4 Unión y separación de palabras}\label{uniuxf3n-y-separaciuxf3n-de-palabras}}
+\addcontentsline{toc}{paragraph}{2.4 Unión y separación de palabras}
+
+CHARTA
+
+CHARTA-TEITOK
+
+dela
+
+{\textless tok} {id} {=} {``w-1''} {nform} {=} {``de la''}{\textgreater{}}dela{\textless dtok} {id} {=} {``d-1-1''} {form} {=} {``de''}{/\textgreater{}} {\textless dtok} {id} {=} {``d-1-2''} {form} {=} {``la''}{/\textgreater{}}{\textless/tok\textgreater{}}
+
+Se trata la unión de palabras con la adición del elemento { \textless dtok\textgreater{}} el cual no lleva contenido, sin embargo, debe imperativamente llevar un atributo \texttt{form}. También debe constar de un identificador que incluye el número identificador del { \textless tok\textgreater{}} que lo contiene. En los casos que se requiera, la etiqueta { \textless dtok\textgreater{}} debe llevar los atributos \texttt{fform}y \texttt{nform}, no obstante, esto no descarta la necesidad de también incluir el atributo \texttt{nform} en el { \textless tok\textgreater{}} principal.
+
+CHARTA
+
+CHARTA-TEITOK
+
+juris prudencia
+
+{\textless tok} {id} {=} {``w-1''} {nform} {=} {``jurisprudencia''}{\textgreater{}}juris prudencia{\textless/tok\textgreater{}}
+
+La separación irregular de palabras se conserva en el contenido de la etiqueta { \textless tok\textgreater{}} y se normaliza en el atributo \texttt{nform}.
+
+\hypertarget{ruptura-de-palabra-a-final-de-rengluxf3n}{%
+\paragraph*{2.5 Ruptura de palabra a final de renglón}\label{ruptura-de-palabra-a-final-de-rengluxf3n}}
+\addcontentsline{toc}{paragraph}{2.5 Ruptura de palabra a final de renglón}
+
+CHARTA
+
+CHARTA-TEITOK
+
+razo\{2\}nes
+
+{\textless tok} {id} {=} {``w-1''} {form} {=} {``razones''}{\textgreater{}}razo{\textless lb} {n} {=} {``2''} {id} {=} {``e-9''}{/\textgreater{}}nes{\textless/tok\textgreater{}}
+
+Se introduce la etiqueta de salto de línea { \textless lb\textgreater{}} al interior del \emph{token} en el que ocurre la ruptura. Recordemos que todo \emph{token} que lleve otra etiqueta al interior debe añadir el atributo \texttt{form}con la palabra en su forma de transcripción paleográfica.
+
+\hypertarget{cambio-de-lengua}{%
+\paragraph*{2.6 Cambio de lengua}\label{cambio-de-lengua}}
+\addcontentsline{toc}{paragraph}{2.6 Cambio de lengua}
+
+CHARTA
+
+CHARTA-TEITOK
+
+{[}en.: fish{]}
+
+{\textless foreign} {xml:lang} {=} {``en''}{\textgreater{}} {\textless tok} {id} {=} {``w-1''}{\textgreater{}}fish{\textless/tok\textgreater{}}{\textless/foreign\textgreater{}}
+
+Se trata el cambio de lengua con la etiqueta { \textless foreign\textgreater{}}, que permite indicar la presencia de una lengua distinta a su contexto. Se debe añadir el código \href{https://fr.wikipedia.org/wiki/Liste_des_codes_ISO_639-1}{ISO-639-1} como valor del atributo \texttt{xml:lang}.
+
+\hypertarget{signos-de-puntuaciuxf3n}{%
+\paragraph*{2.7 Signos de puntuación}\label{signos-de-puntuaciuxf3n}}
+\addcontentsline{toc}{paragraph}{2.7 Signos de puntuación}
+
+CHARTA-TEITOK
+
+{\textless tok} {id} {=} {``w-1''} {nform} {=} {``.''}{\textgreater{}},{\textless/tok\textgreater{}}
+
+Se ha señalado previamente que en Teitok los signos de puntuación son considerados \emph{tokens}, de modo que para editar un signo de puntuación se añade un atributo \texttt{nform}con el signo deseado en la presentación crítica.
+
+CHARTA-TEITOK
+
+{\textless tok} {id} {=} {``w-1''} {nform} {=} {``--''}{\textgreater{}},{\textless/tok\textgreater{}}
+
+Para eliminar un signo de puntuación de la presentación crítica, se escriben dos guiones en el atributo \texttt{nform}.
+
+CHARTA-TEITOK
+
+{\textless tok} {id} {=} {``w-1''} {nform} {=} {``,''}{\textgreater{}}{\textless ee/\textgreater\textless/tok\textgreater{}}
+
+Si se desea añadir un signo de puntuación únicamente en la presentación crítica, es necesario agregar una etiqueta { \textless ee/\textgreater{}} al interior del elemento { \textless tok\textgreater{}} y se escribe en el atributo \texttt{nform} el signo deseado.
+
+\hypertarget{etiquetado-gramatical}{%
+\paragraph*{2.8 Etiquetado gramatical}\label{etiquetado-gramatical}}
+\addcontentsline{toc}{paragraph}{2.8 Etiquetado gramatical}
+
+CHARTA-TEITOK
+
+{\textless tok} {id} {=} {``w-1''} {pos} {=} {``VMIS3S0''} {lemma} {=} {``venir''}{\textgreater{}}vino{\textless/tok\textgreater{}}
+
+Para indicar la anotación morfosintáctica se añaden dos atributos: \texttt{pos}(\emph{part of speech}) para incluir la categoría gramatical y \texttt{lemma} para la forma lematizada.
+
+\begin{quote}
+📝 Para obtener más detalles sobre las categorías gramaticales y los códigos a emplear en el atributo \texttt{pos} se recomienda visitar la página del \href{https://cosuiza.unil.ch/teitok/shared/index.php?action=tagset}{etiquetario}.
+\end{quote}
+
+\hypertarget{automatizaciuxf3n-en-la-plataforma}{%
+\section*{Automatización en la plataforma}\label{automatizaciuxf3n-en-la-plataforma}}
+\addcontentsline{toc}{section}{Automatización en la plataforma}
+
+En esta sección se presenta una lección con las instrucciones para la edición de textos en la página del COSUIZA. Ahora bien, aunque la sección precedente pueda parecer abrumadora por la profusión de información, es absolutamente necesario que el lector esté al tanto de la estructura y contenido de los documentos codificados.\\
+En este apartado veremos que todo el proceso de codificación está ampliamente automatizado en la plataforma, sin embargo, las
+aplicaciones informáticas, aunque son convenientes, no siempre son infalibles.\\
+El documento que codificaremos es una carta que se conserva en la Biblioteca cantonal y universitaria de Friburgo:
+
+\begin{center}\includegraphics{_main_files/figure-latex/unnamed-chunk-1-1} \end{center}
+
+\emph{Biblioteca cantonal y universitaria de Friburgo, B-126}
+
+\hypertarget{acceso}{%
+\subsection*{Acceso}\label{acceso}}
+\addcontentsline{toc}{subsection}{Acceso}
+
+Como se ha mencionado en el primer apartado, para hacer ediciones en el COSUIZA, es necesario tener una cuenta de usuario o administrador.
+Satisfecho este requisito, ir a la página de inicio del \href{https://cosuiza.unil.ch/}{COSUIZA}. En el menú principal seleccionar la pestaña \emph{login} e ingresar usuario y contraseña.
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/acceso.png}
+
+\hypertarget{creaciuxf3n-de-archivo-xml}{%
+\subsection*{Creación de archivo XML}\label{creaciuxf3n-de-archivo-xml}}
+\addcontentsline{toc}{subsection}{Creación de archivo XML}
+
+Tras identificarse en la plataforma, se abrirá una página con la lista de funciones con privilegios de administrador. Se debe pinchar en la primera opción \emph{create new XML file} como vemos a continuación:
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/crear_xml.png}
+
+Esta selección nos dirige a una página en donde se debe denominar el archivo, escoger las opciones relativas a los metadatos y agregar su contenido textual.
+
+\includegraphics{img/crear.png}
+
+{1.} En primer lugar se completa el campo \emph{XML id (filename)} con el nombre del archivo siguiendo el estándar expuesto en \protect\hyperlink{head1234}{§ 1.1.1}. Para los metadatos, se debe escoger la opción \emph{Leave empty} (posteriormente nos ocuparemos de los metadatos).
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/nombre.png}
+
+{2.} Para el contenido textual, pinchamos la opción \emph{Create as WYSIWYG} que nos permite transcribir directamente en el cuadro de texto o pegar el texto del portapapeles. Vamos a pegar la transcripción paleográfica de nuestro documento hecha conforme a los criterios CHARTA.
+
+{3.} Verificar que no existan errores, que cada corchete de apertura vaya acompañado de un corchete de cierre y que las anotaciones hechas entre corchetes no se encuentren escritas en cursiva. Posteriormente, pinchamos en el botón \emph{Create XML File} en la parte inferior izquierda de la pantalla.
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/tp.png}
+
+Esta acción crea un archivo XML mínimo con el elemento raíz {\textless TEI\textgreater{}}, sus dos elementos hijos, { \textless teiHeader\textgreater{}} y {\textless text\textgreater{}} y, dos elementos { \textless p\textgreater{}} que contienen los dos párrafos de nuestra carta. Sin embargo, este archivo XML no contiene ningúna etiqueta previamente presentadas en la guía de etiquetado. Para aplicar esta marcación vamos a pinchar en la opción \textbf{TP (CHARTA 3.0)} en el apartado \emph{Admin options} como vemos en la imagen debajo:
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/scriptCHtoTeitok.png}
+
+Esta etapa permite marcar elementos textuales como los cambios de línea, de página, los signos y las firmas, entre otros. En la imagen debajo vemos un mensaje subrayado, este mensaje nos indica que la secuencia de comandos se aplicó correctamente. De no hacerlo, es necesario reiniciar el proceso desde la creación del archivo XML. Si el script \textbf{TP (CHARTA 3.O)} se ha aplicado correctamente, pinchar en el enlace indicado en la parte inferior de la imagen a continuación:
+
+\includegraphics{img/scriptdone.png}
+
+\hypertarget{tokenizaciuxf3n-del-texto}{%
+\subsection*{Tokenización del texto}\label{tokenizaciuxf3n-del-texto}}
+\addcontentsline{toc}{subsection}{Tokenización del texto}
+
+La aplicación del script \textbf{TP (CHARTA 3.O)} nos permite visualizar los elementos que ya han sido marcados. Si hacemos clic en en el botón \textless pb\textgreater{} podemos ver los cambios de página y, el botón \textless lb\textgreater{} nos permite visualizar las líneas. Para poder modificar cada palabra y poder aplicar el etiquetado morfosintáctico, debemos aplicar otro programa especial para dar a cada palabra una etiqueta { \textless tok\textgreater{}}. Para ello, pincharemos en el enlace \textbf{Tokenize the text} en la parte inferior de la página. Esta acción nos permite hacer clic en cualquiera de las palabras del texto para poder editarla.
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/tokenize.png}
+
+\hypertarget{ediciuxf3n-de-token}{%
+\subsection*{Edición de token}\label{ediciuxf3n-de-token}}
+\addcontentsline{toc}{subsection}{Edición de token}
+
+En la imagen debajo hemos hecho clic en la palabra \emph{Bordelesas} para poder cambiar la \emph{B} inicial por \emph{b}. Esto abre una página en donde podemos agregar cualquiera de las formas posibles de un \emph{token}. En la imagen debajo hemos completado el campo \textbf{nform Critical form} con la forma de la presentación crítica. Pinchar en \textbf{Save} en la parte inferior izquierda de la página para volver a la visualización del documento.
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/edit.png}
+
+Como podemos ver en la imagen a continuación, solo hay que añadir una \textbf{nform} a una palabra para que se haga visible el botón que permite visualizar la presentación crítica. Debajo vemos \emph{bordelesas} con \emph{b} inicial como corresponde.
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/PCviz.png}
+
+\hypertarget{puntuaciuxf3n}{%
+\subsection*{Puntuación}\label{puntuaciuxf3n}}
+\addcontentsline{toc}{subsection}{Puntuación}
+
+Vamos a añadir dos puntos después del saludo en nuestra carta. Para ello, pinchamos en la palabra \emph{General}, en seguida hacemos clic en \textbf{insert tok after: attached}. Esto añadirá un \emph{tok} sin dejar un espacio en blanco antes. La plataforma reconoce esta instrucción, por lo tanto, solamente se debe agregar los dos puntos en el campo \textbf{nform Critical form} y hacer en clic en \textbf{Save}.
+
+\includegraphics[width=0.8\textwidth,height=\textheight]{img/add.png}
+
+\includegraphics[width=0.8\textwidth,height=\textheight]{img/add1.png}
+
+Recordemos que para cambiar un signo de puntuación, simplemente se añade el signo deseado en la presentación crítica en el campo \textbf{nform Critical form}. Para eliminar un signo de puntuación de la presentación crítica, se agregan dos guiones en el campo \textbf{nform Critical form} del token que se desea eliminar.
+
+\hypertarget{uniuxf3n-y-separaciuxf3n-irregular-de-palabras}{%
+\subsection*{Unión y separación irregular de palabras}\label{uniuxf3n-y-separaciuxf3n-irregular-de-palabras}}
+\addcontentsline{toc}{subsection}{Unión y separación irregular de palabras}
+
+La unión de palabras se trata agregando etiquetas { \textless dtok\textgreater{}} al interior de la etiqueta { \textless tok\textgreater{}}. Esta opción se presenta en la ventana de edición de token como vemos en la imagen debajo. Pincharemos en \textbf{split in dtoks: 2}.
+
+\includegraphics[width=0.8\textwidth,height=\textheight]{img/dela.png}
+
+Esto crea los \emph{dtok} con sus campos para las diferentes formas posibles. La forma de la presentación crítica se conserva en el token principal, por lo tanto, separamos las palabras en este campo. Los dos \emph{dtok} deben tener siempre el campo \textbf{form} completo. Por último, hacemos clic en \textbf{Save}.
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/dela2.png}
+
+La separación irregular de palabras se trata con la opción \emph{merge} en la página de edición de token. Primero, se pincha en el segundo o último token de la secuencia que se desea unir.
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/separacion.png}
+
+Luego hacemos clic en \emph{merge}:
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/separacion1.png}
+
+Esta acción abre una página en donde se presenta la visualización del token que resulta de la fusión. Pinchamos en \textbf{Save}.
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/separacion2.png}
+
+Finalmente, completamos la \textbf{nform Critical form} con la palabra en la forma de la presentación crítica y pinchamos en el botón \textbf{Save}.
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/separacion3.png}
+
+\hypertarget{etiquetado-morfosintuxe1ctico-y-lematizaciuxf3n}{%
+\subsection*{Etiquetado morfosintáctico y lematización}\label{etiquetado-morfosintuxe1ctico-y-lematizaciuxf3n}}
+\addcontentsline{toc}{subsection}{Etiquetado morfosintáctico y lematización}
+
+Para aplicar el etiquetado morfosintáctico es indispensable haber realizado las tareas de edición precedentes en todo el documento. Solo entonces podemos aplicar el etiquetado automático. Para ello, debemos pinchar en el enlace \textbf{(Pre)tag this text with POS (and lemma)}.
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/pos.png}
+
+El resultado que se obtenga con la aplicación de este etiquetado automático debe ser cuidadosamente revisado por el editor. Para evitar equivocaciones como la que vemos en la imagen debajo. Al apoyar el cursor sobre la palabra \emph{vino} vemos que la categoría adjudicada automáticamente no es correcta. Hemos obtenido \textbf{VMIS3S0}:
+
+\includegraphics{img/tok.png}
+
+Ahora bien, evidentemente si examinamos el contexto, esta categoría no corresponde al no tratarse de un verbo, sino más bien de un sustantivo. Habremos de modificar este campo directamente en la página de edición del token como vemos en la siguiente imagen:
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/posmod.png}
+
+\begin{quote}
+Para mas información sobre el etiquetario pinchar \href{https://cosuiza.unil.ch/teitok/shared/index.php?action=tagset}{aquí}.
+\end{quote}
+
+Volvemos a la visualización de nuestro documento y la viñeta presenta la información corregida.
+
+\includegraphics{img/posmod2.png}
+
+Esta acción debe repetirse con otros fenómenos que el editor podrá encontrar al revisar el resultado del etiquetado automático. En cuanto a los pronombres atonos, el editor deberá separar los enclíticos de los verbos utilizando la opción \textbf{split in dtoks: 2}.
+
+\includegraphics{img/enclitico.png}
+
+En la página de edición del token vamos a borrar el campo \textbf{pos POS tag} y \textbf{lemma Lemma} del token principal y completaremos los campos que correspondan en cada dtok.\footnote{Ante cualquier duda respecto al etiquetado se recomienda encarecidamente consultar el manual concebido para el proyecto de P.S. Post Scriptum (Vaamonde 2018)}
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/pronombre.png}
+
+En la página de visualización del documento podemos ver la información correcta aparecer en la viñeta del token.
+
+\includegraphics{img/pronombre1.png}
+
+\hypertarget{facsuxedmil}{%
+\subsection*{Facsímil}\label{facsuxedmil}}
+\addcontentsline{toc}{subsection}{Facsímil}
+
+Para adjuntar el facsimil de cada página a nuestro documento vamos a pinchar en el botón que nos permite visualizar los cambios de página (\textless pb\textgreater). Inmediatamente después hacemos clic en el indicador de página \textbf{{[}1r{]}}.
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/fac1.png}
+
+En la página de edición que se abrirá vamos a pinchar en el enlace \textbf{(see list)} como se muestra a continuación:
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/fac2.png}
+
+Se abrirá una nueva pestaña en donde se podrán buscar y adjuntar archivos desde la computadora. Antes de iniciar esta acción se debe denominar el archivo con la secuencia estándar concebida para los facsímiles como se presentó anteriormente en este documento (en \protect\hyperlink{head12345}{1.1.1}).
+Para ello, se debe pinchar en el botón \textbf{Choisir un fichier}, navegar hasta la ubicación del archivo y una vez seleccionado hacer clic en \textbf{Save}.
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/fac3.png}
+
+El archivo se habrá guardado en el directorio destinado a conservar los facsímiles en el servidor del COSUIZA.
+Ingresamos el nombre del archivo ---incluida su extensión--- al campo \textbf{Facsimile image} y hacemos clic en \textbf{Save}.
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/fac4.png}
+
+Terminada esta etapa, podremos ir a la página de visualización de nuestro documento y el botón \textbf{Imágenes} nos permitirá visualizar el facsímil.
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/fac5.png}
+
+\hypertarget{metadatos-1}{%
+\subsection*{Metadatos}\label{metadatos-1}}
+\addcontentsline{toc}{subsection}{Metadatos}
+
+En este apartado vamos a agregar la cabecera de nuestro documento. Comenzaremos instalando el editor de código fuente \href{https://code.visualstudio.com/}{Visual Studio Code}.
+Tras instalar y abrir el programa, vamos a pinchar en la pestaña de las extensiones como se muestra en la siguiente figura:
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/vsc.png}
+
+Vamos a escribir \emph{xml} en el cuadro de texto y vamos a pinchar en el botón \textbf{install}. Esta extensión nos ayudará a comprobar que nuestra cabecera está bien estructurada.
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/vsc2.png}
+
+Luego, vamos a abrir nuestra cabecera con la ayuda de este editor de código fuente. Primero, pincha en este enlace. La carpeta que se descargará contiene dos documentos XML, uno es la cabecera que usaremos para completar los datos correspondientes a nuestro documento y el otro es el mismo, sin embargo, todos los campos llevan comentarios para recordar la finalidad de cada etiqueta.
+Vamos a abrir la carpeta que hemos descargado en nuestro editor de código fuente como vemos en la figura debajo o, simplemente arrastrando la carpeta sobre el icono de Visual Studio Code.
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/vsc3.png}
+
+Una vez abierto el archivo XML podemos agregar los datos directamente en nuestro editor de código. En la figura debajo podemos ver que dentro de la etiqueta { \textless teiHeader\textgreater{}} hemos completado con \emph{COSUIZA-0013}, el nombre de archivo de nuestra carta. En la parte inferior izquierda se indica la cantidad de errores existentes en el archivo y, en la barra inferior, aparece la información respecto a la validez del archivo. En nuestro caso, nuestro archivo es válido.
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/vsc4.png}
+
+En el caso de existir errores, estos aparecen señalados en la parte inferior. En la figura debajo, a nuestro elemento {\textless title\textgreater{}} le falta la etiqueta de cierre.
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/vsc5.png}
+
+Después de haber agregado todos los datos pertinentes, vamos a copiar el texto de nuestra cabecera en el portapapeles y vamos a ir a nuestro documento en el COSUIZA.
+
+Vamos a pinchar en la opción que nos permite visualizar el archivo XML sin formato como se muestra en la figura debajo:
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/editheader.png}
+
+Después pinchamos en el enlace \textbf{Switch to full XML including header} como vemos a cotinuación:
+
+En seguida podremos ver el elemento { \textless teiHeader\textgreater{}} que se constituye automáticamente al crear un archivo en Teitok, pero que no contiene la información ni la estructura de nuestra cabecera presentada en el apartado de los \protect\hyperlink{head123456}{§ metadatos}.
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/editheader2.png}
+
+Vamos a seleccionar el elemento { \textless teiHeader\textgreater{}} desde su etiqueta de apertura hasta su etiqueta de cierre y la vamos a eliminar. En su lugar vamos a pegar la cabecera que hemos creado en el editor de código fuente.
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/editheader3.png}
+
+Finalmente pinchamos en \textbf{Save}.
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/editheader4.png}
+
+Al volver a nuestra página de visualización de nuestro documento podemos ver en la parte superior los metadatos pertinentes.
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{img/editheader5.png}
+
+\hypertarget{videotutorial}{%
+\section*{Videotutorial}\label{videotutorial}}
+\addcontentsline{toc}{section}{Videotutorial}
+
+\hypertarget{acceso-1}{%
+\subsection*{Acceso}\label{acceso-1}}
+\addcontentsline{toc}{subsection}{Acceso}
+
+\hypertarget{creaciuxf3n-de-archivo-xml-y-tokenizaciuxf3n}{%
+\subsection*{Creación de archivo XML y tokenización}\label{creaciuxf3n-de-archivo-xml-y-tokenizaciuxf3n}}
+\addcontentsline{toc}{subsection}{Creación de archivo XML y tokenización}
+
+\hypertarget{ediciuxf3n-de-token-1}{%
+\subsection*{Edición de token}\label{ediciuxf3n-de-token-1}}
+\addcontentsline{toc}{subsection}{Edición de token}
+
+\hypertarget{puntuaciuxf3n-1}{%
+\subsection*{Puntuación}\label{puntuaciuxf3n-1}}
+\addcontentsline{toc}{subsection}{Puntuación}
+
+\hypertarget{uniuxf3n-y-separaciuxf3n-irregular-de-palabras-1}{%
+\subsection*{Unión y separación irregular de palabras}\label{uniuxf3n-y-separaciuxf3n-irregular-de-palabras-1}}
+\addcontentsline{toc}{subsection}{Unión y separación irregular de palabras}
+
+\hypertarget{etiquetado-morfosintuxe1ctico-y-lematizaciuxf3n-1}{%
+\subsection*{Etiquetado morfosintáctico y lematización}\label{etiquetado-morfosintuxe1ctico-y-lematizaciuxf3n-1}}
+\addcontentsline{toc}{subsection}{Etiquetado morfosintáctico y lematización}
+
+\hypertarget{facsuxedmil-1}{%
+\subsection*{Facsímil}\label{facsuxedmil-1}}
+\addcontentsline{toc}{subsection}{Facsímil}
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}

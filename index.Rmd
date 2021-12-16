@@ -1,0 +1,38 @@
+--- 
+title: "COSUIZA EN TEITOK"
+author: "Andrea Escobar Castillo"
+date: "Última actualización: `r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+---
+# Informaciones generales {-}
+
+### ¿A quién está dirigido este documento? {-}
+A todos los colaboradores del corpus COSUIZA que vayan a realizar ediciones digitales en nuestra página [web](https://cosuiza.unil.ch/){target="_blank"}.
+
+### Objetivo {-}
+Este documento tiene por objetivo servir como guía de trabajo en todas las etapas de creación de ediciones digitales con la herramienta Teitok en el servidor del COSUIZA.
+
+### Requisitos {-}
+Para hacer uso de este tutorial no se necesita tener ningún conocimiento previo, pero es necesario tener:  
+1. Una cuenta de usuario o de administrador en la página del COSUIZA.  
+2. Un editor de código fuente. Recomendamos [Visual Studio Code](https://code.visualstudio.com/){target="_blank"} por su versatilidad y por ser una herramienta  gratuita compatible con Mac, Linux y Microsoft. 
+
+### ¿Cómo está estructurado este tutorial? {-}
+
+El [primer][Introducción] capítulo se ofrece une breve introducción a la codificación de textos, su importancia, fundamentos y herramientas. Este apartado resulta imprescindible para el principiante en estas cuestiones.   
+El [segundo][COSUIZA] capítulo presenta el corpus documental que motiva el proyecto en el cual se enmarca este documento.  
+El [tercer][CHARTA] capítulo expone muy brevemente el proyecto y el macrocorpus del cual hace parte el COSUIZA.  
+En el [cuarto][TEITOK] capítulo se presenta la herramienta que nos permite crear, anotar y publicar nuestro corpus documental.  
+El [quinto][Edición de textos en COSUIZA/Teitok] capítulo es un tutorial que enseña cómo proceder en todas las etapas de la edición de textos en el COSUIZA.
+
+***  
+
+**Contacto**: andrea.escobarcastillo@unil.ch
+
+***
+<a id="licencia" rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/us/88x31.png"/> </a>
+
+
+<p id="footer"> Este documento está en construcción</p>

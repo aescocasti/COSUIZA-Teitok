@@ -1,0 +1,35 @@
+# TEITOK {-}
+
+Teitok es una plataforma web desarrollada por Maarten Janssen [@janssen2016teitok] en el contexto del proyecto
+<a href="http://teitok.clul.ul.pt/postscriptum/es/index.php?action=home" target="_blank">Post Scriptum</a> de la Universidad de Lisboa en 2014.^[Ver @vaamonde2015ps]
+Esencialmente, Teitok permite visualizar y procesar datos textuales codificados en TEI/XML. Es una herramienta versátil que ofrece además, diferentes módulos en función del corpus para el cual se utiliza.
+Comúnmente entendemos por corpus una colección de textos. En Teitok, esta colección de textos se presenta como una serie de archivos en formato TEI/XML. La particularidad de Teitok, y su diferencia con el estándar de marcación TEI, es que en el segmento <span class="emph-code"> \<text\> </span> se aplica un sistema de <span style="color:orange">tokenización</span> que permite llevar a cabo el etiquetado morfosintáctico y la lematización de manera automática con herramientas de lingüística computacional almacenadas en el servidor de la plataforma. Esto se traduce en el reemplazo de la etiqueta <span class="emph-code"> \<w\> </span> del estándar TEI, utilizada para marcar lingüísticamente las palabras, por la etiqueta  <span class="emph-code"> \<tok\>.</span> Para el resto de los elementos textuales se conservan las anotaciones de TEI (<span class="emph-code">\<pb\> </span>para el inicio de página, <span class="emph-code">\<lb\> </span> para el cambio de línea, <span class="emph-code"> \<cb\> </span>para el inicio de columna, entre otros que veremos en el siguiente capítulo).  
+A continuación vemos el resultado de la anotación en TEI y luego con el modelo de Teitok:
+```xml
+1) TEI
+<w lemma="haber" pos="VAIP2P0"
+  xml:id="A19883-003-a-0180">
+  <choice>
+   <orig>habeis</orig>
+   <reg>habéis</reg>
+  </choice>
+ </w>
+```
+
+
+```xml
+1) Teitok
+<tok id="w-102" nform="habéis" lemma="haber" pos="VAIP2P0">
+habeis
+</tok>
+```
+
+Conforme al sistema de tokenización, la normalización, la anotación lingüística y la lematización se inscriben en un solo nodo por medio de los atributos, lo que permite la modificación en la plataforma de manera muy intuitiva.^[Para un modelo de anotación cabalmente conforme a TEI, el lector puede consultar el libro *Edición digital de documentos antiguos: marcación XML-TEI basada en los criterios CHARTA*. [@martinez2020edicion]]  Siguiendo la línea de desarrollo de los corpus electrónicos, resultado de la vinculación de la lingüística de corpus con las herramientas informáticas, la plataforma permite trabajar directamente en línea, lo que resulta en la utilización crítica del corpus por medio de su corrección continua [@kabatek2016linguistica]. Ya veremos en [§ Edición de textos en COSUIZA/Teitok][TEITOK] las posibilidades que ofrece la plataforma web en cuanto a estas labores de edición.  
+Cabe señalar que la red CHARTA se encuentra haciendo la migración de su [Corpus 2.0](http://www.corpuscharta.es/) a una versión 3.0 implementando Teitok. Este proyecto se puso en marcha en 2020 y, desde entonces, ha integrado al entorno de Teitok una serie de instrumentos para adaptar los criterios de edición CHARTA a las posibilidades y requerimientos de Teitok y TEI.
+
+
+
+
+---
+nocite: '@*'
+---
