@@ -861,16 +861,8 @@ En este apartado veremos que todo el proceso de codificación está ampliamente 
 aplicaciones informáticas, aunque son convenientes, no siempre son infalibles.  
 El documento que codificaremos es una carta que se conserva en la Biblioteca cantonal y universitaria de Friburgo:  
 
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.align='center'}
-library(cowplot)
-library(ggplot2)
-library(magick)
-
-p1 <- ggdraw() + draw_image("~/Documents/GitHub/pro_bookdown/img/marichalar_1r.jpeg", scale = 1)
-p2 <- ggdraw() + draw_image("~/Documents/GitHub/pro_bookdown/img/marichalar_1v.jpeg", scale = 1)
-plot_grid(p1, p2)
-#plot_grid(p3, p4)
-```
+<p align="center">
+![](img/marichalar.png) </p>
 <p align="center">*Biblioteca cantonal y universitaria de Friburgo,  B-126*</p>
 
 
