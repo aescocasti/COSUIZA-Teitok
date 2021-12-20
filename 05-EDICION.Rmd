@@ -583,19 +583,19 @@ Usamos la etiqueta <span class="emph-code"> \<del\></span> (*deletion*) para mar
 </table>
 Puesto que esta es una intervención que tiene lugar dentro de una palabra o un <span class="emph-code"> \<tok\></span>, integramos los elementos propios a la intervención en el interior de esta etiqueta. Utilizamos <span class="emph-code"> \<subst\></span> para indicar la supresión y adición de elementos en el texto. Para indicar la supresión empleamos la etiqueta <span class="emph-code"> \<del\></span> cuyo contenido es, en este caso, la letra *l* y, para el texto sobrescrito, la letra *g*, usamos <span class="emph-code"> \<add\></span>. Ambas deben contar con un atributo ```type```para declarar el tipo de intervención.
 
-###### 1.4.3 Sobre raspado {-}
+###### 1.4.3 Sobrerraspado {-}
 
 <table id = "styled-table">
             <td>CHARTA</td>
             <td>CHARTA-TEITOK</td>
         </tr>
         <tr>
-            <td>[sobre raspado: muger]</td>
-            <td><span style="color: #900C3F">\<subst\></span><br><span style="color: #900C3F;margin-left: 10px;">\<del</span> <span style="color: #E34234">type</span> <span style="color: gray">=</span> <span style="color: blue">"sobre-raspado"</span><span style="color: #900C3F">\/\></span><span style="color: gray;"><br></span><span style="color: #900C3F;margin-left: 10px;">\<add</span> <span style="color: #E34234">type</span> <span style="color: gray">=</span> <span style="color: blue">"sobre-raspado"</span><span style="color: #900C3F">\></span>muger<span style="color: #900C3F">\<\/add\></span><br><span style="color: #900C3F">\<\/subst\></span>
+            <td>[sobrerraspado: muger]</td>
+            <td><span style="color: #900C3F">\<subst\></span><br><span style="color: #900C3F;margin-left: 10px;">\<del</span> <span style="color: #E34234">type</span> <span style="color: gray">=</span> <span style="color: blue">"sobrerraspado"</span><span style="color: #900C3F">\/\></span><span style="color: gray;"><br></span><span style="color: #900C3F;margin-left: 10px;">\<add</span> <span style="color: #E34234">type</span> <span style="color: gray">=</span> <span style="color: blue">"sobrerraspado"</span><span style="color: #900C3F">\></span>muger<span style="color: #900C3F">\<\/add\></span><br><span style="color: #900C3F">\<\/subst\></span>
         </td>
         </tr>
 </table>
-Utilizamos los mismos elementos que en el caso precedente, sin embargo, dado que es muy improbable que podamos restituir el texto raspado, la etiqueta <span class="emph-code"> \<del\></span> no lleva contenido. El texto, en este caso *muger*, debe ir correctamente *tokenizado*, cosa que no hacemos en este ejemplo para no sobrecargarlo visualmente. Si el sobre raspado se hallase al interior de una palabra, la intervención debe indicarse al interior de la etiqueta <span class="emph-code"> \<tok\></span> como podemos apreciar en el ejemplo del sobrescrito.
+Utilizamos los mismos elementos que en el caso precedente, sin embargo, dado que es muy improbable que podamos restituir el texto raspado, la etiqueta <span class="emph-code"> \<del\></span> no lleva contenido. El texto, en este caso *muger*, debe ir correctamente *tokenizado*, cosa que no hacemos en este ejemplo para no sobrecargarlo visualmente. Si el sobrerraspado se hallase al interior de una palabra, la intervención debe indicarse al interior de la etiqueta <span class="emph-code"> \<tok\></span> como podemos apreciar en el ejemplo del sobrescrito.
 
 ###### 1.4.4 Interlineado {-}
 
