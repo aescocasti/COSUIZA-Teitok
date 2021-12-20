@@ -15,16 +15,16 @@ A todos los colaboradores del corpus COSUIZA que vayan a realizar ediciones digi
 Este documento tiene por objetivo servir como guía de trabajo en todas las etapas de creación de ediciones digitales con la herramienta Teitok en el servidor del COSUIZA.
 
 ### Requisitos {-}
-Para hacer uso de este tutorial no se necesita tener ningún conocimiento previo, pero es necesario tener:  
+Para hacer uso de este tutorial no se necesita poseer ningún conocimiento previo, pero es necesario tener:  
 1. Una cuenta de usuario o de administrador en la página del COSUIZA.  
 2. Un editor de código fuente. Recomendamos [Visual Studio Code](https://code.visualstudio.com/){target="_blank"} por su versatilidad y por ser una herramienta  gratuita compatible con Mac, Linux y Microsoft. 
 
 ### ¿Cómo está estructurado este tutorial? {-}
 
-El [primer][Introducción] capítulo se ofrece une breve introducción a la codificación de textos, su importancia, fundamentos y herramientas. Este apartado resulta imprescindible para el principiante en estas cuestiones.   
-El [segundo][COSUIZA] capítulo presenta el corpus documental que motiva el proyecto en el cual se enmarca este documento.  
-El [tercer][CHARTA] capítulo expone muy brevemente el proyecto y el macrocorpus del cual hace parte el COSUIZA.  
-En el [cuarto][TEITOK] capítulo se presenta la herramienta que nos permite crear, anotar y publicar nuestro corpus documental.  
+El [primer][Introducción] capítulo ofrece une breve introducción a la codificación de textos, su importancia, fundamentos y herramientas. Este apartado resulta imprescindible para el principiante en estas cuestiones.   
+El [segundo][COSUIZA] capítulo presenta el COSUIZA, el corpus documental que motiva el proyecto en el cual se enmarca este documento.  
+El [tercer][CHARTA] capítulo expone muy brevemente en qué consiste el corpus CHARTA, el proyecto y el macrocorpus del cual hace parte el COSUIZA.  
+En el [cuarto][TEITOK] capítulo se presenta, Teitok la herramienta que nos permite crear, anotar y publicar nuestro corpus documental.  
 El [quinto][Edición de textos en COSUIZA/Teitok] capítulo es un tutorial que enseña cómo proceder en todas las etapas de la edición de textos en el COSUIZA.
 
 ***  
