@@ -53,7 +53,7 @@ Supongamos que formamos parte de un proyecto en el cual se ha decidido codificar
 <center>
 <div class="figura">
 <img class='img-note' src="img/La_Araucana.jpeg">
-<p class="caption"> </p>
+<p class="caption">La Araucana, Memoria Chilena, Biblioteca Nacional de Chile</p>
 </div>
 </center>
 </br>
