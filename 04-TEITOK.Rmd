@@ -2,9 +2,9 @@
 
 Teitok es una plataforma web desarrollada por Maarten Janssen [@janssen2016teitok] en el contexto del proyecto
 <a href="http://teitok.clul.ul.pt/postscriptum/es/index.php?action=home" target="_blank">Post Scriptum</a> de la Universidad de Lisboa en 2014.^[Ver @vaamonde2015ps]
-Esencialmente, Teitok permite visualizar y procesar datos textuales codificados en TEI/XML. Es una herramienta versátil que ofrece además, diferentes módulos en función del corpus para el cual se utiliza.
+Esencialmente, Teitok permite visualizar y procesar datos textuales codificados en TEI/XML. Es una herramienta versátil que ofrece, además, diferentes módulos en función del corpus para el cual se utiliza.
 Comúnmente entendemos por corpus una colección de textos. En Teitok, esta colección de textos se presenta como una serie de archivos en formato TEI/XML. La particularidad de Teitok, y su diferencia con el estándar de marcación TEI, es que en el segmento <span class="emph-code"> \<text\> </span> se aplica un sistema de <span style="color:orange">tokenización</span> que permite llevar a cabo el etiquetado morfosintáctico y la lematización de manera automática con herramientas de lingüística computacional almacenadas en el servidor de la plataforma. Esto se traduce en el reemplazo de la etiqueta <span class="emph-code"> \<w\> </span> del estándar TEI, utilizada para marcar lingüísticamente las palabras, por la etiqueta  <span class="emph-code"> \<tok\>.</span> Para el resto de los elementos textuales se conservan las anotaciones de TEI (<span class="emph-code">\<pb\> </span>para el inicio de página, <span class="emph-code">\<lb\> </span> para el cambio de línea, <span class="emph-code"> \<cb\> </span>para el inicio de columna, entre otros que veremos en el siguiente capítulo).  
-A continuación vemos el resultado de la anotación en TEI y luego con el modelo de Teitok:
+A continuación vemos el resultado de la anotación de la forma "habeis" en TEI y luego con el modelo de Teitok:
 ```xml
 1) TEI
 <w lemma="haber" pos="VAIP2P0"

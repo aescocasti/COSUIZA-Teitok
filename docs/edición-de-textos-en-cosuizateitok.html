@@ -243,7 +243,7 @@ Este capítulo se divide en tres apartados. En el primero se hace una presentaci
 <h2>Guía de etiquetado</h2>
 <div id="metadatos" class="section level3 unnumbered">
 <h3>Metadatos</h3>
-<p>Como se ha indicado previamente, los metadatos se presentan dentro del elemento <span class="emph-code"> &lt;teiHeader&gt;</span>. Esta sección puede ser muy suscinta o muy extensa dependiendo de los requerimientos del proyecto en el que se inscribe la edición. El <span class="emph-code">&lt;teiHeader&gt;</span> del COSUIZA recoge los datos necesarios según los criterios de la red CHARTA y las exigencias de TEI. Este elemento que, de ahora en adelante, llamaremos cabecera se compone de cuatro elementos hijos que detallamos a continuación:</p>
+<p>Como se ha indicado previamente, los metadatos se presentan dentro del elemento <span class="emph-code"> &lt;teiHeader&gt;</span>. Esta sección puede ser muy sucinta o muy extensa dependiendo de los requerimientos del proyecto en el que se inscribe la edición. El <span class="emph-code">&lt;teiHeader&gt;</span> del COSUIZA recoge los datos necesarios según los criterios de la red CHARTA y las exigencias de TEI. Este elemento, que de ahora en adelante llamaremos <em>cabecera</em> se compone de cuatro elementos hijos que detallamos a continuación:</p>
 <ol style="list-style-type: decimal">
 <li><span class="emph-code"> &lt;fileDesc&gt; </span></li>
 <li><span class="emph-code"> &lt;encodingDesc&gt; </span></li>
@@ -268,7 +268,7 @@ Este capítulo se divide en tres apartados. En el primero se hace una presentaci
 </div>
 <div id="respstmt" class="section level6 unnumbered">
 <h6>1.1.3 <span class="emph-code"> &lt;respStmt&gt; </span></h6>
-<p>El enunciado de responsabilidad provee información sobre las personas que han participado en la producción del documento electrónico, también se precisa el rol de cada una. Se deben distinguir tres roles de acuerdo a los criterios de edición CHARTA y uno específico a la producción del documento electrónico. Cada uno de estos enunciados de responsabilidad contienen un elemento <span class="emph-code">&lt;resp&gt;</span> con un atributo para especificar si se trata del transcriptor, los revisores o el encargado de producir el documento XML y, un elemento <span class="emph-code">&lt;name&gt;</span> para identificar a la persona encargada de la función correspondiente. Se deben completar solamente los nombres que correspondan en la etiqueta <span class="emph-code">&lt;name&gt;</span>, el resto es invariable.</p>
+<p>El enunciado de responsabilidad provee información sobre las personas que han participado en la producción del documento electrónico, también se precisa el rol de cada una. Se deben distinguir tres roles de acuerdo a los criterios de edición CHARTA y uno específico a la producción del documento electrónico. Cada uno de estos enunciados de responsabilidad contienen un elemento <span class="emph-code">&lt;resp&gt;</span> con un atributo para especificar si se trata del transcriptor, los revisores o el encargado de producir el documento XML y un elemento <span class="emph-code">&lt;name&gt;</span> para identificar a la persona encargada de la función correspondiente. Se deben completar solamente los nombres que correspondan en la etiqueta <span class="emph-code">&lt;name&gt;</span>, el resto es invariable.</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb9-1"><a href="edición-de-textos-en-cosuizateitok.html#cb9-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">respStmt</span>&gt; </span>
 <span id="cb9-2"><a href="edición-de-textos-en-cosuizateitok.html#cb9-2" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">resp</span><span class="ot"> resp=</span><span class="st">&quot;transcriber&quot;</span>&gt;Transcriptor&lt;/<span class="kw">resp</span>&gt; </span>
 <span id="cb9-3"><a href="edición-de-textos-en-cosuizateitok.html#cb9-3" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">name</span>&gt;Nombre del transcriptor&lt;/<span class="kw">name</span>&gt; </span>
@@ -329,7 +329,7 @@ En virtud de que todos los documentos originales son manuscritos, vamos a utiliz
 <div id="msdesc" class="section level6 unnumbered">
 <h6>1.3.1 <span class="emph-code"> &lt;msDesc&gt; </span></h6>
 <p><span class="subdivision">1.3.1.1 </span> <span class="emph-code"> &lt;msIdentifier&gt; </span>
-Este elemento contiene todas las etiquetas destinadas a identificar la ubicación exacta de un manuscrito. Vamos a indicar el país, el cantón, la ciudad, el nombre del archivo y el identificador dentro del archivo. El único elemento que no varía es el país como podemos ver debajo:</p>
+Este elemento contiene todas las etiquetas destinadas a identificar la ubicación exacta de un manuscrito. Vamos a indicar el país, el cantón, la ciudad, el nombre del archivo y el identificador dentro del archivo. El único elemento que no varía es el país, como podemos ver debajo:</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb15-1"><a href="edición-de-textos-en-cosuizateitok.html#cb15-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">msIdentifier</span>&gt;</span>
 <span id="cb15-2"><a href="edición-de-textos-en-cosuizateitok.html#cb15-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">country</span>&gt;Suiza&lt;/<span class="kw">country</span>&gt;</span>
 <span id="cb15-3"><a href="edición-de-textos-en-cosuizateitok.html#cb15-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">region</span><span class="ot"> type=</span><span class="st">&quot;canton&quot;</span>&gt;Cantón en donde se conserva el documento&lt;/<span class="kw">region</span>&gt; </span>
@@ -338,7 +338,7 @@ Este elemento contiene todas las etiquetas destinadas a identificar la ubicació
 <span id="cb15-6"><a href="edición-de-textos-en-cosuizateitok.html#cb15-6" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">idno</span>&gt;Identificador dentro del archivo&lt;/<span class="kw">idno</span>&gt; </span>
 <span id="cb15-7"><a href="edición-de-textos-en-cosuizateitok.html#cb15-7" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">msIdentifier</span>&gt;</span></code></pre></div>
 <p>En caso de que el documento electrónico tenga como fuente el fragmento de un manuscrito se deben indicar los folios (f o ff.) dentro de la etiqueta <span class="emph-code"> &lt;idno&gt;</span>.</p>
-<p><span class="subdivision">1.3.1.2 </span> <span class="emph-code"> &lt;msContents&gt; </span> Esta etiqueta nos permite describir los contenidos del manuscrito. Incluiremos el resumen que hace parte de todas las cabeceras de las ediciones CHARTA, además señalaremos si se trata de una copia o de un original en el valor del atributo <code>class</code> del elemento <span class="emph-code"> &lt;msItem&gt;</span>, el nombre del <i>scriptor</i> en caso de conocer su nombre y, añadiremos su tipo en el atributo <code>type</code> con el valor que corresponda:</p>
+<p><span class="subdivision">1.3.1.2 </span> <span class="emph-code"> &lt;msContents&gt; </span> Esta etiqueta nos permite describir los contenidos del manuscrito. Incluiremos el resumen que hace parte de todas las cabeceras de las ediciones CHARTA, además señalaremos si se trata de una copia o de un original en el valor del atributo <code>class</code> del elemento <span class="emph-code"> &lt;msItem&gt;</span>, el nombre del <i>scriptor</i>, en caso de conocer su nombre, y añadiremos su tipo en el atributo <code>type</code> con el valor que corresponda:</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb16-1"><a href="edición-de-textos-en-cosuizateitok.html#cb16-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">msContents</span>&gt; </span>
 <span id="cb16-2"><a href="edición-de-textos-en-cosuizateitok.html#cb16-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">summary</span>&gt;Resumen del contenido&lt;/<span class="kw">summary</span>&gt; </span>
 <span id="cb16-3"><a href="edición-de-textos-en-cosuizateitok.html#cb16-3" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">msItem</span><span class="ot"> class=</span><span class="st">&quot;original/copia&quot;</span>&gt;</span>
@@ -474,7 +474,7 @@ Usaremos la etiqueta <span class="emph-code"> &lt;origin&gt;</span> para incluir
 <p>Elemento que se utiliza para indicar informaciones no bibliográficas del documento.</p>
 <div id="langusage" class="section level5 unnumbered">
 <h5>3.1 <span class="emph-code"> &lt;langUsage&gt; </span></h5>
-<p>Esta etiqueta contiene las lenguas utilizadas en el texto. Cada lengua se señala en un elemento <span class="emph-code"> &lt;language&gt; </span> que incluye el atributo <code>ident</code> para identificar el código de cada lengua. Este código proviene de la norma <a href="https://fr.wikipedia.org/wiki/Liste_des_codes_ISO_639-1" target="_blank">ISO-639-1</a>. La mayoría de los documentos del COSUIZA están escritos en castellano y para expresarlo usaremos el código <em>es</em>. En el ejemplo debajo vamos a suponer estamos frente a un documento en el cual se utilizan dos lenguas, una principal (<em>major</em>) y una secundaria (<em>minor</em>), la extensión de la utilización de cada una en el manuscrito se expresa en el atributo <code>scope</code> que permite expresar una noción de medida:</p>
+<p>Esta etiqueta contiene las lenguas utilizadas en el texto. Cada lengua se señala en un elemento <span class="emph-code"> &lt;language&gt; </span> que incluye el atributo <code>ident</code> para identificar el código de cada lengua. Este código proviene de la norma <a href="https://fr.wikipedia.org/wiki/Liste_des_codes_ISO_639-1" target="_blank">ISO-639-1</a>. La mayoría de los documentos del COSUIZA están escritos en castellano y para expresarlo usaremos el código <em>es</em>. En el ejemplo debajo vamos a suponer estamos frente a un documento en el cual se utilizan dos lenguas, una principal (<em>major</em>) y una secundaria (<em>minor</em>), la extensión de la utilización de cada una en el manuscrito se expresa en el atributo <code>scope</code>, que permite expresar una noción de medida:</p>
 <div class="sourceCode" id="cb22"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb22-1"><a href="edición-de-textos-en-cosuizateitok.html#cb22-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">langUsage</span><span class="ot"> type=</span><span class="st">&quot;hybrid&quot;</span>&gt;</span>
 <span id="cb22-2"><a href="edición-de-textos-en-cosuizateitok.html#cb22-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">language</span><span class="ot"> ident=</span><span class="st">&quot;es&quot;</span><span class="ot"> scope=</span><span class="st">&quot;major&quot;</span>&gt;castellano&lt;/<span class="kw">language</span>&gt;</span>
 <span id="cb22-3"><a href="edición-de-textos-en-cosuizateitok.html#cb22-3" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">language</span><span class="ot"> ident=</span><span class="st">&quot;fr&quot;</span><span class="ot"> scope=</span><span class="st">&quot;minor&quot;</span>&gt;francés&lt;/<span class="kw">language</span>&gt; </span>
@@ -589,7 +589,7 @@ CHARTA-TEITOK
 </tr>
 </table>
 <p>La etiqueta <span class="emph-code"> &lt;pb&gt; </span> indica el inicio de página.
-Es pertinente recordar que conforme a los criterios CHARTA todos los textos editados, aunque sean fragmentos de un manuscrito, comienzan por la hoja 1. De modo que el atributo <code>n</code> (<em>número</em>), siempre comienza por el número 1. También consta de un atributo <code>facs</code> para precisar el nombre del archivo facsimilar. Para denominar los archivos de los facsímiles se utiliza el nombre del archivo XML seguido de un guión, la hoja y cara correspondiente: COSUIZA-XXXX-1r. El atributo <code>ìd</code> adjudica un identificador único al elemento <span class="emph-code">&lt;pb&gt;</span>, este identificador es de la forma <code>e-n°</code> y, si bien no es aleatorio, no corresponde necesariamente al número de hoja. Veremos en la sección práctica de este documento, que la plataforma de Teitok se encarga de adjudicar este identificador.</p>
+Es pertinente recordar que, conforme a los criterios CHARTA, todos los textos editados, aunque sean fragmentos de un manuscrito, comienzan por la hoja 1. De modo que el atributo <code>n</code> (<em>número</em>), siempre comienza por el número 1. También consta de un atributo <code>facs</code> para precisar el nombre del archivo facsimilar. Para denominar los archivos de los facsímiles se utiliza el nombre del archivo XML seguido de un guión, la hoja y cara correspondiente: COSUIZA-XXXX-1r. El atributo <code>ìd</code> adjudica un identificador único al elemento <span class="emph-code">&lt;pb&gt;</span>, este identificador es de la forma <code>e-n°</code> y, si bien no es aleatorio, no corresponde necesariamente al número de hoja. Veremos en la sección práctica de este documento que la plataforma de Teitok se encarga de adjudicar este identificador.</p>
 </div>
 <div id="inicio-de-columna" class="section level6 unnumbered">
 <h6>1.1.2 Inicio de columna</h6>
@@ -815,7 +815,7 @@ CHARTA-TEITOK
 </td>
 </tr>
 </table>
-<p>Se usa el atributo <code>xml:lang</code>para marcar una firma en un alfabeto distinto al latino. Nótese que entre corchetes en la marcación CHARTA se aconseja utilizar el código ISO-639-1.</p>
+<p>Se usa el atributo <code>xml:lang</code> para marcar una firma en un alfabeto distinto al latino. Nótese que entre corchetes en la marcación CHARTA se aconseja utilizar el código ISO-639-1.</p>
 </div>
 <div id="rúbrica" class="section level6 unnumbered">
 <h6>1.3.2 Rúbrica</h6>
@@ -865,7 +865,7 @@ CHARTA-TEITOK
 </td>
 </tr>
 </table>
-<p>Se emplea la etiqueta <span class="emph-code"> &lt;figure&gt;</span> para los signos especiales. En el ejemplo hemos usado solamente el signo de la cruz, no obstante, se debe dar el valor que corresponda en cada caso al atributo <code>type</code>.</p>
+<p>Se emplea la etiqueta <span class="emph-code"> &lt;figure&gt;</span> para los signos especiales. En el ejemplo hemos usado solamente el signo de la cruz; no obstante, se debe dar el valor que corresponda en cada caso al atributo <code>type</code>.</p>
 </div>
 <div id="impreso" class="section level6 unnumbered">
 <h6>1.3.4 Impreso</h6>
@@ -928,8 +928,8 @@ CHARTA-TEITOK
 </table>
 <p>Usamos la etiqueta <span class="emph-code"> &lt;del&gt;</span> (<em>deletion</em>) para marcar un fragmento suprimido. Utilizaremos la misma secuencia para otras intervenciones como <em>raspado</em> y <em>cancelado</em>. Para ello, se debe completar el valor del atributo <code>type</code> con la intervención que corresponda.</p>
 </div>
-<div id="sobre-escrito" class="section level6 unnumbered">
-<h6>1.4.2 Sobre escrito</h6>
+<div id="sobrescrito" class="section level6 unnumbered">
+<h6>1.4.2 Sobrescrito</h6>
 <table id="styled-table">
 <td>
 CHARTA
@@ -1390,7 +1390,7 @@ Satisfecho este requisito, ir a la página de inicio del <a href="https://cosuiz
 </div>
 <div id="creación-de-archivo-xml" class="section level3 unnumbered">
 <h3>Creación de archivo XML</h3>
-<p>Tras identificarse en la plataforma, se abrirá una página con la lista de funciones con privilegios de administrador. Se debe pinchar en la primera opción <em>create new XML file</em> como vemos a continuación:
+<p>Tras identificarse en la plataforma, se abrirá una página con la lista de funciones con privilegios de administrador. Se debe pinchar en la primera opción <em>create new XML file</em>, como vemos a continuación:
 <br></p>
 <p align="center">
 <img src="img/crear_xml.png" style="width:70.0%" />
@@ -1409,7 +1409,7 @@ Satisfecho este requisito, ir a la página de inicio del <a href="https://cosuiz
 <p align="center">
 <img src="img/tp.png" style="width:70.0%" />
 </p>
-<p>Esta acción crea un archivo XML mínimo con el elemento raíz <span class="emph-code">&lt;TEI&gt;</span>, sus dos elementos hijos, <span class="emph-code"> &lt;teiHeader&gt;</span> y <span class="emph-code">&lt;text&gt;</span> y, dos elementos <span class="emph-code"> &lt;p&gt;</span> que contienen los dos párrafos de nuestra carta. Sin embargo, este archivo XML no contiene ningúna etiqueta previamente presentadas en la guía de etiquetado. Para aplicar esta marcación vamos a pinchar en la opción <strong>TP (CHARTA 3.0)</strong> en el apartado <em>Admin options</em> como vemos en la imagen debajo:</p>
+<p>Esta acción crea un archivo XML mínimo con el elemento raíz <span class="emph-code">&lt;TEI&gt;</span>, sus dos elementos hijos, <span class="emph-code"> &lt;teiHeader&gt;</span> y <span class="emph-code">&lt;text&gt;</span> y, dos elementos <span class="emph-code"> &lt;p&gt;</span> que contienen los dos párrafos de nuestra carta. Sin embargo, este archivo XML no contiene ningúna etiqueta previamente presentada en la guía de etiquetado. Para aplicar esta marcación vamos a pinchar en la opción <strong>TP (CHARTA 3.0)</strong> en el apartado <em>Admin options</em>, como vemos en la imagen debajo:</p>
 <p align="center">
 <img src="img/scriptCHtoTeitok.png" style="width:70.0%" />
 </p>
@@ -1484,7 +1484,7 @@ Satisfecho este requisito, ir a la página de inicio del <a href="https://cosuiz
 <p align="center">
 <img src="img/tok.png" />
 </p>
-<p>Ahora bien, evidentemente si examinamos el contexto, esta categoría no corresponde al no tratarse de un verbo, sino más bien de un sustantivo. Habremos de modificar este campo directamente en la página de edición del token como vemos en la siguiente imagen:</p>
+<p>Ahora bien, evidentemente si examinamos el contexto, esta categoría no corresponde, al no tratarse de un verbo, sino de un sustantivo. Habremos de modificar este campo directamente en la página de edición del token como vemos en la siguiente imagen:</p>
 <p align="center">
 <img src="img/posmod.png" style="width:70.0%" />
 </p>
@@ -1495,7 +1495,7 @@ Satisfecho este requisito, ir a la página de inicio del <a href="https://cosuiz
 <p align="center">
 <img src="img/posmod2.png" />
 </p>
-<p>Esta acción debe repetirse con otros fenómenos que el editor podrá encontrar al revisar el resultado del etiquetado automático. En cuanto a los pronombres atonos, el editor deberá separar los enclíticos de los verbos utilizando la opción <strong>split in dtoks: 2</strong>.</p>
+<p>Esta acción debe repetirse con otros fenómenos que el editor podrá encontrar al revisar el resultado del etiquetado automático. En cuanto a los pronombres átonos, el editor deberá separar los enclíticos de los verbos utilizando la opción <strong>split in dtoks: 2</strong>.</p>
 <p align="center">
 <img src="img/enclitico.png" />
 </p>
@@ -1545,7 +1545,7 @@ Tras instalar y abrir el programa, vamos a pinchar en la pestaña de las extensi
 <img src="img/vsc2.png" style="width:70.0%" />
 </p>
 <p>Luego, vamos a abrir nuestra cabecera con la ayuda de este editor de código fuente. Primero, pincha en <a href="https://github.com/aescocasti/pro_bookdown/raw/master/headers.zip">este</a> enlace. La carpeta que se descargará contiene dos documentos XML, uno es la cabecera que usaremos para completar los datos correspondientes a nuestro documento y el otro es el mismo, sin embargo, todos los campos llevan comentarios para recordar la finalidad de cada etiqueta.
-Vamos a abrir la carpeta que hemos descargado en nuestro editor de código fuente como vemos en la figura debajo o, simplemente arrastrando la carpeta sobre el icono de Visual Studio Code.</p>
+Vamos a abrir la carpeta que hemos descargado en nuestro editor de código fuente como vemos en la figura debajo, o simplemente arrastrando la carpeta sobre el icono de Visual Studio Code.</p>
 <p align="center">
 <img src="img/vsc3.png" style="width:70.0%" />
 </p>
