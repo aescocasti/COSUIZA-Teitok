@@ -1035,7 +1035,7 @@ Terminada esta etapa, podremos ir a la página de visualización de nuestro docu
 <p align="center">
 ![](img/fac5.png){width=70%} </p>
 
-### Metadatos {-}
+### Cabecera {-}
 
 En este apartado vamos a agregar la cabecera de nuestro documento. Comenzaremos instalando el editor de código fuente [Visual Studio Code](https://code.visualstudio.com/).
 Tras instalar y abrir el programa, vamos a pinchar en la pestaña de las extensiones como se muestra en la siguiente figura:
