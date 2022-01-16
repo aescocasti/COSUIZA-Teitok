@@ -184,8 +184,8 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#guía-de-etiquetado"><i class="fa fa-check"></i>Guía de etiquetado</a>
 <ul>
-<li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#metadatos"><i class="fa fa-check"></i>Metadatos</a></li>
-<li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#texto"><i class="fa fa-check"></i>Texto</a></li>
+<li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#cabecera"><i class="fa fa-check"></i>Cabecera</a></li>
+<li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#documento"><i class="fa fa-check"></i>Documento</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#automatización-en-la-plataforma"><i class="fa fa-check"></i>Automatización en la plataforma</a>
 <ul>
@@ -197,7 +197,7 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#unión-y-separación-irregular-de-palabras"><i class="fa fa-check"></i>Unión y separación irregular de palabras</a></li>
 <li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#etiquetado-morfosintáctico-y-lematización"><i class="fa fa-check"></i>Etiquetado morfosintáctico y lematización</a></li>
 <li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#facsímil"><i class="fa fa-check"></i>Facsímil</a></li>
-<li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#metadatos-1"><i class="fa fa-check"></i>Metadatos</a></li>
+<li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#metadatos"><i class="fa fa-check"></i>Metadatos</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#videotutorial"><i class="fa fa-check"></i>Videotutorial</a>
 <ul>
@@ -237,12 +237,12 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="edición-de-textos-en-cosuizateitok" class="section level1 unnumbered">
 <h1>Edición de textos en COSUIZA/Teitok</h1>
-<p>En este capítulo presentaremos una guía detallada de los procedimientos de edición en la página del COSUIZA.
+<p>En esta sección presentaremos una guía detallada de los procedimientos de edición en la página del COSUIZA.
 Este capítulo se divide en tres apartados. En el primero se hace una presentación de las etiquetas que componen la cabecera de todos los documentos del corpus y un repertorio de las etiquetas aplicables al texto. El segundo expone las posibilidades de automatización que ofrece Teitok en el proceso de edición. Finalmente, el tercer apartado, ofrece una serie de videotutoriales que exponen el proceso de creación y edición de un documento en la página del COSUIZA.</p>
 <div id="guía-de-etiquetado" class="section level2 unnumbered">
 <h2>Guía de etiquetado</h2>
-<div id="metadatos" class="section level3 unnumbered">
-<h3>Metadatos</h3>
+<div id="cabecera" class="section level3 unnumbered">
+<h3>Cabecera</h3>
 <p>Como se ha indicado previamente, los metadatos se presentan dentro del elemento <span class="emph-code"> &lt;teiHeader&gt;</span>. Esta sección puede ser muy sucinta o muy extensa dependiendo de los requerimientos del proyecto en el que se inscribe la edición. El <span class="emph-code">&lt;teiHeader&gt;</span> del COSUIZA recoge los datos necesarios según los criterios de la red CHARTA y las exigencias de TEI. Este elemento, que de ahora en adelante llamaremos <em>cabecera</em> se compone de cuatro elementos hijos que detallamos a continuación:</p>
 <ol style="list-style-type: decimal">
 <li><span class="emph-code"> &lt;fileDesc&gt; </span></li>
@@ -338,7 +338,7 @@ Este elemento contiene todas las etiquetas destinadas a identificar la ubicació
 <span id="cb15-6"><a href="edición-de-textos-en-cosuizateitok.html#cb15-6" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">idno</span>&gt;Identificador dentro del archivo&lt;/<span class="kw">idno</span>&gt; </span>
 <span id="cb15-7"><a href="edición-de-textos-en-cosuizateitok.html#cb15-7" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">msIdentifier</span>&gt;</span></code></pre></div>
 <p>En caso de que el documento electrónico tenga como fuente el fragmento de un manuscrito se deben indicar los folios (f o ff.) dentro de la etiqueta <span class="emph-code"> &lt;idno&gt;</span>.</p>
-<p><span class="subdivision">1.3.1.2 </span> <span class="emph-code"> &lt;msContents&gt; </span> Esta etiqueta nos permite describir los contenidos del manuscrito. Incluiremos el resumen que hace parte de todas las cabeceras de las ediciones CHARTA, además señalaremos si se trata de una copia o de un original en el valor del atributo <code>class</code> del elemento <span class="emph-code"> &lt;msItem&gt;</span>, el nombre del <i>scriptor</i>, en caso de conocer su nombre, y añadiremos su tipo en el atributo <code>type</code> con el valor que corresponda:</p>
+<p><span class="subdivision">1.3.1.2 </span> <span class="emph-code"> &lt;msContents&gt; </span> Esta etiqueta nos permite describir los contenidos del manuscrito. Incluiremos el resumen que forma parte de todas las cabeceras de las ediciones CHARTA, además señalaremos si se trata de una copia o de un original en el valor del atributo <code>class</code> del elemento <span class="emph-code"> &lt;msItem&gt;</span>, el nombre del <i>scriptor</i>, en caso de conocer su nombre y añadiremos su tipo en el atributo <code>type</code> con el valor que corresponda:</p>
 <div class="sourceCode" id="cb16"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb16-1"><a href="edición-de-textos-en-cosuizateitok.html#cb16-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">msContents</span>&gt; </span>
 <span id="cb16-2"><a href="edición-de-textos-en-cosuizateitok.html#cb16-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">summary</span>&gt;Resumen del contenido&lt;/<span class="kw">summary</span>&gt; </span>
 <span id="cb16-3"><a href="edición-de-textos-en-cosuizateitok.html#cb16-3" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">msItem</span><span class="ot"> class=</span><span class="st">&quot;original/copia&quot;</span>&gt;</span>
@@ -386,7 +386,8 @@ Usaremos la etiqueta <span class="emph-code"> &lt;origin&gt;</span> para incluir
 <span id="cb18-9"><a href="edición-de-textos-en-cosuizateitok.html#cb18-9" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">origPlace</span>&gt;</span>
 <span id="cb18-10"><a href="edición-de-textos-en-cosuizateitok.html#cb18-10" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">origin</span>&gt;</span>
 <span id="cb18-11"><a href="edición-de-textos-en-cosuizateitok.html#cb18-11" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">history</span>&gt;</span></code></pre></div>
-<p>El atributo <code>when</code>debe tener como valor la fecha en formato <code>aaaa-mm-dd</code>. El contenido del elemento <span class="emph-code"> &lt;geo&gt;</span> permite la geovisualización de los documentos en la plataforma Teitok. Para lograr la correcta distribución de los documentos en el mapa, es imprescindible estandardizar las coordenadas geográficas de las diferentes localidades representadas en el mapa. Para acceder al repertorio de coordenadas del COSUIZA pinchar <a href="https://github.com/aescocasti/pro_bookdown/raw/master/coordenadas.xlsx.zip">aquí</a>. En los casos en donde solo se sepa el país de origen del documento, el repertorio de coordenadas se encuentra en <a href="https://github.com/aescocasti/pro_bookdown/raw/master/coordenadas_paises.xlsx.zip">este</a> enlace. En el supuesto de que una localidad o país no se hallaren en el repertorio se debe contactar al administrador de la página del COSUIZA.</p>
+<p>El atributo <code>when</code>debe tener como valor la fecha en formato <code>aaaa-mm-dd</code>.<br />
+El contenido del elemento <span class="emph-code"> &lt;geo&gt;</span> permite la geovisualización de los documentos en la plataforma Teitok. Para lograr la correcta distribución de los documentos en el mapa, es imprescindible estandardizar las coordenadas geográficas de las diferentes localidades representadas en el mapa. Para acceder al repertorio de coordenadas del COSUIZA pinchar <a href="https://github.com/aescocasti/COSUIZA-Teitok/raw/main/coordenadas.xlsx.zip">aquí</a>. En los casos en donde solo se sepa el país de origen del documento, el repertorio de coordenadas se encuentra en <a href="https://github.com/aescocasti/COSUIZA-Teitok/raw/main/coordenadas_paises.xlsx.zip">este</a> enlace. En el supuesto de que una localidad o país no se hallaren en el repertorio se debe contactar al administrador de la página del COSUIZA.</p>
 </div>
 </div>
 </div>
@@ -453,7 +454,7 @@ Usaremos la etiqueta <span class="emph-code"> &lt;origin&gt;</span> para incluir
 <span id="cb21-41"><a href="edición-de-textos-en-cosuizateitok.html#cb21-41" aria-hidden="true" tabindex="-1"></a>             &lt;<span class="kw">catDesc</span>&gt;Permutas&lt;/<span class="kw">catDesc</span>&gt;</span>
 <span id="cb21-42"><a href="edición-de-textos-en-cosuizateitok.html#cb21-42" aria-hidden="true" tabindex="-1"></a>          &lt;/<span class="kw">category</span>&gt;</span>
 <span id="cb21-43"><a href="edición-de-textos-en-cosuizateitok.html#cb21-43" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">category</span><span class="ot"> xml:id=</span><span class="st">&quot;car-com-tru&quot;</span>&gt;</span>
-<span id="cb21-44"><a href="edición-de-textos-en-cosuizateitok.html#cb21-44" aria-hidden="true" tabindex="-1"></a>             &lt;<span class="kw">catDesc</span>&gt;Truques&lt;/<span class="kw">catDesc</span>&gt;</span>
+<span id="cb21-44"><a href="edición-de-textos-en-cosuizateitok.html#cb21-44" aria-hidden="true" tabindex="-1"></a>             &lt;<span class="kw">catDesc</span>&gt;Trueques&lt;/<span class="kw">catDesc</span>&gt;</span>
 <span id="cb21-45"><a href="edición-de-textos-en-cosuizateitok.html#cb21-45" aria-hidden="true" tabindex="-1"></a>          &lt;/<span class="kw">category</span>&gt;</span>
 <span id="cb21-46"><a href="edición-de-textos-en-cosuizateitok.html#cb21-46" aria-hidden="true" tabindex="-1"></a>          &lt;<span class="kw">category</span><span class="ot"> xml:id=</span><span class="st">&quot;car-com-pac&quot;</span>&gt;</span>
 <span id="cb21-47"><a href="edición-de-textos-en-cosuizateitok.html#cb21-47" aria-hidden="true" tabindex="-1"></a>             &lt;<span class="kw">catDesc</span>&gt;Pactos&lt;/<span class="kw">catDesc</span>&gt;</span>
@@ -474,7 +475,7 @@ Usaremos la etiqueta <span class="emph-code"> &lt;origin&gt;</span> para incluir
 <p>Elemento que se utiliza para indicar informaciones no bibliográficas del documento.</p>
 <div id="langusage" class="section level5 unnumbered">
 <h5>3.1 <span class="emph-code"> &lt;langUsage&gt; </span></h5>
-<p>Esta etiqueta contiene las lenguas utilizadas en el texto. Cada lengua se señala en un elemento <span class="emph-code"> &lt;language&gt; </span> que incluye el atributo <code>ident</code> para identificar el código de cada lengua. Este código proviene de la norma <a href="https://fr.wikipedia.org/wiki/Liste_des_codes_ISO_639-1" target="_blank">ISO-639-1</a>. La mayoría de los documentos del COSUIZA están escritos en castellano y para expresarlo usaremos el código <em>es</em>. En el ejemplo debajo vamos a suponer estamos frente a un documento en el cual se utilizan dos lenguas, una principal (<em>major</em>) y una secundaria (<em>minor</em>), la extensión de la utilización de cada una en el manuscrito se expresa en el atributo <code>scope</code>, que permite expresar una noción de medida:</p>
+<p>Esta etiqueta contiene las lenguas utilizadas en el texto. Cada lengua se señala en un elemento <span class="emph-code"> &lt;language&gt; </span> que incluye el atributo <code>ident</code> para identificar el código de cada lengua. Este código proviene de la norma <a href="https://fr.wikipedia.org/wiki/Liste_des_codes_ISO_639-1" target="_blank">ISO-639-1</a>. La mayoría de los documentos del COSUIZA están escritos en castellano y para expresarlo usaremos el código <em>es</em>. En el ejemplo debajo vamos a suponer que estamos frente a un documento en el cual se utilizan dos lenguas, una principal (<em>major</em>) y una secundaria (<em>minor</em>), la extensión de la utilización de cada una en el manuscrito se expresa en el atributo <code>scope</code>, que permite expresar una noción de medida:</p>
 <div class="sourceCode" id="cb22"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb22-1"><a href="edición-de-textos-en-cosuizateitok.html#cb22-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">langUsage</span><span class="ot"> type=</span><span class="st">&quot;hybrid&quot;</span>&gt;</span>
 <span id="cb22-2"><a href="edición-de-textos-en-cosuizateitok.html#cb22-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">language</span><span class="ot"> ident=</span><span class="st">&quot;es&quot;</span><span class="ot"> scope=</span><span class="st">&quot;major&quot;</span>&gt;castellano&lt;/<span class="kw">language</span>&gt;</span>
 <span id="cb22-3"><a href="edición-de-textos-en-cosuizateitok.html#cb22-3" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">language</span><span class="ot"> ident=</span><span class="st">&quot;fr&quot;</span><span class="ot"> scope=</span><span class="st">&quot;minor&quot;</span>&gt;francés&lt;/<span class="kw">language</span>&gt; </span>
@@ -550,12 +551,12 @@ Usaremos la etiqueta <span class="emph-code"> &lt;origin&gt;</span> para incluir
 <p>Este elemento permite registrar las modificaciones que se han hecho en el documento electrónico. Cada intervención se detalla en un elemento <span class="emph-code"> &lt;change&gt; </span> con un atributo <code>when</code> para precisar la fecha en que ha tenido lugar la modificación. En el COSUIZA detallaremos dos modificaciones principales: la creación del documento XML y la revisión de la presentación crítica. El atributo <code>when</code>debe indicar la fecha de la modificación y se puede agregar el atributo <code>who</code>para indicar las iniciales del colaborador que las ha llevado a cabo.</p>
 <div class="sourceCode" id="cb27"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb27-1"><a href="edición-de-textos-en-cosuizateitok.html#cb27-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">revisionDesc</span>&gt; </span>
 <span id="cb27-2"><a href="edición-de-textos-en-cosuizateitok.html#cb27-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">change</span><span class="ot"> when=</span><span class="st">&quot;aaa-mm-dd&quot;</span><span class="ot"> who=</span><span class="st">&quot;MCL&quot;</span>&gt;Creación del archivo&lt;/<span class="kw">change</span>&gt;</span>
-<span id="cb27-3"><a href="edición-de-textos-en-cosuizateitok.html#cb27-3" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">change</span><span class="ot"> when=</span><span class="st">&quot;aaa-mm-dd&quot;</span><span class="ot"> who=</span> <span class="st">&quot;ECDA&quot;</span>&gt;Revisión final de la presentación crítica&lt;/<span class="kw">change</span>&gt;</span>
+<span id="cb27-3"><a href="edición-de-textos-en-cosuizateitok.html#cb27-3" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">change</span><span class="ot"> when=</span><span class="st">&quot;aaa-mm-dd&quot;</span><span class="ot"> who=</span> <span class="st">&quot;EDCA&quot;</span>&gt;Revisión final de la presentación crítica&lt;/<span class="kw">change</span>&gt;</span>
 <span id="cb27-4"><a href="edición-de-textos-en-cosuizateitok.html#cb27-4" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">revisionDesc</span>&gt;</span></code></pre></div>
 </div>
 </div>
-<div id="texto" class="section level3 unnumbered">
-<h3>Texto</h3>
+<div id="documento" class="section level3 unnumbered">
+<h3>Documento</h3>
 <p><span class="emph-code"> &lt;text&gt;</span> es el elemento que contiene los datos textuales en un documento TEI. Hemos señalado que en Teitok la cabecera se ajusta a los criterios de la TEI, sin embargo, en lo que respecta al texto tiene su propio sistema basado en la <em>tokenización</em> de las palabras y de los signos de puntuación. En este sentido, en este tutorial nos limitaremos a presentar solamente los elementos editoriales que CHARTA ha adaptado para su migración a Teitok.</p>
 <div id="elementos-codicológicos" class="section level4 unnumbered">
 <h4>1. Elementos codicológicos</h4>
@@ -968,7 +969,7 @@ CHARTA-TEITOK
 </td>
 </tr>
 </table>
-<p>Utilizamos los mismos elementos que en el caso precedente, sin embargo, dado que es muy improbable que podamos restituir el texto raspado, la etiqueta <span class="emph-code"> &lt;del&gt;</span> no lleva contenido. El texto, en este caso <em>muger</em>, debe ir correctamente <em>tokenizado</em>, cosa que no hacemos en este ejemplo para no sobrecargarlo visualmente. Si el sobrerraspado se hallase al interior de una palabra, la intervención debe indicarse al interior de la etiqueta <span class="emph-code"> &lt;tok&gt;</span> como podemos apreciar en el ejemplo del sobrescrito.</p>
+<p>Utilizamos los mismos elementos que en el caso precedente, sin embargo, dado que es muy improbable que podamos restituir el texto raspado, la etiqueta <span class="emph-code"> &lt;del&gt;</span> no lleva contenido. El texto, en este caso <em>muger</em>, debe ir correctamente <em>tokenizado</em>, cosa que no hacemos en este ejemplo para no sobrecargarlo visualmente. Si el sobrerraspado se hallase en el interior de una palabra, la intervención debe indicarse en el interior de la etiqueta <span class="emph-code"> &lt;tok&gt;</span> como podemos apreciar en el ejemplo del sobrescrito.</p>
 </div>
 <div id="interlineado" class="section level6 unnumbered">
 <h6>1.4.4 Interlineado</h6>
@@ -1015,7 +1016,7 @@ CHARTA-TEITOK
 <span style="color: #900C3F">&lt;add</span> <span style="color: #E34234">hand</span> <span style="color: gray">=</span> <span style="color: blue">“#h2”</span> <span style="color: #E34234">place</span> <span style="color: gray">=</span> <span style="color: blue">“margen”</span><span style="color: #900C3F">&gt;</span>texto<span style="color: #900C3F">&lt;/add&gt;</span>
 </td>
 </table>
-<p>Usamos las mismas etiquetas que en el caso del interlineado, sin embargo, el valor del atributo <code>place</code>cambia. Opcionalmente se puede añadir el lado en el cual tiene lugar la intervención al margen. En cuyo caso el atributo <code>place</code>llevaría por valor: margen izquiero, margen derecho, margen superior o margen inferior. Como en el resto de los casos previamente señalados y, como se puede ver en la tabla, también se puede precisar un cambio de mano.</p>
+<p>Usamos las mismas etiquetas que en el caso del interlineado, sin embargo, el valor del atributo <code>place</code>cambia. Opcionalmente, se puede añadir el lado en el cual tiene lugar la intervención al margen. En cuyo caso el atributo <code>place</code>llevaría por valor: margen izquierdo, margen derecho, margen superior o margen inferior. Como en el resto de los casos previamente señalados y, como se puede ver en la tabla, también se puede precisar un cambio de mano.</p>
 <blockquote>
 <p>📝 Para agregar el texto de un sobre se puede utilizar el mismo marcado que se usa para el margen. Se debe escribir <em>sobre</em> en el valor del atributo <code>place</code></p>
 </blockquote>
@@ -1045,7 +1046,7 @@ CHARTA-TEITOK
 <span style="color: #900C3F">&lt;div</span> <span style="color: #E34234">type</span> <span style="color: gray">=</span> <span style="color: blue">“título”</span><span style="color: #900C3F">&gt;</span>texto<span style="color: #900C3F">&lt;/div&gt;</span>
 </td>
 </table>
-<p>Se emplea la etiqueta <span class="emph-code"> &lt;div&gt;</span> para el encabezamiento y el título. Este elemento se utiliza para englobar párrafos que hacen parte de una unidad. Se añade el atributo <code>type</code>para detallar el tipo de subdivisión.</p>
+<p>Se emplea la etiqueta <span class="emph-code"> &lt;div&gt;</span> (text division) para el encabezamiento y el título. Este elemento se utiliza para englobar párrafos que forman parte de una unidad. Se añade el atributo <code>type</code>para detallar el tipo de subdivisión.</p>
 </div>
 <div id="blanco" class="section level6 unnumbered">
 <h6>1.4.7 Blanco</h6>
@@ -1161,7 +1162,7 @@ CHARTA-TEITOK
 </td>
 </tr>
 </table>
-<p>La conjetura con menos certeza se trata de manera similar a la precedente, sin embargo, se utiliza la etiqueta <span class="emph-code"> &lt;unclear&gt;</span>. Se debe recordar que todo texto al interior de estas etiquetas debe estar <em>tokenizado</em>.</p>
+<p>La conjetura con menos certeza se trata de manera similar a la precedente, sin embargo, se utiliza la etiqueta <span class="emph-code"> &lt;unclear&gt;</span>. Se debe recordar que todo texto en el interior de estas etiquetas debe estar <em>tokenizado</em>.</p>
 </div>
 </div>
 </div>
@@ -1205,7 +1206,7 @@ uilla
 <span style="color: #900C3F">&lt;tok</span> <span style="color: #E34234">id</span> <span style="color: gray">=</span> <span style="color: blue">“w-1”</span> <span style="color: #E34234">nform</span> <span style="color: gray">=</span> <span style="color: blue">“villa”</span><span style="color: #900C3F">&gt;</span>uilla<span style="color: #900C3F">&lt;/tok&gt;</span>
 </td>
 </table>
-<p>En este caso debemos cambiar la grafía <em>u</em> por la <em>v</em> ya que la primera se presenta con valor consonántico, para ello, agregamos el atributo <code>nform</code> para escribir la forma que deseamos para nuestra presentación crítica.</p>
+<p>En este caso debemos cambiar la grafía <em>u</em> por la <em>v</em>, ya que la primera se presenta con valor consonántico. Para ello, agregamos el atributo <code>nform</code> para escribir la forma que deseamos para nuestra presentación crítica.</p>
 </div>
 <div id="abreviaturas" class="section level5 unnumbered">
 <h5>2.3 Abreviaturas</h5>
@@ -1225,9 +1226,9 @@ escriu<ano>
 <span style="color: #900C3F">&lt;tok</span> <span style="color: #E34234">id</span> <span style="color: gray">=</span> <span style="color: blue">“w-1”</span> <span style="color: #E34234">form</span> <span style="color: gray">=</span> <span style="color: blue">“escrui”</span> <span style="color: #E34234">fform</span> <span style="color: gray">=</span> <span style="color: blue">“escruiano”</span> <span style="color: #E34234">nform</span> <span style="color: gray">=</span> <span style="color: blue">“escrivano”</span><span style="color: #900C3F">&gt;</span>escriu<span style="color: #900C3F">&lt;ex&gt;</span>ano</span><span style="color: #900C3F">&lt;/ex&gt;</span>
 </td>
 </table>
-<p>Para indicar la presencia de una abreviatura, debemos hacerlo por medio del elemento <span class="emph-code"> &lt;ex&gt;</span>. Dado que es un fenómeno que ocurre al interior de una palabra, su etiqueta debe situarse al interior de la etiqueta <span class="emph-code"> &lt;tok&gt;</span>. Ante la presencia de una abreviatura se deben agregar dos atributos a esta etiqueta. En primer lugar se añade el atributo <code>form</code>cuyo valor debe ser la forma escrita, sin desarrollar la abreviatura ni incluir el elemento <span class="emph-code"> &lt;ex&gt;</span>. Este atributo se usa en todos los casos en donde encontramos otra etiqueta al interior de una etiqueta <span class="emph-code"> &lt;tok&gt;</span>. En segundo lugar, se incorpora el atributo <code>fform</code> cuyo valor debe ser la palabra con su abreviatura expandida. Finalmente, como el ejemplo requiere la modificación de la grafía <em>u</em> por <em>v</em>, al igual que en el ejemplo precedente, añadimos un atributo <code>nform</code>.</p>
+<p>Para indicar la presencia de una abreviatura, debemos hacerlo por medio del elemento <span class="emph-code"> &lt;ex&gt;</span>. Dado que es un fenómeno que ocurre en el interior de una palabra, su etiqueta debe situarse al interior de la etiqueta <span class="emph-code"> &lt;tok&gt;</span>. Ante la presencia de una abreviatura se deben agregar dos atributos a esta etiqueta. En primer lugar se añade el atributo <code>form</code>, cuyo valor debe ser la forma escrita, sin desarrollar la abreviatura ni incluir el elemento <span class="emph-code"> &lt;ex&gt;</span>. Este atributo se usa en todos los casos en donde encontramos otra etiqueta en el interior de una etiqueta <span class="emph-code"> &lt;tok&gt;</span>. En segundo lugar, se incorpora el atributo <code>fform</code> cuyo valor debe ser la palabra con su abreviatura expandida. Finalmente, como el ejemplo requiere la modificación de la grafía <em>u</em> por <em>v</em>, al igual que en el ejemplo precedente, añadimos un atributo <code>nform</code>.</p>
 <blockquote>
-<p>📝 Recordemos que cuando se agregan atributos a las etiquetas, estos deben tener un valor, de otro modo no los añadiremos. En el caso susodicho, la abreviatura exige la existencia de los atributos <code>form</code>y <code>fform</code>, pero no de <code>nform</code>.</p>
+<p>📝 Recordemos que cuando se agregan atributos a las etiquetas, estos deben tener un valor, de otro modo no los añadiremos. En el caso antes dicho, la abreviatura exige la existencia de los atributos <code>form</code>y <code>fform</code>, pero no de <code>nform</code>.</p>
 </blockquote>
 </div>
 <div id="unión-y-separación-de-palabras" class="section level5 unnumbered">
@@ -1248,7 +1249,7 @@ dela
 <span style="color: #900C3F">&lt;tok</span> <span style="color: #E34234">id</span> <span style="color: gray">=</span> <span style="color: blue">“w-1”</span> <span style="color: #E34234">nform</span> <span style="color: gray">=</span> <span style="color: blue">“de la”</span><span style="color: #900C3F">&gt;</span>dela<br><span style="color: #900C3F;margin-left: 10px;">&lt;dtok</span> <span style="color: #E34234">id</span> <span style="color: gray">=</span> <span style="color: blue">“d-1-1”</span> <span style="color: #E34234">form</span> <span style="color: gray">=</span> <span style="color: blue">“de”</span></span><span style="color: #900C3F">/&gt;</span> <br><span style="color: #900C3F;margin-left: 10px;">&lt;dtok</span> <span style="color: #E34234">id</span> <span style="color: gray">=</span> <span style="color: blue">“d-1-2”</span> <span style="color: #E34234">form</span> <span style="color: gray">=</span> <span style="color: blue">“la”</span></span><span style="color: #900C3F">/&gt;</span></span><br><span style="color: #900C3F">&lt;/tok&gt;</span>
 </td>
 </table>
-<p>Se trata la unión de palabras con la adición del elemento <span class="emph-code"> &lt;dtok&gt;</span> el cual no lleva contenido, sin embargo, debe imperativamente llevar un atributo <code>form</code>. También debe constar de un identificador que incluye el número identificador del <span class="emph-code"> &lt;tok&gt;</span> que lo contiene. En los casos que se requiera, la etiqueta <span class="emph-code"> &lt;dtok&gt;</span> debe llevar los atributos <code>fform</code>y <code>nform</code>, no obstante, esto no descarta la necesidad de también incluir el atributo <code>nform</code> en el <span class="emph-code"> &lt;tok&gt;</span> principal.</p>
+<p>Se trata la unión de palabras con la adición del elemento <span class="emph-code"> &lt;dtok&gt;</span> el cual no lleva contenido, sin embargo, debe imperativamente llevar un atributo <code>form</code>. También debe constar de un identificador que incluye el número identificador del <span class="emph-code"> &lt;tok&gt;</span> que lo contiene. En los casos que se requiera, la etiqueta <span class="emph-code"> &lt;dtok&gt;</span> debe llevar los atributos <code>fform</code>y <code>nform</code>. No obstante, esto no descarta la necesidad de también incluir el atributo <code>nform</code> en el <span class="emph-code"> &lt;tok&gt;</span> principal.</p>
 <table id = "styled-table">
 <td>
 CHARTA
@@ -1285,7 +1286,7 @@ razo{2}nes<ano>
 <span style="color: #900C3F">&lt;tok</span> <span style="color: #E34234">id</span> <span style="color: gray">=</span> <span style="color: blue">“w-1”</span> <span style="color: #E34234">form</span> <span style="color: gray">=</span> <span style="color: blue">“razones”</span><span style="color: #900C3F">&gt;</span>razo<span style="color: #900C3F">&lt;lb</span> <span style="color: #E34234">n</span> <span style="color: gray">=</span> <span style="color: blue">“2”</span> <span style="color: #E34234">id</span> <span style="color: gray">=</span> <span style="color: blue">“e-9”</span><span style="color: #900C3F">/&gt;</span>nes<span style="color: #900C3F">&lt;/tok&gt;</span>
 </td>
 </table>
-<p>Se introduce la etiqueta de salto de línea <span class="emph-code"> &lt;lb&gt;</span> al interior del <em>token</em> en el que ocurre la ruptura. Recordemos que todo <em>token</em> que lleve otra etiqueta al interior debe añadir el atributo <code>form</code>con la palabra en su forma de transcripción paleográfica.</p>
+<p>Se introduce la etiqueta de salto de línea <span class="emph-code"> &lt;lb&gt;</span> en el interior del <em>token</em> en el que ocurre la ruptura. Recordemos que todo <em>token</em> que lleve otra etiqueta en el interior debe añadir el atributo <code>form</code>con la palabra en su forma de transcripción paleográfica.</p>
 </div>
 <div id="cambio-de-lengua" class="section level5 unnumbered">
 <h5>2.6 Cambio de lengua</h5>
@@ -1345,7 +1346,7 @@ CHARTA-TEITOK
 </td>
 </tr>
 </table>
-<p>Si se desea añadir un signo de puntuación únicamente en la presentación crítica, es necesario agregar una etiqueta <span class="emph-code"> &lt;ee/&gt;</span> al interior del elemento <span class="emph-code"> &lt;tok&gt;</span> y se escribe en el atributo <code>nform</code> el signo deseado.</p>
+<p>Si se desea añadir un signo de puntuación en la presentación crítica, es necesario agregar una etiqueta <span class="emph-code"> &lt;ee/&gt;</span> al interior del elemento <span class="emph-code"> &lt;tok&gt;</span> y se escribe en el atributo <code>nform</code> el signo deseado.</p>
 </div>
 <div id="etiquetado-gramatical" class="section level5 unnumbered">
 <h5>2.8 Etiquetado gramatical</h5>
@@ -1370,7 +1371,7 @@ CHARTA-TEITOK
 </div>
 <div id="automatización-en-la-plataforma" class="section level2 unnumbered">
 <h2>Automatización en la plataforma</h2>
-<p>En esta sección se presenta una lección con las instrucciones para la edición de textos en la página del COSUIZA. Ahora bien, aunque la sección precedente pueda parecer abrumadora por la profusión de información, es absolutamente necesario que el lector esté al tanto de la estructura y contenido de los documentos codificados.<br />
+<p>En esta sección se presentan las instrucciones para la edición de textos en la página del COSUIZA. Ahora bien, aunque la sección precedente pueda parecer abrumadora por la profusión de información, es absolutamente necesario que el lector esté al tanto de la estructura y contenido de los documentos codificados.<br />
 En este apartado veremos que todo el proceso de codificación está ampliamente automatizado en la plataforma, sin embargo, las
 aplicaciones informáticas, aunque son convenientes, no siempre son infalibles.<br />
 El documento que codificaremos es una carta que se conserva en la Biblioteca cantonal y universitaria de Friburgo:</p>
@@ -1420,7 +1421,7 @@ Satisfecho este requisito, ir a la página de inicio del <a href="https://cosuiz
 </div>
 <div id="tokenización-del-texto" class="section level3 unnumbered">
 <h3>Tokenización del texto</h3>
-<p>La aplicación del script <strong>TP (CHARTA 3.O)</strong> nos permite visualizar los elementos que ya han sido marcados. Si hacemos clic en en el botón &lt;pb&gt; podemos ver los cambios de página y, el botón &lt;lb&gt; nos permite visualizar las líneas. Para poder modificar cada palabra y poder aplicar el etiquetado morfosintáctico, debemos aplicar otro programa especial para dar a cada palabra una etiqueta <span class="emph-code"> &lt;tok&gt;</span>. Para ello, pincharemos en el enlace <strong>Tokenize the text</strong> en la parte inferior de la página. Esta acción nos permite hacer clic en cualquiera de las palabras del texto para poder editarla.</p>
+<p>La aplicación del script <strong>TP (CHARTA 3.O)</strong> nos permite visualizar los elementos que ya han sido marcados. Si hacemos clic en el botón &lt;pb&gt; podemos ver los cambios de página y, el botón &lt;lb&gt; nos permite visualizar las líneas. Para poder modificar cada palabra y poder aplicar el etiquetado morfosintáctico, debemos aplicar otro programa especial para dar a cada palabra una etiqueta <span class="emph-code"> &lt;tok&gt;</span>. Para ello, pincharemos en el enlace <strong>Tokenize the text</strong> en la parte inferior de la página. Esta acción nos permite hacer clic en cualquiera de las palabras del texto para poder editarla.</p>
 <p align="center">
 <img src="img/tokenize.png" style="width:70.0%" />
 </p>
@@ -1449,7 +1450,7 @@ Satisfecho este requisito, ir a la página de inicio del <a href="https://cosuiz
 </div>
 <div id="unión-y-separación-irregular-de-palabras" class="section level3 unnumbered">
 <h3>Unión y separación irregular de palabras</h3>
-<p>La unión de palabras se trata agregando etiquetas <span class="emph-code"> &lt;dtok&gt;</span> al interior de la etiqueta <span class="emph-code"> &lt;tok&gt;</span>. Esta opción se presenta en la ventana de edición de token como vemos en la imagen debajo. Pincharemos en <strong>split in dtoks: 2</strong>.</p>
+<p>La unión de palabras se trata agregando etiquetas <span class="emph-code"> &lt;dtok&gt;</span> en el interior de la etiqueta <span class="emph-code"> &lt;tok&gt;</span>. Esta opción se presenta en la ventana de edición de token como vemos en la imagen debajo. Pincharemos en <strong>split in dtoks: 2</strong>.</p>
 <p align="center">
 <img src="img/dela.png" style="width:80.0%" />
 </p>
@@ -1484,7 +1485,7 @@ Satisfecho este requisito, ir a la página de inicio del <a href="https://cosuiz
 <p align="center">
 <img src="img/tok.png" />
 </p>
-<p>Ahora bien, evidentemente si examinamos el contexto, esta categoría no corresponde, al no tratarse de un verbo, sino de un sustantivo. Habremos de modificar este campo directamente en la página de edición del token como vemos en la siguiente imagen:</p>
+<p>Ahora bien, evidentemente si examinamos el contexto, esta categoría no corresponde, al no tratarse de un verbo, sino de un sustantivo. Debemos modificar este campo directamente en la página de edición del token como vemos en la siguiente imagen:</p>
 <p align="center">
 <img src="img/posmod.png" style="width:70.0%" />
 </p>
@@ -1533,7 +1534,7 @@ Ingresamos el nombre del archivo —incluida su extensión— al campo <strong>F
 <img src="img/fac5.png" style="width:70.0%" />
 </p>
 </div>
-<div id="metadatos-1" class="section level3 unnumbered">
+<div id="metadatos" class="section level3 unnumbered">
 <h3>Metadatos</h3>
 <p>En este apartado vamos a agregar la cabecera de nuestro documento. Comenzaremos instalando el editor de código fuente <a href="https://code.visualstudio.com/">Visual Studio Code</a>.
 Tras instalar y abrir el programa, vamos a pinchar en la pestaña de las extensiones como se muestra en la siguiente figura:</p>
@@ -1563,7 +1564,7 @@ Vamos a abrir la carpeta que hemos descargado en nuestro editor de código fuent
 <img src="img/editheader.png" style="width:70.0%" />
 </p>
 <p>Después pinchamos en el enlace <strong>Switch to full XML including header</strong> como vemos a cotinuación:</p>
-<p>En seguida podremos ver el elemento <span class="emph-code"> &lt;teiHeader&gt;</span> que se constituye automáticamente al crear un archivo en Teitok, pero que no contiene la información ni la estructura de nuestra cabecera presentada en el apartado de los <a href="#head123456">§ metadatos</a>.</p>
+<p>En seguida podremos ver el elemento <span class="emph-code"> &lt;teiHeader&gt;</span> que se constituye automáticamente al crear un archivo en Teitok. No obstante, no contiene la información ni la estructura de nuestra cabecera presentada en el apartado de los <a href="#head123456">§ metadatos</a>.</p>
 <p align="center">
 <img src="img/editheader2.png" style="width:70.0%" />
 </p>
@@ -1600,35 +1601,35 @@ Finalmente pinchamos en <strong>Save</strong>.
 <div id="edición-de-token-1" class="section level3 unnumbered">
 <h3>Edición de token</h3>
 <p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QoqFRt0fnEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zPc2u5xx9a8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 </p>
 </div>
 <div id="puntuación-1" class="section level3 unnumbered">
 <h3>Puntuación</h3>
 <p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/T_5jN_2GJzU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9hMC_1Z6rYo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 </p>
 </div>
 <div id="unión-y-separación-irregular-de-palabras-1" class="section level3 unnumbered">
 <h3>Unión y separación irregular de palabras</h3>
 <p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Bur6LEy7J0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KJ1T77jFLwk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 </p>
 </div>
 <div id="etiquetado-morfosintáctico-y-lematización-1" class="section level3 unnumbered">
 <h3>Etiquetado morfosintáctico y lematización</h3>
 <p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Wn5-JEYtzjw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3eyV9otwCEs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 </p>
 </div>
 <div id="facsímil-1" class="section level3 unnumbered">
 <h3>Facsímil</h3>
 <p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uKVkl8Hvdmc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cKQBAXxlzNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 </p>
 

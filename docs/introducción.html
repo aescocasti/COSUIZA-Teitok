@@ -184,8 +184,8 @@ div.csl-indent {
 <ul>
 <li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#guía-de-etiquetado"><i class="fa fa-check"></i>Guía de etiquetado</a>
 <ul>
-<li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#metadatos"><i class="fa fa-check"></i>Metadatos</a></li>
-<li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#texto"><i class="fa fa-check"></i>Texto</a></li>
+<li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#cabecera"><i class="fa fa-check"></i>Cabecera</a></li>
+<li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#documento"><i class="fa fa-check"></i>Documento</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#automatización-en-la-plataforma"><i class="fa fa-check"></i>Automatización en la plataforma</a>
 <ul>
@@ -197,7 +197,7 @@ div.csl-indent {
 <li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#unión-y-separación-irregular-de-palabras"><i class="fa fa-check"></i>Unión y separación irregular de palabras</a></li>
 <li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#etiquetado-morfosintáctico-y-lematización"><i class="fa fa-check"></i>Etiquetado morfosintáctico y lematización</a></li>
 <li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#facsímil"><i class="fa fa-check"></i>Facsímil</a></li>
-<li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#metadatos-1"><i class="fa fa-check"></i>Metadatos</a></li>
+<li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#metadatos"><i class="fa fa-check"></i>Metadatos</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="edición-de-textos-en-cosuizateitok.html"><a href="edición-de-textos-en-cosuizateitok.html#videotutorial"><i class="fa fa-check"></i>Videotutorial</a>
 <ul>
@@ -238,9 +238,9 @@ div.csl-indent {
 <div id="introducción" class="section level1 unnumbered">
 <h1>Introducción</h1>
 <p>En la era digital, los datos textuales se producen en cantidades inconmensurables, sean estos de origen digital o no. Diversas disciplinas fundamentan sus investigaciones en datos textuales. En este sentido, las humanidades no han experimentado un cambio, puesto que, desde siempre los datos textuales, o simplemente el texto, han sido la materia prima de los estudiosos de esta disciplina.
-Sin embargo, pese a conservar su materia de estudio intacta, la llegada de las computadoras presentó, inevitablemente, desafíos y posibilidades en cuanto a la colecta, constitución y análisis de datos, o más bien dicho de los corpus de estudio.
+Sin embargo, pese a conservar su materia de estudio intacta, la llegada de las computadoras presentó, inevitablemente, desafíos y posibilidades en cuanto al agrupamiento, constitución y análisis de datos, o más bien dicho de los corpus de estudio.
 Un corpus lingüístico, que es el tipo de corpus del que nos ocuparemos en este documento, requiere del trabajo de filólogos en la colecta, transcripción y edición de datos y del uso de ciertas herramientas informáticas destinadas a la presentación de los documentos editados.<br />
-En la imagen debajo vemos la reproducción de un documento que hace parte del corpus COSUIZA:<br />
+En la siguiente imagen vemos la reproducción de un documento que forma parte del corpus COSUIZA:<br />
 </br></p>
 <center>
 <div class="figura">
@@ -251,13 +251,13 @@ En la imagen debajo vemos la reproducción de un documento que hace parte del co
 </div>
 </center>
 <p></br>
-¿Cómo podemos hacer de este documento una fuente de datos susceptibles de almacenarse, transportarse y hacer parte de un corpus en el cual puedan realizarse búsquedas específicas?, pero, además, ¿cómo podemos transcribir y presentar fielmente su estructura?
-Más allá de la etapa evidente de la captura de la imagen, nos debemos plantear la cuestión de cómo extraer el texto que contiene el facsímil. Esto lo hacemos transcribiendo, pero para ello debemos determinar las herramientas que nos van a permitir producir esta transcripción. Existen programas, que muy frecuentemente exigen una subscripción para usarlos,
+¿Cómo podemos hacer de este documento una fuente de datos susceptibles de almacenarse, transportarse y formar parte de un corpus en el cual puedan realizarse búsquedas específicas?, pero, además, ¿cómo podemos transcribir y presentar fielmente su estructura?
+Más allá de la etapa evidente de la captura de la imagen, nos debemos plantear la cuestión de cómo extraer el texto que contiene el facsímil. Esto lo hacemos transcribiendo, pero para ello debemos determinar las herramientas que nos van a permitir producir esta transcripción. Existen programas que muy frecuentemente exigen una subscripción para usarlos,
 y permiten transcribir documentos manuscritos de manera automática, por ejemplo,
-<a href="https://aws.amazon.com/fr/textract/" target="_blank">Textract</a> de la compañía Amazon. Pero esta etapa constituye solamente una parte del proceso de preparación de un corpus lingüístico digital. En la actualidad, las transcripciones de textos manuscritos se deben realizar teniendo en consideración que estas serán publicadas empleando herramientas informáticas, lo que supone, desde luego, que estén codificadas de modo que puedan ser legibles por las computadoras.</p>
+<a href="https://aws.amazon.com/fr/textract/" target="_blank"><em>Textract</em></a> de la compañía <em>Amazon</em>. Pero esta etapa constituye solamente una parte del proceso de preparación de un corpus lingüístico digital. En la actualidad, las transcripciones de textos manuscritos se deben realizar teniendo en consideración que estas serán publicadas empleando herramientas informáticas, lo que supone, desde luego, que estén codificadas de modo que puedan ser legibles por las computadoras.</p>
 <div id="la-codificación-de-textos" class="section level2 unnumbered">
 <h2>La codificación de textos</h2>
-<p>En rigor, el texto que leemos en este documento está codificado, de otro modo el computador, que solamente “habla” binario, no podría presentar los caracteres de nuestra lengua. Para la computadora, la palabra <em>español</em> equivale a la secuencia <span class="emph">\x65\x73\x70\x61\xc3\xb1\x6f\x6c</span> en el sistema de codificación UTF-8. Esta codificación, muy cercana a la lengua de la computadora y no fácilmente legible por los seres humanos (o al menos para la mayoría), es la que permite obtener texto plano o texto sin formato. Ahora bien, sabemos que las características textuales y estructurales de los documentos provenientes de las humanidades son diversas. Volvamos al documento presentado más arriba: podemos observar columnas, títulos subrayados, signos, etcétera. Una alternativa sería, simplemente, transcribir este documento en un procesador de texto como Word y aplicar algunos estilos tipográficos. Sin embargo, esta opción es restrictiva, no solamente por el hecho de que Word es un programa que exige una licencia, sino porque, además, este no asegura la interoperabilidad imprescindible para el intercambio de datos. Pero por sobre todo, los estilos tipográficos no incluyen información semántica. Somos los seres humanos quienes tenemos la capacidad de interpretar el contenido semántico de los estilos tipográficos. Esto es posible gracias a una serie de convenciones, por ejemplo, el uso de cursivas para las citas, diferencias de tamaño de la fuente para las distintas partes de un texto, etcétera. Sin embargo, cuando un texto “circula” entre dispositivos, es muy probable que esta información se pierda.</p>
+<p>En rigor, el texto que leemos en este documento está codificado. De otro modo, el computador, que solamente “habla” binario, no podría presentar los caracteres de nuestra lengua. Para la computadora, la palabra <em>español</em> equivale a la secuencia <span class="emph">\x65\x73\x70\x61\xc3\xb1\x6f\x6c</span> en el sistema de codificación UTF-8. Esta codificación, muy cercana a la lengua de la computadora y no fácilmente legible por los seres humanos (o al menos para la mayoría), es la que permite obtener texto plano o texto sin formato. Ahora bien, sabemos que las características textuales y estructurales de los documentos provenientes de las humanidades son diversas. Volvamos al documento presentado más arriba: podemos observar columnas, títulos subrayados, signos, etcétera. Una alternativa sería, simplemente, transcribir este documento en un procesador de texto como Word y aplicar algunos estilos tipográficos. Sin embargo, esta opción es restrictiva, no solamente por el hecho de que Word es un programa que exige una licencia, sino porque, además, este no asegura la interoperabilidad imprescindible para el intercambio de datos. Pero por sobre todo, los estilos tipográficos no incluyen información semántica. Somos los seres humanos quienes tenemos la capacidad de interpretar el contenido semántico de los estilos tipográficos. Esto es posible gracias a una serie de convenciones, por ejemplo, el uso de cursivas para las citas, diferencias de tamaño de la fuente para las distintas partes de un texto, etcétera. Sin embargo, cuando un texto “circula” entre dispositivos, es muy probable que esta información se pierda.</p>
 <div id="xml" class="section level3 unnumbered">
 <h3>XML</h3>
 <p>Una solución al problema de la codificación de textos fue propuesta hace bastante tiempo con la creación del metalenguaje de marcado XML, sigla de eXtensible Markup Language. XML es un estándar que permite la estructuración y transmisión de información a través de un sistema de etiquetas que se extienden en una estructura de subordinación. La cantidad de etiquetas que componen un documento es variable y no es forzosamente permanente, característica que explica el adjetivo <i>eXtensible</i>.
@@ -291,7 +291,7 @@ La Araucana, Memoria Chilena, Biblioteca Nacional de Chile
 </div>
 </center>
 <p></br>
-Una manera de transcribir esta primera plana sería como hacemos en el cuadro debajo (ignoramos todos los elementos tipogáficos para los cuales existe una gran cantidad de elementos previstos por la TEI):</p>
+Una manera de transcribir esta primera plana sería como hacemos en el cuadro debajo (ignoramos todos los elementos tipográficos para los cuales existe una gran cantidad de elementos previstos por la TEI):</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="introducción.html#cb3-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">front</span>&gt;</span>
 <span id="cb3-2"><a href="introducción.html#cb3-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">titlePage</span>&gt;</span>
 <span id="cb3-3"><a href="introducción.html#cb3-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">docTitle</span>&gt;</span>
@@ -301,19 +301,21 @@ Una manera de transcribir esta primera plana sería como hacemos en el cuadro de
 <span id="cb3-7"><a href="introducción.html#cb3-7" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">byline</span>&gt;de don&lt;<span class="kw">docAuthor</span>&gt;</span>
 <span id="cb3-8"><a href="introducción.html#cb3-8" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">choice</span>&gt;&lt;<span class="kw">orig</span>&gt;Alonſo&lt;/<span class="kw">orig</span>&gt;&lt;<span class="kw">reg</span>&gt;Alonso&lt;/<span class="kw">reg</span>&gt; </span>
 <span id="cb3-9"><a href="introducción.html#cb3-9" aria-hidden="true" tabindex="-1"></a>    de Ercilla y &lt;<span class="kw">choice</span>&gt;&lt;<span class="kw">orig</span>&gt;çuñiga&lt;/<span class="kw">orig</span>&gt;&lt;<span class="kw">reg</span>&gt;Zúñiga&lt;/<span class="kw">reg</span>&gt;.</span>
-<span id="cb3-10"><a href="introducción.html#cb3-10" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">docAuthor</span>&gt;&lt;/<span class="kw">byline</span>&gt; </span>
-<span id="cb3-11"><a href="introducción.html#cb3-11" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">figure</span>&gt;</span>
-<span id="cb3-12"><a href="introducción.html#cb3-12" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">graphic</span><span class="ot"> url=</span><span class="st">&quot;https://es.wikipedia.org/wiki/Literatura_colonial_de_Chile#/media/Archivo:La_Araucana.jpg&quot;</span>/&gt;</span>
-<span id="cb3-13"><a href="introducción.html#cb3-13" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">figDesc</span>&gt;Grabado del Ángel Gabriel&lt;/<span class="kw">figDesc</span>&gt;</span>
-<span id="cb3-14"><a href="introducción.html#cb3-14" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">figure</span>&gt;</span>
-<span id="cb3-15"><a href="introducción.html#cb3-15" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">docImprint</span>&gt; </span>
-<span id="cb3-16"><a href="introducción.html#cb3-16" aria-hidden="true" tabindex="-1"></a>       EN &lt;<span class="kw">pubPlace</span>&gt;SALAMANCA&lt;/<span class="kw">pubPlace</span>&gt;</span>
-<span id="cb3-17"><a href="introducción.html#cb3-17" aria-hidden="true" tabindex="-1"></a>      En caſa de &lt;<span class="kw">name</span>&gt;Domingo de Portonarijs&lt;/<span class="kw">name</span>&gt;, Impreſſor de ſu Catholica Mageſtad.</span>
-<span id="cb3-18"><a href="introducción.html#cb3-18" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">docImprint</span>&gt;</span>
-<span id="cb3-19"><a href="introducción.html#cb3-19" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">imprimatur</span>&gt;Con privilegio de Caſtilla, y de Aragon. A coſta de Vicente, y Simon de Portonarijs. Eſta taſſado a        &lt;<span class="kw">del</span>&gt;&lt;<span class="kw">gap</span><span class="ot"> reason=</span><span class="st">&quot;illegible&quot;</span>&gt;&lt;/<span class="kw">del</span>&gt; </span>
-<span id="cb3-20"><a href="introducción.html#cb3-20" aria-hidden="true" tabindex="-1"></a>    marauedis el pliego.&lt;/<span class="kw">imprimatur</span>&gt;</span>
-<span id="cb3-21"><a href="introducción.html#cb3-21" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">titlePage</span>&gt;</span>
-<span id="cb3-22"><a href="introducción.html#cb3-22" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">front</span>&gt;</span></code></pre></div>
+<span id="cb3-10"><a href="introducción.html#cb3-10" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">div</span><span class="ot"> type=</span><span class="st">&quot;dedication&quot;</span>&gt;DIRIGIDA A LA SACRA Catholica Real Magestad del Rey don Philippe nueſtro Señor</span>
+<span id="cb3-11"><a href="introducción.html#cb3-11" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">div</span>&gt;</span>
+<span id="cb3-12"><a href="introducción.html#cb3-12" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">docAuthor</span>&gt;&lt;/<span class="kw">byline</span>&gt; </span>
+<span id="cb3-13"><a href="introducción.html#cb3-13" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">figure</span>&gt;</span>
+<span id="cb3-14"><a href="introducción.html#cb3-14" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">graphic</span><span class="ot"> url=</span><span class="st">&quot;https://es.wikipedia.org/wiki/Literatura_colonial_de_Chile#/media/Archivo:La_Araucana.jpg&quot;</span>/&gt;</span>
+<span id="cb3-15"><a href="introducción.html#cb3-15" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">figDesc</span>&gt;Grabado del Ángel Gabriel&lt;/<span class="kw">figDesc</span>&gt;</span>
+<span id="cb3-16"><a href="introducción.html#cb3-16" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">figure</span>&gt;</span>
+<span id="cb3-17"><a href="introducción.html#cb3-17" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">docImprint</span>&gt; </span>
+<span id="cb3-18"><a href="introducción.html#cb3-18" aria-hidden="true" tabindex="-1"></a>       EN &lt;<span class="kw">pubPlace</span>&gt;SALAMANCA&lt;/<span class="kw">pubPlace</span>&gt;</span>
+<span id="cb3-19"><a href="introducción.html#cb3-19" aria-hidden="true" tabindex="-1"></a>      En caſa de &lt;<span class="kw">name</span>&gt;Domingo de Portonarijs&lt;/<span class="kw">name</span>&gt;, Impreſſor de ſu Catholica Mageſtad.</span>
+<span id="cb3-20"><a href="introducción.html#cb3-20" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">docImprint</span>&gt;</span>
+<span id="cb3-21"><a href="introducción.html#cb3-21" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">imprimatur</span>&gt;Con privilegio de Caſtilla, y de Aragon. A coſta de Vicente, y Simon de Portonarijs. Eſta taſſado a        &lt;<span class="kw">del</span>&gt;&lt;<span class="kw">gap</span><span class="ot"> reason=</span><span class="st">&quot;illegible&quot;</span>&gt;&lt;/<span class="kw">del</span>&gt; </span>
+<span id="cb3-22"><a href="introducción.html#cb3-22" aria-hidden="true" tabindex="-1"></a>    marauedis el pliego.&lt;/<span class="kw">imprimatur</span>&gt;</span>
+<span id="cb3-23"><a href="introducción.html#cb3-23" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">titlePage</span>&gt;</span>
+<span id="cb3-24"><a href="introducción.html#cb3-24" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">front</span>&gt;</span></code></pre></div>
 Esta brevísima transcripción nos permite constatar ciertos puntos antes mencionados en este tutorial:
 <ul>
 <li>
@@ -323,9 +325,9 @@ Un elemento engloba a todo el resto de los elementos, en este caso es el element
 Cada elemento tiene una etiqueta de apertura y una de cierre. La barra oblicua / indica el cierre de una etiqueta.
 </li>
 <li>
-Se puede, facultativamente, agregar atributos a los elementos. En este caso el elemento <span class="emph-code"> &lt;titlePart&gt; </span> tiene un atributo para especificar el título principal de un texto. En ciertos casos, podríamos encontrar un subtítulo explicativo o un título alternativo precedido por la conjuncion disyuntiva <em>o</em>, en cuyos casos el valor del atributo <code>type</code> debe ser <code>"desc"</code> y <code>"alt"</code> respectivamente.
+Se puede, facultativamente, agregar atributos a los elementos. En este caso el elemento <span class="emph-code"> &lt;titlePart&gt; </span> tiene un atributo para especificar el título principal de un texto. En ciertos casos, podríamos encontrar un subtítulo explicativo o un título alternativo precedido por la conjuncion disyuntiva <em>o</em>, en cuyos casos el valor del atributo <code>type</code> debe ser <code>"desc"</code>(description) y <code>"alt"</code> (alternation) respectivamente.
 <li>
-Podemos constatar la finalidad para cual se ha concebido el sistema de codificación TEI en XML: la descripción detallada del texto.
+Podemos constatar la finalidad para cual la se ha concebido el sistema de codificación TEI en XML: la descripción detallada del texto.
 </li>
 </ul>
 <p>Sin embargo, esta transcripción se encuentra fuera de contexto. El elemento <span class="emph-code"> &lt;front&gt; </span> no es el elemento raíz de un documento codificado en TEI.

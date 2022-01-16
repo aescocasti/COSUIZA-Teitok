@@ -1,9 +1,9 @@
 # Introducción {-}
 
 En la era digital, los datos textuales se producen en cantidades inconmensurables, sean estos de origen digital o no. Diversas disciplinas fundamentan sus investigaciones en datos textuales. En este sentido, las humanidades no han experimentado un cambio, puesto que, desde siempre los datos textuales, o simplemente el texto, han sido la materia prima de los estudiosos de esta disciplina.
-Sin embargo, pese a conservar su materia de estudio intacta, la llegada de las computadoras presentó, inevitablemente, desafíos y posibilidades en cuanto a la colecta,  constitución y análisis de datos, o más bien dicho de los corpus de estudio. 
+Sin embargo, pese a conservar su materia de estudio intacta, la llegada de las computadoras presentó, inevitablemente, desafíos y posibilidades en cuanto al agrupamiento,  constitución y análisis de datos, o más bien dicho de los corpus de estudio. 
 Un corpus lingüístico, que es el tipo de corpus del que nos ocuparemos en este documento, requiere del trabajo de filólogos en la colecta, transcripción y edición de datos y del uso de ciertas herramientas informáticas destinadas a la presentación de los documentos editados.   
-En la imagen debajo vemos la reproducción de un documento que hace parte del corpus COSUIZA:  
+En la siguiente imagen vemos la reproducción de un documento que forma parte del corpus COSUIZA:  
 </br>
 
 <center>
@@ -13,13 +13,13 @@ En la imagen debajo vemos la reproducción de un documento que hace parte del co
 </div>
 </center>
 </br>
-¿Cómo podemos hacer de este documento una fuente de datos susceptibles de almacenarse, transportarse y  hacer parte de un corpus en el cual puedan realizarse búsquedas específicas?, pero, además, ¿cómo podemos transcribir y presentar fielmente su estructura?
-Más allá de la etapa evidente de la captura de la imagen, nos debemos plantear la cuestión de cómo extraer el texto que contiene el facsímil. Esto lo hacemos transcribiendo, pero para ello debemos determinar las herramientas que nos van a permitir producir esta transcripción. Existen programas, que muy frecuentemente exigen una subscripción para usarlos,
+¿Cómo podemos hacer de este documento una fuente de datos susceptibles de almacenarse, transportarse y formar parte de un corpus en el cual puedan realizarse búsquedas específicas?, pero, además, ¿cómo podemos transcribir y presentar fielmente su estructura?
+Más allá de la etapa evidente de la captura de la imagen, nos debemos plantear la cuestión de cómo extraer el texto que contiene el facsímil. Esto lo hacemos transcribiendo, pero para ello debemos determinar las herramientas que nos van a permitir producir esta transcripción. Existen programas que muy frecuentemente exigen una subscripción para usarlos,
 y permiten transcribir documentos manuscritos de manera automática, por ejemplo,
-<a href="https://aws.amazon.com/fr/textract/" target="_blank">Textract</a> de la compañía Amazon. Pero esta etapa constituye solamente una parte del proceso de preparación de un corpus lingüístico digital.  En la actualidad, las transcripciones de textos manuscritos se deben realizar teniendo en consideración que estas serán publicadas empleando herramientas informáticas, lo que supone, desde luego, que estén codificadas de modo que puedan ser legibles por las computadoras. 
+<a href="https://aws.amazon.com/fr/textract/" target="_blank">*Textract*</a> de la compañía *Amazon*. Pero esta etapa constituye solamente una parte del proceso de preparación de un corpus lingüístico digital.  En la actualidad, las transcripciones de textos manuscritos se deben realizar teniendo en consideración que estas serán publicadas empleando herramientas informáticas, lo que supone, desde luego, que estén codificadas de modo que puedan ser legibles por las computadoras. 
 
 ## La codificación de textos {-}
-En rigor, el texto que leemos en este documento está codificado, de otro modo el computador, que solamente “habla” binario, no podría presentar los caracteres de nuestra lengua. Para la computadora, la palabra *español* equivale a la secuencia <span class="emph">\\x65\\x73\\x70\\x61\\xc3\\xb1\\x6f\\x6c</span> en el sistema de codificación UTF-8. Esta codificación, muy cercana a la lengua de la computadora y no fácilmente legible por los seres humanos (o al menos para la mayoría), es la que permite obtener texto plano o texto sin formato. Ahora bien, sabemos que las características textuales y estructurales de los documentos provenientes de las humanidades son diversas. Volvamos al documento presentado más arriba: podemos observar columnas, títulos subrayados, signos, etcétera.  Una alternativa sería, simplemente, transcribir este documento en un procesador de texto como Word y aplicar algunos estilos tipográficos. Sin embargo, esta opción es restrictiva, no solamente por el hecho de que Word es un programa que exige una licencia, sino porque, además, este no asegura la interoperabilidad imprescindible para el intercambio de datos. Pero por sobre todo, los estilos tipográficos no incluyen información semántica. Somos los seres humanos quienes tenemos la capacidad de interpretar el contenido semántico de los estilos tipográficos. Esto es posible gracias a una serie de convenciones, por ejemplo, el uso de cursivas para las citas, diferencias de tamaño de la fuente para las distintas partes de un texto, etcétera. Sin embargo, cuando un texto "circula" entre dispositivos, es muy probable que esta información se pierda.
+En rigor, el texto que leemos en este documento está codificado. De otro modo, el computador, que solamente “habla” binario, no podría presentar los caracteres de nuestra lengua. Para la computadora, la palabra *español* equivale a la secuencia <span class="emph">\\x65\\x73\\x70\\x61\\xc3\\xb1\\x6f\\x6c</span> en el sistema de codificación UTF-8. Esta codificación, muy cercana a la lengua de la computadora y no fácilmente legible por los seres humanos (o al menos para la mayoría), es la que permite obtener texto plano o texto sin formato. Ahora bien, sabemos que las características textuales y estructurales de los documentos provenientes de las humanidades son diversas. Volvamos al documento presentado más arriba: podemos observar columnas, títulos subrayados, signos, etcétera.  Una alternativa sería, simplemente, transcribir este documento en un procesador de texto como Word y aplicar algunos estilos tipográficos. Sin embargo, esta opción es restrictiva, no solamente por el hecho de que Word es un programa que exige una licencia, sino porque, además, este no asegura la interoperabilidad imprescindible para el intercambio de datos. Pero por sobre todo, los estilos tipográficos no incluyen información semántica. Somos los seres humanos quienes tenemos la capacidad de interpretar el contenido semántico de los estilos tipográficos. Esto es posible gracias a una serie de convenciones, por ejemplo, el uso de cursivas para las citas, diferencias de tamaño de la fuente para las distintas partes de un texto, etcétera. Sin embargo, cuando un texto "circula" entre dispositivos, es muy probable que esta información se pierda.
 
 ### XML {-}
 Una solución al problema de la codificación de textos fue propuesta hace bastante tiempo con la creación del metalenguaje de marcado XML, sigla de eXtensible Markup Language. XML es un estándar que permite la estructuración y transmisión de información a través de un sistema de etiquetas que se extienden en una estructura de subordinación. La cantidad de etiquetas que componen un documento es variable y no es forzosamente permanente, característica que explica el adjetivo <i>eXtensible</i>.
@@ -57,7 +57,7 @@ Supongamos que formamos parte de un proyecto en el cual se ha decidido codificar
 </div>
 </center>
 </br>
-Una manera de transcribir esta primera plana sería como hacemos en el cuadro debajo (ignoramos todos los elementos tipogáficos para los cuales existe una gran cantidad de elementos previstos por la TEI):
+Una manera de transcribir esta primera plana sería como hacemos en el cuadro debajo (ignoramos todos los elementos tipográficos para los cuales existe una gran cantidad de elementos previstos por la TEI):
 ``` xml
 <front>
   <titlePage>
@@ -68,6 +68,8 @@ Una manera de transcribir esta primera plana sería como hacemos en el cuadro de
     <byline>de don<docAuthor>
     <choice><orig>Alonſo</orig><reg>Alonso</reg> 
     de Ercilla y <choice><orig>çuñiga</orig><reg>Zúñiga</reg>.
+    <div type="dedication">DIRIGIDA A LA SACRA Catholica Real Magestad del Rey don Philippe nueſtro Señor
+    </div>
     </docAuthor></byline> 
     <figure>
       <graphic url="https://es.wikipedia.org/wiki/Literatura_colonial_de_Chile#/media/Archivo:La_Araucana.jpg"/>
@@ -86,8 +88,8 @@ Esta brevísima transcripción nos permite constatar ciertos puntos antes mencio
 <ul>
   <li>Un elemento engloba a todo el resto de los elementos, en este caso es el elemento <span class="emph-code"> \<front\> </span> cuya función es contener toda la información paratextual de un documento.</li>
   <li>Cada elemento tiene una etiqueta de apertura y una de cierre. La barra oblicua \/ indica el cierre de una etiqueta.</li>
-  <li>Se puede, facultativamente, agregar atributos a los elementos. En este caso el elemento <span class="emph-code"> \<titlePart\> </span> tiene un atributo para especificar el título principal de un texto. En ciertos casos, podríamos encontrar un subtítulo explicativo o un título alternativo precedido por la conjuncion disyuntiva *o*, en cuyos casos el valor del atributo ```type``` debe ser ```"desc"``` y ```"alt"``` respectivamente.
-  <li>Podemos constatar la finalidad para cual se ha concebido el sistema de codificación TEI en XML: la descripción detallada del texto.</li>
+  <li>Se puede, facultativamente, agregar atributos a los elementos. En este caso el elemento <span class="emph-code"> \<titlePart\> </span> tiene un atributo para especificar el título principal de un texto. En ciertos casos, podríamos encontrar un subtítulo explicativo o un título alternativo precedido por la conjuncion disyuntiva *o*, en cuyos casos el valor del atributo ```type``` debe ser ```"desc"```(description) y ```"alt"``` (alternation) respectivamente.
+  <li>Podemos constatar la finalidad para cual la se ha concebido el sistema de codificación TEI en XML: la descripción detallada del texto.</li>
 </ul>
 Sin embargo, esta transcripción se encuentra fuera de contexto. El elemento <span class="emph-code"> \<front\> </span> no es el elemento raíz de un documento codificado en TEI.
 El elemento raíz de un documento en TEI es <span class="emph-code"> \<TEI\></span>. Este siempre lleva dos elementos hijos, <span class="emph-code"> \<teiHeader\> </span>para los metadatos y <span class="emph-code"> \<text\> </span> para el texto en sí.  
@@ -122,6 +124,4 @@ El <span class="emph-code"> \<teiHeader\> </span> puede contener cinco elementos
 <li><span class="emph-code"> \<sourceDesc\></span>: contiene la información referente al documento que sirve de fuente para la edición electrónica. Al igual que el elemento precedente, este puede ser descrito en prosa o con elementos propios.</li>
 </ul>
 Como se ha mencionado previamente, la exhaustividad de la descripción con ayuda del estándar de marcación TEI depende de los requisitos de cada proyecto. En nuestro caso, haremos el examen detallado de la cabecera que utilizaremos para cada documento del COSUIZA en el último capítulo.
-
-
 
