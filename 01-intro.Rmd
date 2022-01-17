@@ -68,9 +68,9 @@ Una manera de transcribir esta primera plana sería como hacemos en el cuadro de
     <byline>de don<docAuthor>
     <choice><orig>Alonſo</orig><reg>Alonso</reg> 
     de Ercilla y <choice><orig>çuñiga</orig><reg>Zúñiga</reg>.
+    </docAuthor></byline> 
     <div type="dedication">DIRIGIDA A LA SACRA Catholica Real Magestad del Rey don Philippe nueſtro Señor
     </div>
-    </docAuthor></byline> 
     <figure>
       <graphic url="https://es.wikipedia.org/wiki/Literatura_colonial_de_Chile#/media/Archivo:La_Araucana.jpg"/>
       <figDesc>Grabado del Ángel Gabriel</figDesc>

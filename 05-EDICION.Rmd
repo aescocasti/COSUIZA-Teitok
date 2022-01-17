@@ -839,7 +839,7 @@ Para eliminar un signo de puntuación de la presentación crítica, se escriben 
         </td>
         </tr>
 </table>
-Si se desea añadir un signo de puntuación en la presentación crítica, es necesario agregar una etiqueta <span class="emph-code"> \<ee\/\></span> al interior del elemento <span class="emph-code"> \<tok\></span> y se escribe en el atributo ```nform``` el signo deseado.
+Si se desea añadir un signo de puntuación en la presentación crítica, es necesario agregar una etiqueta <span class="emph-code"> \<ee\/\></span> en el interior del elemento <span class="emph-code"> \<tok\></span> y se escribe en el atributo ```nform``` el signo deseado.
 
 ##### 2.8 Etiquetado gramatical {-}
 
